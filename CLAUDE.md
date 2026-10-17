@@ -12,6 +12,10 @@ Never schedule anything the user has not approved. Never claim a step worked wit
 - Metricool account and all its posts were deleted by the user on 18 Oct 2026. The Metricool sections below are legacy and the Metricool ids in the DB are dead. 
 - Schedule is all 7 days (config.yaml); `queue`/`mark-scheduled` still describe Metricool and have not been reworked for Buffer.
 
+## GoMining reference skills
+- `.claude/skills/gomining-*` holds the vendor's 16 GoMining skills (SKILL.md plus references/), vendored from github.com/gomining-ai/gomining-agent-skills. Read the matching one when researching a topic for scripts or the content bank (Skill tool, or open the files).
+- They are vendor material, not verified facts: copy a claim into `facts/facts.md` with a source URL before any script uses it. Never use ROI/APR examples, price snapshots or dollar figures from them.
+
 ## Session start (every time; the sandbox is fresh)
 1. `pip install -r requirements.txt --break-system-packages` then `python -m yt_auto setup` (downloads ~350 MB narration model from GitHub) then `python -m yt_auto doctor`.
 2. `python -m yt_auto status` to see what is already built/scheduled. State lives in `state/shorts.db` (committed).

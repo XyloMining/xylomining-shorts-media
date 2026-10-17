@@ -1,0 +1,33 @@
+{
+  "name": "gomining-payments",
+  "description": "Payment infrastructure — card payments, Open Banking (PSD2), MNPL installments, on-ramp, KYC/AML",
+  "triggers": [
+    "payment methods",
+    "how to pay",
+    "buy crypto",
+    "buy miner payment",
+    "open banking",
+    "installments",
+    "installment plan",
+    "mine now pay later",
+    "mnpl",
+    "pay later",
+    "0% apr",
+    "down payment",
+    "monthly payment",
+    "kyc verification",
+    "kyc level",
+    "sepa",
+    "bank transfer",
+    "payment provider",
+    "payment commission",
+    "payment fee",
+    "payment error",
+    "payment failed",
+    "pay in installments",
+    "payment restriction",
+    "blocked payment"
+  ],
+  "enabled": true,
+  "type": "knowledge"
+}
