@@ -1,0 +1,1 @@
+Three Bitcoin mining ideas worth remembering this week. Bitcoin aims for a block roughly every ten minutes. Every 2,016 blocks, difficulty resets to keep that pace. Lower watts per terahash means less electricity for the same hashrate. Want to explore how digital Bitcoin mining works? Check the link on my channel page.

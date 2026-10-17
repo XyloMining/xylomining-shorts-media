@@ -1,0 +1,44 @@
+{
+  "day": "wednesday",
+  "topic": "What W/TH mining efficiency means",
+  "hook": "Two miners, same hashrate, very different electricity bills.",
+  "scenes": [
+    {
+      "text": "Hashrate is speed",
+      "narration": "One terahash per second means one trillion hash attempts every second.",
+      "stat": "1 TH/s"
+    },
+    {
+      "text": "Efficiency is cost",
+      "narration": "Efficiency is measured in watts per terahash. Lower means less electricity for the same work.",
+      "stat": "W/TH"
+    },
+    {
+      "text": "Compare both numbers",
+      "narration": "To judge any miner, look at hashrate and efficiency together."
+    }
+  ],
+  "cta": "Want to explore how digital Bitcoin mining works? Check the link on my channel page.",
+  "title": "W/TH Explained: Why Mining Efficiency Matters",
+  "description_body": "Hashrate tells you how fast a miner is. Watts per terahash tells you what that speed costs in electricity.",
+  "tags": [
+    "mining efficiency",
+    "W/TH",
+    "hashrate",
+    "TH/s"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Hashrate"
+  ],
+  "thumbnail": {
+    "line1": "W/TH",
+    "line2": "LOWER IS BETTER"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

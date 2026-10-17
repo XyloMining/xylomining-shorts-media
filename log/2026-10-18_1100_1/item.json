@@ -1,0 +1,44 @@
+{
+  "day": "sunday",
+  "topic": "Weekly recap: block time, difficulty and efficiency",
+  "hook": "Three Bitcoin mining ideas worth remembering this week.",
+  "scenes": [
+    {
+      "text": "Blocks take ~10 minutes",
+      "narration": "Bitcoin aims for a block roughly every ten minutes.",
+      "stat": "~10 min"
+    },
+    {
+      "text": "Difficulty adjusts",
+      "narration": "Every 2,016 blocks, difficulty resets to keep that pace.",
+      "stat": "2,016 blocks"
+    },
+    {
+      "text": "Efficiency is cost",
+      "narration": "Lower watts per terahash means less electricity for the same hashrate.",
+      "stat": "W/TH"
+    }
+  ],
+  "cta": "Want to explore how digital Bitcoin mining works? Check the link on my channel page.",
+  "title": "Weekly Bitcoin Mining Recap: 3 Ideas to Remember",
+  "description_body": "A quick recap of block time, the difficulty adjustment and mining efficiency.",
+  "tags": [
+    "bitcoin mining recap",
+    "difficulty adjustment",
+    "mining efficiency"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Recap"
+  ],
+  "thumbnail": {
+    "line1": "WEEKLY RECAP",
+    "line2": "3 IDEAS TO REMEMBER"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

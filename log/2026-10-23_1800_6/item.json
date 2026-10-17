@@ -1,0 +1,46 @@
+{
+  "day": "friday",
+  "topic": "Bitcoin's supply is capped at 21 million",
+  "hook": "There will only ever be 21 million bitcoin.",
+  "scenes": [
+    {
+      "text": "A fixed cap",
+      "narration": "Bitcoin's supply is capped at 21 million coins.",
+      "stat": "21M"
+    },
+    {
+      "text": "Mining issues them",
+      "narration": "New coins enter circulation as block rewards paid to miners."
+    },
+    {
+      "text": "Rewards keep shrinking",
+      "narration": "Because the reward halves every 210,000 blocks, new supply slows over time."
+    }
+  ],
+  "cta": "Want to explore how digital Bitcoin mining works? Check the link on my channel page.",
+  "title": "Only 21 Million Bitcoin Will Ever Exist",
+  "description_body": "Bitcoin's supply is capped at 21 million coins, and block rewards halve every 210,000 blocks.",
+  "tags": [
+    "21 million bitcoin",
+    "bitcoin supply",
+    "bitcoin halving"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Bitcoin"
+  ],
+  "thumbnail": {
+    "line1": "21 MILLION",
+    "line2": "THE HARD CAP"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    },
+    {
+      "title": "Blockstream: halving",
+      "url": "https://help.blockstream.com/education/glossary/halving"
+    }
+  ]
+}

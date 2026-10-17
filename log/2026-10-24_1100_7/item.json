@@ -1,0 +1,43 @@
+{
+  "day": "saturday",
+  "topic": "Three numbers to check before any mining decision",
+  "hook": "Before you look at any mining offer, check these three numbers.",
+  "scenes": [
+    {
+      "text": "1. Hashrate",
+      "narration": "How much hashing power are you actually getting, measured in terahashes per second?",
+      "stat": "TH/s"
+    },
+    {
+      "text": "2. Efficiency",
+      "narration": "How many watts per terahash? Lower means lower electricity costs.",
+      "stat": "W/TH"
+    },
+    {
+      "text": "3. Fees and costs",
+      "narration": "What maintenance or hosting charges come out of the rewards? Costs decide your net result."
+    }
+  ],
+  "cta": "Want to explore how digital Bitcoin mining works? Check the link on my channel page.",
+  "title": "3 Numbers to Check Before Any Bitcoin Mining Decision",
+  "description_body": "A beginner's checklist: hashrate, efficiency and ongoing fees. Mining involves costs and risk.",
+  "tags": [
+    "bitcoin mining for beginners",
+    "mining checklist",
+    "hashrate"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Beginners"
+  ],
+  "thumbnail": {
+    "line1": "3 NUMBERS",
+    "line2": "CHECK BEFORE YOU MINE"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

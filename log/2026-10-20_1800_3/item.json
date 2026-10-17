@@ -1,0 +1,47 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: more miners make Bitcoin blocks faster",
+  "hook": "Myth: more miners means faster Bitcoin blocks. Here's why it's wrong.",
+  "scenes": [
+    {
+      "text": "The myth",
+      "narration": "People assume that if more miners join, blocks arrive faster."
+    },
+    {
+      "text": "Difficulty adjusts",
+      "narration": "Every 2,016 blocks, about two weeks, Bitcoin recalculates difficulty.",
+      "stat": "2,016 blocks"
+    },
+    {
+      "text": "Pace stays near 10 minutes",
+      "narration": "If blocks come too quickly, difficulty rises, so the average stays close to ten minutes.",
+      "stat": "~10 min"
+    }
+  ],
+  "cta": "Want to explore how digital Bitcoin mining works? Check the link on my channel page.",
+  "title": "Myth: More Miners = Faster Bitcoin Blocks?",
+  "description_body": "Bitcoin's difficulty adjustment keeps blocks near ten minutes however much hashrate joins.",
+  "tags": [
+    "bitcoin myths",
+    "difficulty adjustment",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#BitcoinMyths"
+  ],
+  "thumbnail": {
+    "line1": "MYTH",
+    "line2": "MORE MINERS = FASTER BLOCKS?"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

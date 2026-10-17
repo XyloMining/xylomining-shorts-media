@@ -1,0 +1,42 @@
+{
+  "day": "thursday",
+  "topic": "What a GoMining digital miner is",
+  "hook": "A mining machine you never have to plug in? Here's the idea.",
+  "scenes": [
+    {
+      "text": "A digital miner",
+      "narration": "Per a third-party explainer, a GoMining digital miner is an NFT representing a share of hashrate hosted in GoMining's data centres."
+    },
+    {
+      "text": "Two key numbers",
+      "narration": "Each one has a hashrate in terahashes per second and an efficiency in watts per terahash.",
+      "stat": "TH/s · W/TH"
+    },
+    {
+      "text": "Not the hardware",
+      "narration": "You own the digital miner, not the physical machine, so always read the platform's own terms."
+    }
+  ],
+  "cta": "Learn more about GoMining through the link on my channel page. It's a referral link, so I may earn a benefit.",
+  "title": "What Is a GoMining Digital Miner? Explained",
+  "description_body": "A plain-English look at what GoMining digital miners are, based on a third-party explainer. Always check the platform's own terms.",
+  "tags": [
+    "gomining",
+    "digital miner",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#GoMining"
+  ],
+  "thumbnail": {
+    "line1": "DIGITAL MINER",
+    "line2": "WHAT IS IT?"
+  },
+  "sources": [
+    {
+      "title": "Forklog: what is a digital miner",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

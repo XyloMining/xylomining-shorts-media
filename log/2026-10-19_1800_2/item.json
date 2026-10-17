@@ -1,0 +1,46 @@
+{
+  "day": "monday",
+  "topic": "How a Bitcoin block actually gets mined",
+  "hook": "Bitcoin miners are playing the world's biggest guessing game.",
+  "scenes": [
+    {
+      "text": "Hash, check, repeat",
+      "narration": "Miners bundle transactions into a block, then hash the block header with SHA-256 over and over, searching for a result below the network's target."
+    },
+    {
+      "text": "First valid hash wins",
+      "narration": "The first miner to find one broadcasts the block. Finding it is hard, but other nodes can check it cheaply."
+    },
+    {
+      "text": "Winner takes the reward",
+      "narration": "That miner collects the block reward: newly issued bitcoin plus the transaction fees in the block."
+    }
+  ],
+  "cta": "Want to explore how digital Bitcoin mining works? Check the link on my channel page.",
+  "title": "How a Bitcoin Block Actually Gets Mined",
+  "description_body": "Miners race to find a hash below the network target. The first valid block earns the reward.",
+  "tags": [
+    "bitcoin mining",
+    "how bitcoin mining works",
+    "SHA-256",
+    "proof of work"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "GUESSING GAME",
+    "line2": "HOW BLOCKS GET MINED"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

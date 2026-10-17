@@ -1,0 +1,1 @@
+Two miners, same hashrate, very different electricity bills. One terahash per second means one trillion hash attempts every second. Efficiency is measured in watts per terahash. Lower means less electricity for the same work. To judge any miner, look at hashrate and efficiency together. Want to explore how digital Bitcoin mining works? Check the link on my channel page.
