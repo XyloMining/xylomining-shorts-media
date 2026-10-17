@@ -1,0 +1,4 @@
+run: 39036799860
+[0;93m2026-10-17 13:30:18.061391375 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+2026-10-17 13:30:19,969 WARNING ALERT [ERROR] Could not build the Short for Sun 18 Oct 11:00
+CHECK FAILED: nothing was built
