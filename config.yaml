@@ -85,11 +85,10 @@ media:                               # videos are served to Metricool from this 
 
 
 # Where the spoken/on-screen call to action points. Links in Shorts descriptions are NOT clickable on YouTube
-# (since 31 Aug 2023), so consider putting your link in the channel profile links and switching these two lines to
-#   where: "on my channel page"      label: "LINK ON MY CHANNEL PAGE"
+# (since 31 Aug 2023), so the CTA points to the channel profile link (add the Linkvertise URL under channel links).
 cta:
-  where: "in my description"
-  label: "LINK IN DESCRIPTION"
+  where: "on my channel page"
+  label: "LINK ON MY CHANNEL PAGE"
 
 description:
   cta_header: "Interested in learning more about digital Bitcoin mining? Explore GoMining here:"

@@ -72,9 +72,14 @@ def draw_caption(d, w, y, groups, lt, accent, cfg_font):
             cur = g
     if not cur:
         return
-    f = font(72, cfg_font)
-    sp = f.getlength(" ")
-    total = sum(f.getlength(x[0]) for x in cur) + sp * (len(cur) - 1)
+    size = 72
+    while True:
+        f = font(size, cfg_font)
+        sp = f.getlength(" ")
+        total = sum(f.getlength(x[0]) for x in cur) + sp * (len(cur) - 1)
+        if total <= w - 150 or size <= 40:
+            break
+        size -= 4
     x = (w - total) / 2
     d.rounded_rectangle([x - 36, y - 20, x + total + 36, y + 110], 30, fill=(0, 0, 0, 170))
     for word, a, b in cur:
@@ -143,7 +148,7 @@ def render_video(cfg, item, outdir: pathlib.Path, no_audio_fail=False):
             # visual: big stat (pulse in) or block chain
             if s.get("stat"):
                 sa = ease((lt - 0.2) / 0.5)
-                sf = font(int(150 + 40 * sa), ff)
+                sf = fit(str(s["stat"]), W - 140, 300, int(150 + 40 * sa), 60, ff, max_lines=1)[0]
                 d.text((W // 2, 1000), str(s["stat"]), font=sf, fill=accent + (int(255 * sa),), anchor="mm")
             else:
                 draw_chain(d, W, 880, t, accent, idx * 7)

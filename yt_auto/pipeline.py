@@ -120,8 +120,8 @@ def stage_approved(cfg, db):
     staged = []
     for r in rows:
         name = f"{from_utc_iso(r['slot_utc'], cfg):%Y-%m-%d_%H%M}_{r['id']}"
-        src = pathlib.Path(r["video_path"])
-        if not src.exists():
+        src = pathlib.Path(r["video_path"]) if r["video_path"] else None
+        if src is None or not src.exists():
             db.update(r["id"], status="failed", error="rendered video missing from scratch dir; rebuild needed")
             notify(f"Rendered video missing for post {r['id']}", r["title"])
             continue
@@ -187,6 +187,9 @@ def run(cfg, stage=True, now=None):
     if is_paused():
         log.info("PAUSED - nothing generated or staged (run `python -m yt_auto resume`).")
         return db
+    if db.manual_approvals() >= cfg["approval"]["required_count"]:   # gate passed: the rest need no manual step
+        for r in db.by_status("pending_approval"):
+            db.update(r["id"], status="approved", approved_by="auto")
     reslot_stale(cfg, db, now)
     root = DATA / "posts"
     taken = {r["slot_utc"] for r in db.all()}

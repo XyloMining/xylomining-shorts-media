@@ -83,6 +83,18 @@ class T(unittest.TestCase):
         pipeline.run(self.cfg, now=later)
         self.assertTrue(any(r["approved_by"] == "auto" for r in db.all()))
 
+    def test_remaining_pending_auto_approved_after_gate(self):
+        db = pipeline.run(self.cfg, now=self.now)
+        ids = [r["id"] for r in db.by_status("pending_approval")]
+        db.update(ids[0], status="approved", approved_by="manual")
+        pipeline.run(self.cfg, now=self.now)
+        self.assertEqual(len(db.by_status("pending_approval")), 2)       # only 1 manual approval so far: still gated
+        for i in ids[1:]:
+            db.update(i, status="approved", approved_by="manual")
+        db.update(db.insert(slot_utc="2030-01-01T00:00:00Z", status="pending_approval", topic="zz", topic_hash="zz"), title="x")
+        pipeline.run(self.cfg, now=self.now)
+        self.assertEqual(db.by_status("pending_approval"), [])           # 3 manual approvals: leftovers auto-approved
+
     def test_pause_blocks_everything(self):
         pipeline.pause_flag().write_text("x")
         db = pipeline.run(self.cfg, now=self.now)
