@@ -1,0 +1,30 @@
+{
+ "publisher": "buffer",
+ "org": "6ad38249b692c4ab06ad53ec",
+ "channels": {
+  "youtube": "6ad382fe778b240e2f3a0081",
+  "tiktok": "6ad3833b778b240e2f3a0347"
+ },
+ "posts": {
+  "2": {
+   "youtube": "6ad3bf11ae173d6e00cc0e38",
+   "tiktok": "6ad3bf13769b4579348da03b"
+  },
+  "3": {
+   "youtube": "6ad3bf180a208cb32332c808",
+   "tiktok": "6ad3bf1a0b0d72757aed6b3c"
+  },
+  "4": {
+   "youtube": "6ad3bf1c0b0d72757aed6bb8",
+   "tiktok": "6ad3bf1e769b4579348da280"
+  },
+  "5": {
+   "youtube": "6ad3bf210a208cb32332c97e",
+   "tiktok": "6ad3bf230b0d72757aed6ca7"
+  },
+  "6": {
+   "youtube": "6ad3bf26938409f1d09aee5f",
+   "tiktok": "6ad3bf28769b4579348da587"
+  }
+ }
+}

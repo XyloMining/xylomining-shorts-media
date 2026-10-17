@@ -37,10 +37,11 @@ def load(path=None) -> dict:
 
 
 def validate_config(cfg: dict) -> None:
-    missing = [d for d in DAYS if d not in cfg.get("schedule", {})]
-    if missing:
-        raise ValueError(f"config.yaml schedule is missing days: {missing}")
-    for d in DAYS:
+    sched = cfg.get("schedule", {})
+    unknown = [d for d in sched if d not in DAYS]
+    if unknown or not sched:
+        raise ValueError(f"config.yaml schedule needs at least one valid weekday; bad keys: {unknown}")
+    for d in sched:
         h, m = cfg["schedule"][d]["time"].split(":")
         if not (0 <= int(h) < 24 and 0 <= int(m) < 60):
             raise ValueError(f"bad time for {d}: {cfg['schedule'][d]['time']}")

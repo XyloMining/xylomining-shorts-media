@@ -26,6 +26,9 @@ def upcoming_slots(cfg, now: dt.datetime, count: int, min_lead_minutes: int = 30
     earliest = now + dt.timedelta(minutes=min_lead_minutes)
     out, d = [], now.date()
     for _ in range(count + 15):
+        if DAYS[d.weekday()] not in cfg["schedule"]:   # days left out of the schedule are skipped
+            d += dt.timedelta(days=1)
+            continue
         s = slot_for_date(cfg, d)
         if s > earliest:
             out.append(s)

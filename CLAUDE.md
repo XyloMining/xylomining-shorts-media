@@ -4,6 +4,14 @@ This repo is the whole pipeline. A weekly Claude session builds a week of Shorts
 Metricool tools only exist inside a Claude session, so scheduling is done by you (Claude) following this runbook.
 Never schedule anything the user has not approved. Never claim a step worked without checking its output.
 
+## NOTE (18 Oct 2026): publishing moved from Metricool to Buffer
+- Buffer org `6ad38249b692c4ab06ad53ec`; channels YouTube `6ad382fe778b240e2f3a0081`, TikTok `6ad3833b778b240e2f3a0347`. Posts 2-6 are scheduled there (ids in `state/buffer_posts.json`), Mon-Fri 18:00 Sydney, same video and time on both.
+- Use `mcp__Buffer__create_post` (mode customScheduled, schedulingType automatic, video asset = raw GitHub URL, YouTube metadata title + categoryId 28, TikTok metadata title + isAiGenerated true). Check `list_posts` for duplicates first.
+- Buffer free plan: 10 scheduled posts at once, so schedule at most 5 videos (x2 channels) ahead. Buffer has no best-time API; times are fixed at 18:00 unless the user sets others.
+- Buffer cannot set TikTok's "branded content" toggle; the caption carries the referral disclosure.
+- The Metricool sections below are legacy. The old Metricool posts (ids in the DB) must be deleted in Metricool by the user to avoid double posting.
+- Schedule is Mon-Fri only (config.yaml); `queue`/`mark-scheduled` still describe Metricool and have not been reworked for Buffer.
+
 ## Session start (every time; the sandbox is fresh)
 1. `pip install -r requirements.txt --break-system-packages` then `python -m yt_auto setup` (downloads ~350 MB narration model from GitHub) then `python -m yt_auto doctor`.
 2. `python -m yt_auto status` to see what is already built/scheduled. State lives in `state/shorts.db` (committed).

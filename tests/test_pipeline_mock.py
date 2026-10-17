@@ -14,6 +14,8 @@ class T(unittest.TestCase):
         for d in (pipeline.STATE, pipeline.DATA, pipeline.ROOT):
             d.mkdir(parents=True)
         self.cfg = config.load()
+        self.cfg["schedule"] = {d: {"time": "18:00" if d not in ("saturday", "sunday") else "11:00", "theme": "test theme"}
+                                for d in ("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")}
         self.cfg["tts"]["backend"] = "silent"
         self.cfg["video"]["render_fps"] = 5
         self.cfg["pipeline"]["buffer_slots"] = 3

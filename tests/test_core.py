@@ -2,7 +2,10 @@ import datetime as dt, json, os, pathlib, shutil, sys, tempfile, unittest
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from yt_auto import config, content, schedule, state
 
+FULL_WEEK = {d: {"time": "18:00" if d not in ("saturday", "sunday") else "11:00", "theme": "test theme"}
+             for d in ("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")}
 CFG = config.load()
+CFG["schedule"] = FULL_WEEK  # tests exercise every weekday; production config may use fewer
 UTC = dt.timezone.utc
 
 
