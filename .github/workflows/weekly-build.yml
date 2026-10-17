@@ -29,8 +29,15 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - name: Check FFmpeg
-        run: ffmpeg -version | head -1
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Check FFmpeg (strict)
+        run: |
+          ffmpeg -version > /dev/null
+          ffprobe -version > /dev/null
+          ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libx264
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Cache narration model
