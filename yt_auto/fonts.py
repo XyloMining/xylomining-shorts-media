@@ -3,6 +3,8 @@ import pathlib
 
 from PIL import ImageFont
 
+from .config import ROOT
+
 CANDIDATES = [
     "C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf", "C:/Windows/Fonts/calibrib.ttf",
     "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf",
@@ -14,8 +16,12 @@ CANDIDATES = [
 @functools.lru_cache(maxsize=None)
 def font(size: int, path: str = ""):
     for p in ([path] if path else []) + CANDIDATES:
-        if p and pathlib.Path(p).exists():
-            return ImageFont.truetype(p, size)
+        if not p:
+            continue
+        q = pathlib.Path(p)
+        q = q if q.is_absolute() else ROOT / q
+        if q.exists():
+            return ImageFont.truetype(str(q), size)
     return ImageFont.load_default()
 
 

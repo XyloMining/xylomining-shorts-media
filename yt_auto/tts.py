@@ -12,7 +12,7 @@ import subprocess
 from .config import ROOT
 from .util import get_logger, retry
 
-PAD = 0.30  # seconds of breathing room after each scene
+PAD = 0.30  # default pause after each scene (config tts.pad_seconds overrides)
 
 
 def ffprobe_duration(path) -> float:
@@ -85,6 +85,7 @@ def _silent(cfg, text, out):
 def synthesize(cfg, narrations, workdir: pathlib.Path):
     """Returns (wav_path, scenes) where scenes = [{start, end, speech}] in seconds."""
     log = get_logger()
+    pad = float(cfg["tts"].get("pad_seconds", PAD))
     workdir.mkdir(parents=True, exist_ok=True)
     pref = cfg["tts"]["backend"]
     chain = {"auto": [("kokoro", _kokoro), ("edge", _edge), ("pyttsx3", _pyttsx3), ("espeak", _espeak), ("silent", _silent)],
@@ -106,13 +107,18 @@ def synthesize(cfg, narrations, workdir: pathlib.Path):
             raise RuntimeError("no TTS backend worked")
         speech = ffprobe_duration(raw)
         wav = workdir / f"scene_{i}.wav"
-        _ff("-i", str(raw), "-ar", "44100", "-ac", "1", "-af", f"apad=pad_dur={PAD}", str(wav))
+        _ff("-i", str(raw), "-ar", "44100", "-ac", "1", "-af", f"apad=pad_dur={pad}", str(wav))
         wavs.append(wav)
-        scenes.append({"start": t, "end": t + speech + PAD, "speech": speech})
-        t += speech + PAD
+        scenes.append({"start": t, "end": t + speech + pad, "speech": speech})
+        t += speech + pad
     lst = workdir / "list.txt"
     lst.write_text("".join(f"file '{w.resolve().as_posix()}'\n" for w in wavs))
     out = workdir / "narration.wav"
     _ff("-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(out))
+    master = cfg["tts"].get("master", "")
+    if master and used != "silent":
+        mastered = workdir / "narration_master.wav"
+        _ff("-i", str(out), "-af", master, "-ar", "44100", str(mastered))
+        out = mastered
     log.info("narration via %s, %.1fs", used, t)
     return out, scenes, used

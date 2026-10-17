@@ -1,0 +1,49 @@
+name: Weekly Shorts build
+
+# Builds the next week of Shorts (script -> narration -> video -> thumbnail), stages approved ones under videos/,
+# and commits state/log back to the repo. Scheduling in Metricool is a separate one-message Claude step (see CLAUDE.md).
+on:
+  schedule:
+    - cron: "0 8 * * 5"      # Fridays 08:00 UTC = Friday evening in Sydney
+  workflow_dispatch: {}
+
+concurrency:
+  group: shorts-build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Check FFmpeg
+        run: ffmpeg -version | head -1
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Cache narration model
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0
+      - name: Fetch narration model
+        run: python -m yt_auto setup
+      - name: Configure git
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "shorts-bot@users.noreply.github.com"
+      - name: Health check
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m yt_auto doctor || true
+      - name: Build the week
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m yt_auto run

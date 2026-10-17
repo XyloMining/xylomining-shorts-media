@@ -70,6 +70,27 @@ class Validator(unittest.TestCase):
         self.assertEqual(len(t), len(set(t)))
 
 
+class Fallback(unittest.TestCase):
+    def test_bank_then_gemini(self):
+        from unittest import mock
+        cfg = config.load(); cfg["llm"]["backend"] = "file+gemini"
+        bank = json.loads(next(config.BANK.glob("claude_week1_2.json")).read_text(encoding="utf-8"))
+        gen = dict(bank[0], topic="A brand new Gemini-written topic about orange coins", title="Gemini Topic")
+        with tempfile.TemporaryDirectory() as d:
+            db = state.DB(pathlib.Path(d) / "t.db")
+            slot = dt.datetime(2026, 10, 19, 18, 0, tzinfo=schedule.tz_of(cfg))
+            with mock.patch.object(content, "_bank_items", lambda: bank):
+                self.assertIn(content.generate(cfg, db, slot)["topic"], [b["topic"] for b in bank])   # bank wins while it has items
+            with mock.patch.object(content, "_bank_items", lambda: []), \
+                 mock.patch.object(content, "_gemini", lambda c, p: "```json\n" + json.dumps(gen) + "\n```"):
+                self.assertEqual(content.generate(cfg, db, slot)["title"], "Gemini Topic")             # fallback after bank is empty
+            bad = dict(gen, hook="This is risk-free passive income.")
+            with mock.patch.object(content, "_bank_items", lambda: []), \
+                 mock.patch.object(content, "_gemini", lambda c, p: json.dumps(bad)):
+                with self.assertRaises(RuntimeError):                                                   # validator still gates Gemini output
+                    content.generate(cfg, db, slot)
+
+
 class Dupes(unittest.TestCase):
     def test_db_blocks_dupes(self):
         with tempfile.TemporaryDirectory() as d:

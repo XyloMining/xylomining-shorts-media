@@ -212,7 +212,7 @@ def generate(cfg, db, slot, insights=None):
     backend = cfg["llm"]["backend"]
     day = slot.strftime("%A").lower()
 
-    if backend == "file":
+    if backend in ("file", "file+gemini"):
         pool = bank_remaining(cfg, db)
         for i in pool:  # prefer an item written for this weekday
             if i.get("day") == day:
@@ -220,7 +220,10 @@ def generate(cfg, db, slot, insights=None):
         if pool:
             log.warning("no unused '%s' item in content_bank; using another day's item", day)
             return pool[0]
-        raise RuntimeError(f"content_bank is empty/used up (need an unused item for {day}). Run: python -m yt_auto bank-prompt")
+        if backend == "file":
+            raise RuntimeError(f"content_bank is empty/used up (need an unused item for {day}). Run: python -m yt_auto bank-prompt")
+        log.warning("content bank used up - falling back to Gemini for %s", day)
+        backend = "gemini"
 
     fn = {"claude_cli": _claude_cli, "anthropic_api": _anthropic, "gemini": _gemini}[backend]
     feedback, last = "", []

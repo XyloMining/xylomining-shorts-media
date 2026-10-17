@@ -29,13 +29,14 @@ approval:
 
 # --- Script / title / description generation --------------------------------
 # backend options:
+#   file+gemini   FREE. Bank first, then Gemini when the bank is empty (needs GEMINI_API_KEY for the fallback).
 #   file          FREE. Reads pre-written JSON from content_bank/ (see `bank-prompt` command:
 #                 you paste a prompt into Claude chat once a month, save the reply).
 #   claude_cli    Runs `claude -p` on your PC. Needs Claude Code installed + a paid Claude plan or API login.
 #   anthropic_api Anthropic Messages API. Pay-per-use (needs ANTHROPIC_API_KEY).
 #   gemini        Google Gemini API; has a free tier with rate limits (needs GEMINI_API_KEY).
 llm:
-  backend: "file"
+  backend: "file+gemini"          # content bank first (written by Claude), then Gemini free tier once the bank is used up
   anthropic_model: "claude-haiku-5-5"
   gemini_model: "gemini-2.5-flash"
   timeout_seconds: 300
@@ -45,8 +46,11 @@ llm:
 # Video is always fully captioned, so silent output is still watchable.
 tts:
   backend: "auto"                   # auto = kokoro -> edge -> pyttsx3 -> espeak -> silent
-  kokoro_voice: "bm_george"         # offline open-source neural voice (British male). Others: bm_lewis, am_adam, af_heart ...
-  kokoro_lang: "en-gb"
+  kokoro_voice: "am_puck"           # offline open-source neural voice. Others: am_michael, am_adam, bm_lewis, af_heart ...
+  kokoro_lang: "en-us"
+  kokoro_speed: 1.18                # 1.0 sounded slow
+  pad_seconds: 0.15                 # pause after each scene
+  master: "highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=5:release=80:makeup=3,equalizer=f=3500:t=q:w=1.2:g=2,loudnorm=I=-16:TP=-1.5"  # voice-over polish; "" to disable
   kokoro_model_dir: "models"        # fetched by `python -m yt_auto setup` (350 MB, free, Apache-2.0)
   voice: "en-AU-WilliamNeural"       # edge-tts voice (needs access to Microsoft; blocked in some sandboxes)
   rate: "+0%"
@@ -58,9 +62,9 @@ video:
   height: 1920
   render_fps: 15            # frames drawn per second (output is encoded at 30 fps)
   tail_seconds: 0.7
-  min_seconds: 15
+  min_seconds: 18
   max_seconds: 45
-  font_path: ""             # optional: path to a bold .ttf; auto-detected otherwise
+  font_path: "assets/Poppins-Bold.ttf"   # bundled (SIL Open Font License) so renders look identical everywhere
   background_music: ""      # optional: path to a track you have the licence to use
   music_volume: 0.08
   accent: "#F7931A"

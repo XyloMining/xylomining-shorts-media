@@ -50,10 +50,15 @@ def cmd_doctor(cfg, a):
         chk("kokoro-onnx + soundfile installed", False, "pip install -r requirements.txt")
     git = subprocess.run(["git", "remote", "-v"], cwd=config.ROOT, capture_output=True, text=True).stdout
     chk("git remote configured (media hosting)", "github.com" in git, "clone the XyloMining/xylomining-shorts-media repo")
-    if cfg["llm"]["backend"] == "file":
+    be = cfg["llm"]["backend"]
+    if be in ("file", "file+gemini"):
         n = len(content.bank_remaining(cfg, DB()))
-        chk(f"content bank: {n} unused valid items (need >= {cfg['pipeline']['buffer_slots']})", n >= cfg["pipeline"]["buffer_slots"],
-            "ask Claude to write more items: python -m yt_auto bank-prompt 30")
+        need = cfg["pipeline"]["buffer_slots"]
+        if be == "file+gemini":
+            chk(f"content bank: {n} unused items; Gemini key for fallback", n >= need or os.environ.get("GEMINI_API_KEY"),
+                "add GEMINI_API_KEY (repo secret / .env) or ask Claude to write more bank items")
+        else:
+            chk(f"content bank: {n} unused valid items (need >= {need})", n >= need, "ask Claude to write more items: python -m yt_auto bank-prompt 30")
     chk("alert channel (Discord/email) - optional", any(os.environ.get(k) for k in ("DISCORD_WEBHOOK_URL", "NOTIFY_EMAIL_TO")), "alerts still go to logs/alerts.log")
     print("Paused:", pipeline.is_paused())
     return 0 if ok else 1

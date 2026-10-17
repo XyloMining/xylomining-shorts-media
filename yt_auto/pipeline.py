@@ -93,6 +93,11 @@ def persist(cfg, message="Update pipeline state"):
     if r.returncode:
         get_logger().error("git commit failed: %s", r.stderr[-300:])
         return False
+    pr = _git("pull", "--rebase", "--autostash", "origin", "main")
+    if pr.returncode:
+        _git("rebase", "--abort")
+        notify("Could not sync with GitHub before pushing", pr.stderr[-400:])
+        return False
     p = _git("push", "origin", "HEAD")
     if p.returncode:
         notify("Could not push to GitHub", p.stderr[-400:])

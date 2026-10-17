@@ -8,7 +8,12 @@ Never schedule anything the user has not approved. Never claim a step worked wit
 1. `pip install -r requirements.txt --break-system-packages` then `python -m yt_auto setup` (downloads ~350 MB narration model from GitHub) then `python -m yt_auto doctor`.
 2. `python -m yt_auto status` to see what is already built/scheduled. State lives in `state/shorts.db` (committed).
 
-## Weekly flow
+## Automation split (GitHub Actions + one message)
+- `.github/workflows/weekly-build.yml` runs every Friday evening (Sydney) and also on demand: it builds up to 7 future Shorts, stages approved ones under `videos/`, and commits `state/` + `log/`. Content comes from the bank first, then Gemini (repo secret `GEMINI_API_KEY`).
+- The user then sends ONE message ("schedule this week's Shorts"). In that session do only: `git pull`, `python -m yt_auto queue`, schedule each item in Metricool (step 3 below), `mark-scheduled`, `persist`. No need to render anything or download the model.
+- Failed workflow runs email the repo owner (GitHub default). If the user reports one, read the run log with `gh run view --log-failed` if permitted.
+
+## Weekly flow (manual / first-time version)
 1. **Content bank**: doctor warns when fewer unused items than `pipeline.buffer_slots` remain. Write more in the same JSON shape as `content_bank/claude_week1_2.json`
    (see `python -m yt_auto bank-prompt 14`), using ONLY claims in `facts/facts.md` (add sourced facts there first). Save to a file and run `python -m yt_auto bank-import FILE`; fix whatever it rejects.
 2. `python -m yt_auto run` builds up to `buffer_slots` future slots (script, Kokoro narration, 1080x1920 video, thumbnail) and pushes approved ones to `videos/`.

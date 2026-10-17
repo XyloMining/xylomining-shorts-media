@@ -10,8 +10,15 @@ Claude writes script/title/description  ->  validator (facts, banned phrases, le
   -> approval gate (first 3 videos need your OK)
   -> pushed to this public repo (videos/)  ->  Metricool pulls the URL and publishes on schedule
 ```
-Weekly rhythm: open a Claude session, say "run the weekly Shorts batch". Claude follows `CLAUDE.md`. Because Metricool schedules
-the posts, publishing happens even when nobody is online.
+Weekly rhythm: **Friday evening** a GitHub Action builds the next 7 Shorts on its own (free). **Once a week you send Claude one message**
+("schedule this week's Shorts"); Claude queues them in Metricool, about a minute. Metricool then publishes even when nobody is online.
+
+### One-time setup for the automation
+1. Repo **Settings > Actions > General**: allow Actions, and set Workflow permissions to *Read and write*.
+2. Repo **Settings > Secrets and variables > Actions > New repository secret**: `GEMINI_API_KEY` (a free key from Google AI Studio). Only used once the 14 Claude-written bank items run out.
+3. Optional: run it now from the **Actions** tab ("Weekly Shorts build" > Run workflow) to test.
+
+Why not fully hands-off: Metricool's tools exist only inside a Claude session, and scheduled Claude tasks are a paid feature. If your Metricool plan includes API access, the last step could also be scripted.
 
 ## What is free / what is not
 | Piece | Cost |
@@ -28,7 +35,7 @@ the posts, publishing happens even when nobody is online.
 `bank-prompt N` `bank-import FILE` `test-render [--silent]` `dry-run [--silent --slots N]`
 
 ## Tests
-`python -m unittest tests.test_core tests.test_pipeline_mock` (18 tests, ~4 min because it renders videos): DST scheduling, validator,
+`python -m unittest tests.test_core tests.test_pipeline_mock` (20 tests, ~5 min because it renders videos): DST scheduling, validator,
 duplicate guards, approval gate, staging, Metricool payload shape, pause, stale-slot handling, analytics report.
 
 ## Known limits (read these)
