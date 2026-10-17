@@ -9,7 +9,7 @@ Never schedule anything the user has not approved. Never claim a step worked wit
 - Use `mcp__Buffer__create_post` (mode customScheduled, schedulingType automatic, video asset = raw GitHub URL, YouTube metadata title + categoryId 28, TikTok metadata title + isAiGenerated true). Check `list_posts` for duplicates first.
 - Buffer free plan: 10 scheduled posts at once, so schedule at most 5 videos (x2 channels) ahead. Buffer has no best-time API; times are fixed at 18:00 unless the user sets others.
 - Buffer cannot set TikTok's "branded content" toggle; the caption carries the referral disclosure.
-- The Metricool sections below are legacy. The old Metricool posts (ids in the DB) must be deleted in Metricool by the user to avoid double posting.
+- Metricool account and all its posts were deleted by the user on 18 Oct 2026. The Metricool sections below are legacy and the Metricool ids in the DB are dead. Posts 1 and 7 (weekend slots) are not scheduled anywhere.
 - Schedule is Mon-Fri only (config.yaml); `queue`/`mark-scheduled` still describe Metricool and have not been reworked for Buffer.
 
 ## Session start (every time; the sandbox is fresh)
