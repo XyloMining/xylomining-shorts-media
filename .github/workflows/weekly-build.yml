@@ -50,7 +50,17 @@ jobs:
         run: python -m yt_auto doctor || true
       - name: Dry run (render + verify one video, commit nothing)
         if: ${{ inputs.dry_run }}
-        run: python -m yt_auto dry-run --slots 1 --check
+        run: |
+          set -o pipefail
+          python -m yt_auto dry-run --slots 1 --check 2>&1 | tee dryrun.log
+      - name: Publish dry-run log (so failures can be read from the repo)
+        if: ${{ always() && inputs.dry_run }}
+        run: |
+          mkdir -p ci-logs
+          { echo "run: $GITHUB_RUN_ID  python: $(python --version)  ffmpeg: $(ffmpeg -version | head -1)"; tail -n 150 dryrun.log; } > ci-logs/dryrun.txt
+          git add ci-logs/dryrun.txt
+          git commit -m "CI: dry-run log" || true
+          git pull --rebase origin main && git push origin HEAD:main
       - name: Build the week
         if: ${{ !inputs.dry_run }}
         env:
