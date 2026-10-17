@@ -119,9 +119,9 @@ def cmd_queue(cfg, a):
 
 
 def cmd_mark_scheduled(cfg, a):
-    pipeline.mark_scheduled(DB(), a.id, a.metricool_id, a.uuid, a.url)
-    pipeline.persist(cfg, f"Mark post {a.id} scheduled in Metricool")
-    print(f"post {a.id} marked scheduled")
+    pipeline.mark_scheduled(DB(), a.id, a.network, a.metricool_id, a.uuid, a.url, cfg)
+    pipeline.persist(cfg, f"Mark post {a.id} scheduled on {a.network} in Metricool")
+    print(f"post {a.id} marked scheduled on {a.network}")
 
 
 def cmd_persist(cfg, a):
@@ -226,7 +226,7 @@ def main(argv=None):
     x = sub.add_parser("reject"); x.add_argument("id", type=int); x.set_defaults(fn=cmd_reject)
     sub.add_parser("pause").set_defaults(fn=cmd_pause)
     x = sub.add_parser("mark-scheduled"); x.add_argument("id", type=int); x.add_argument("--metricool-id", required=True)
-    x.add_argument("--uuid", required=True); x.add_argument("--url", default=""); x.set_defaults(fn=cmd_mark_scheduled)
+    x.add_argument("--uuid", required=True); x.add_argument("--url", default=""); x.add_argument("--network", choices=["youtube", "tiktok"], default="youtube"); x.set_defaults(fn=cmd_mark_scheduled)
     x = sub.add_parser("persist"); x.add_argument("--message", default="Update pipeline state"); x.set_defaults(fn=cmd_persist)
     x = sub.add_parser("bank-prompt"); x.add_argument("count", type=int, nargs="?", default=30); x.set_defaults(fn=cmd_bank_prompt)
     x = sub.add_parser("bank-import"); x.add_argument("file"); x.set_defaults(fn=cmd_bank_import)

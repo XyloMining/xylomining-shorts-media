@@ -175,6 +175,18 @@ def apply_cta(cfg, item):
     return item
 
 
+def build_tiktok_caption(cfg, item) -> str:
+    """Short TikTok caption: no URL (not clickable), honest disclosure, a few hashtags (never #Shorts)."""
+    t = cfg["tiktok"]
+    tags = []
+    for h in [*cfg["description"].get("always_hashtags", []), *item.get("hashtags", [])]:
+        h = h if h.startswith("#") else "#" + h
+        if h.lower() != "#shorts" and h.lower() not in [x.lower() for x in tags]:
+            tags.append(h)
+    tags = tags[:t.get("max_hashtags", 5)]
+    return f"{item['title']}\n\n{item['description_body'].strip()}\n\n{t['cta_line']}\n{t['disclosure']}\n\n{' '.join(tags)}"[:2100]
+
+
 def build_description(cfg, item) -> str:
     d = cfg["description"]
     src = "\n".join(f"- {s.get('title', 'Source')}: {s['url']}" for s in item["sources"])

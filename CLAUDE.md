@@ -18,10 +18,12 @@ Never schedule anything the user has not approved. Never claim a step worked wit
    (see `python -m yt_auto bank-prompt 14`), using ONLY claims in `facts/facts.md` (add sourced facts there first). Save to a file and run `python -m yt_auto bank-import FILE`; fix whatever it rejects.
 2. `python -m yt_auto run` builds up to `buffer_slots` future slots (script, Kokoro narration, 1080x1920 video, thumbnail) and pushes approved ones to `videos/`.
    The first `approval.required_count` (3) videos are held as `pending_approval`. Send the user the videos (SendUserFile) and wait for explicit approval, then `python -m yt_auto approve all` and `python -m yt_auto run` again.
-3. `python -m yt_auto queue` prints one JSON object per staged post. For EACH item:
-   a. Call Metricool `getScheduledPosts` for that day (brand from config `metricool.blog_id`, timezone Australia/Sydney). If a post with the same title or time already exists, skip it and `mark-scheduled` with its id/uuid.
+3. `python -m yt_auto queue` prints one JSON object per (staged post, network): `network` is `youtube` or `tiktok` (config `metricool.networks`). Same video, same slot, separate Metricool post per network
+   (TikTok gets a short caption; YouTube gets the full description with link, disclosure and sources). For EACH item:
+   a. Call Metricool `getScheduledPosts` for that day (brand from config `metricool.blog_id`, timezone Australia/Sydney). If a post for the same network with the same title or time already exists, skip creating it and `mark-scheduled` with its id/uuid.
    b. Call `createScheduledPost` with `blogId`, `date`, and `info` (the item's `info` object as a JSON string, unchanged).
-   c. On success run `python -m yt_auto mark-scheduled ID --metricool-id ... --uuid ... --url PLANNER_URL`. On error, report it verbatim; do not retry blindly.
+   c. On success run `python -m yt_auto mark-scheduled ID --network youtube|tiktok --metricool-id ... --uuid ... --url PLANNER_URL`. On error, report it verbatim; do not retry blindly.
+      A failure on one network must not block or duplicate the other: the post stays `staged` until every network is done, and `queue` re-lists only what is missing.
 4. `python -m yt_auto persist` so the next session sees the state. Report: what is scheduled (title + local time), anything failed, anything waiting for approval.
 
 ## Sunday report
@@ -34,5 +36,5 @@ Link clicks and "viewed vs swiped away" are not available via API; say so. Never
 
 ## Rules that must not be broken
 - No profit promises, no invented results, no claims outside `facts/facts.md`. The validator enforces banned phrases and dollar figures.
-- The referral link always carries the disclosure (added by code in the description).
+- The referral link always carries the disclosure (added by code in the description; TikTok gets the same disclosure and is flagged as third-party commercial content plus AI-generated content, see config `tiktok`).
 - Uploaded media URLs must be public raw GitHub URLs under `media.raw_base`; GitHub Releases are blocked for these sessions, so media is committed under `videos/`.

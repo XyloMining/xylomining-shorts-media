@@ -91,6 +91,20 @@ class Fallback(unittest.TestCase):
                     content.generate(cfg, db, slot)
 
 
+class Migration(unittest.TestCase):
+    def test_old_db_gets_tiktok_columns(self):
+        import sqlite3
+        with tempfile.TemporaryDirectory() as d:
+            path = pathlib.Path(d) / "old.db"
+            con = sqlite3.connect(path)
+            con.execute("CREATE TABLE posts(id INTEGER PRIMARY KEY AUTOINCREMENT, slot_utc TEXT UNIQUE NOT NULL, topic TEXT, topic_hash TEXT UNIQUE, status TEXT NOT NULL, title TEXT, description TEXT, tags TEXT, folder TEXT, video_path TEXT, thumb_path TEXT, video_id TEXT, url TEXT, attempts INTEGER DEFAULT 0, error TEXT, approved_by TEXT, created_at TEXT, updated_at TEXT, theme TEXT)")
+            con.execute("INSERT INTO posts(slot_utc,status) VALUES('2026-10-18T00:00:00Z','pending_approval')"); con.commit(); con.close()
+            db = state.DB(path)
+            cols = {r[1] for r in db.con.execute("PRAGMA table_info(posts)")}
+            self.assertTrue({"tt_metricool_uuid", "tt_planner_url", "video_url", "metricool_uuid"} <= cols)
+            self.assertEqual(len(db.all()), 1)                           # existing rows survive
+
+
 class Dupes(unittest.TestCase):
     def test_db_blocks_dupes(self):
         with tempfile.TemporaryDirectory() as d:

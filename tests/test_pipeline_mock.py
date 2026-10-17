@@ -45,8 +45,11 @@ class T(unittest.TestCase):
             self.assertTrue((pipeline.ROOT / "videos" / pathlib.Path(r["video_url"]).name).exists())
             self.assertTrue((pipeline.ROOT / "log").exists())
         q = pipeline.queue_items(self.cfg, db, self.now)
-        self.assertEqual(len(q), 3)
-        for it in q:
+        self.assertEqual(len(q), 6)                                      # 3 posts x (youtube + tiktok)
+        yt = [i for i in q if i["network"] == "youtube"]
+        tt = [i for i in q if i["network"] == "tiktok"]
+        self.assertEqual((len(yt), len(tt)), (3, 3))
+        for it in yt:
             info = it["info"]
             self.assertEqual(it["blogId"], "7458399")
             self.assertEqual(info["providers"], [{"network": "youtube"}])
@@ -57,14 +60,32 @@ class T(unittest.TestCase):
             self.assertEqual(info["publicationDate"]["timezone"], "Australia/Sydney")
             self.assertRegex(it["date"], r"\+1[01]:00$")                 # Sydney offset, DST-aware
             self.assertNotIn("videoThumbnailUrl", info)                  # off by default
-            json.dumps(it)                                               # serialisable
-        times = [it["date"] for it in q]
+            json.dumps(it)
+        for it in tt:
+            info = it["info"]
+            self.assertEqual(info["providers"], [{"network": "tiktok"}])
+            self.assertTrue(info["tiktokData"]["isAigc"])
+            self.assertTrue(info["tiktokData"]["commercialContentThirdParty"])  # referral promotion is disclosed
+            self.assertNotIn("http", info["text"])                       # captions aren't clickable; link lives in the bio
+            self.assertIn("Referral link", info["text"])
+            self.assertNotIn("#Shorts", info["text"])
+            self.assertLessEqual(len(info["text"]), 2200)
+            json.dumps(it)
+        times = [it["date"] for it in yt]
         self.assertEqual(times, sorted(set(times)))
-        # mark scheduled; double-scheduling is refused
-        pipeline.mark_scheduled(db, q[0]["id"], "123", "uuid-1", "https://app.metricool.com/x")
+        self.assertEqual([i["date"] for i in yt], [i["date"] for i in tt])   # same slot on both networks
+        # per-network marking: post stays 'staged' until BOTH networks are scheduled; duplicates refused per network
+        pid = yt[0]["id"]
+        pipeline.mark_scheduled(db, pid, "youtube", "123", "uuid-1", "https://app.metricool.com/x", self.cfg)
+        self.assertEqual(db.get(pid)["status"], "staged")
         with self.assertRaises(ValueError):
-            pipeline.mark_scheduled(db, q[0]["id"], "123", "uuid-1", "x")
-        self.assertEqual(len(pipeline.queue_items(self.cfg, db, self.now)), 2)
+            pipeline.mark_scheduled(db, pid, "youtube", "123", "uuid-1", "x", self.cfg)
+        remaining = [(i["id"], i["network"]) for i in pipeline.queue_items(self.cfg, db, self.now)]
+        self.assertNotIn((pid, "youtube"), remaining)
+        self.assertIn((pid, "tiktok"), remaining)                        # TikTok still queued if only YouTube succeeded
+        pipeline.mark_scheduled(db, pid, "tiktok", "124", "uuid-2", "https://app.metricool.com/y", self.cfg)
+        self.assertEqual(db.get(pid)["status"], "scheduled")
+        self.assertEqual(len(pipeline.queue_items(self.cfg, db, self.now)), 4)
 
     def test_rerun_is_idempotent(self):
         db = pipeline.run(self.cfg, now=self.now)
@@ -78,7 +99,8 @@ class T(unittest.TestCase):
         self.approve_all(db)
         pipeline.run(self.cfg, now=self.now)
         for r in db.by_status("staged"):
-            pipeline.mark_scheduled(db, r["id"], "1", "u", "")
+            for n in self.cfg["metricool"]["networks"]:
+                pipeline.mark_scheduled(db, r["id"], n, "1", "u", "", self.cfg)
         later = self.now + dt.timedelta(days=4)                          # first three have now passed
         pipeline.run(self.cfg, now=later)
         self.assertTrue(any(r["approved_by"] == "auto" for r in db.all()))

@@ -1,7 +1,7 @@
 # XyloMining Shorts pipeline
 
 Original, fact-checked Bitcoin-mining education Shorts (20-40 s, 9:16), one per day in Australia/Sydney time, with a referral
-link in the description plus disclosure. Claude writes the content; local tools render it; **Metricool** publishes it to YouTube.
+link plus disclosure. Claude writes the content; local tools render it; **Metricool** publishes it to YouTube Shorts and TikTok.
 
 ## How it works
 ```
@@ -37,6 +37,11 @@ Why not fully hands-off: Metricool's tools exist only inside a Claude session, a
 ## Tests
 `python -m unittest tests.test_core tests.test_pipeline_mock` (20 tests, ~5 min because it renders videos): DST scheduling, validator,
 duplicate guards, approval gate, staging, Metricool payload shape, pause, stale-slot handling, analytics report.
+
+## TikTok
+Each video is posted to TikTok through Metricool at the same time as YouTube, with a short caption (no URL, since TikTok captions aren't clickable; add your Linkvertise link to your TikTok **bio**).
+Defaults you should know about (`tiktok:` in `config.yaml`): posts are marked **AI-generated** (the narration is a synthetic voice) and as **third-party commercial content** (you may earn a benefit from the GoMining referral, and TikTok's rules require that disclosure).
+Whether TikTok accepts automatic publishing for your account type is decided by TikTok/Metricool; if a post is rejected, Claude reports the exact error.
 
 ## Known limits (read these)
 - **Links in Shorts descriptions are not clickable** on YouTube (since 31 Aug 2023, per TechCrunch / Search Engine Journal). Put your link in the channel profile

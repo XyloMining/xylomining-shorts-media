@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS posts(
   folder TEXT, video_path TEXT, thumb_path TEXT,
   video_id TEXT, url TEXT,
   video_url TEXT, thumb_url TEXT, metricool_id TEXT, metricool_uuid TEXT, planner_url TEXT,
+  tt_metricool_id TEXT, tt_metricool_uuid TEXT, tt_planner_url TEXT,
   attempts INTEGER DEFAULT 0, error TEXT,
   approved_by TEXT,
   created_at TEXT, updated_at TEXT
@@ -44,6 +45,12 @@ class DB:
         self.con = sqlite3.connect(str(path or STATE / "shorts.db"))
         self.con.row_factory = sqlite3.Row
         self.con.executescript(SCHEMA)
+        have = {r[1] for r in self.con.execute("PRAGMA table_info(posts)")}
+        for col in ("video_url", "thumb_url", "metricool_id", "metricool_uuid", "planner_url",
+                    "tt_metricool_id", "tt_metricool_uuid", "tt_planner_url"):   # migrate DBs created before these existed
+            if col not in have:
+                self.con.execute(f"ALTER TABLE posts ADD COLUMN {col} TEXT")
+        self.con.commit()
 
     def insert(self, **f):
         f.setdefault("created_at", now_iso())

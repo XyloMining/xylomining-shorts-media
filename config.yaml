@@ -72,7 +72,7 @@ video:
 # --- Publishing via Metricool (connected in the Claude session) --------------------
 metricool:
   blog_id: "7458399"                 # Metricool brand id (from getBrandSettings)
-  network: "youtube"
+  networks: ["youtube", "tiktok"]    # one Metricool post per network, same slot
   yt_type: "short"
   privacy: "public"
   category: "SCIENCE_TECHNOLOGY"
@@ -81,6 +81,19 @@ metricool:
                                      # normally does not need it; set true if you add realistic synthetic footage/voices of real people.
   notify_subscribers: null           # null = Metricool/YouTube default; true/false to force
   send_thumbnail: false              # Metricool rejects the WHOLE post if the channel can't show thumbnails; keep false until verified
+
+tiktok:
+  privacy: "PUBLIC_TO_EVERYONE"
+  disable_comment: false
+  disable_duet: false
+  disable_stitch: false
+  auto_add_music: false
+  is_aigc: true                      # TikTok's "AI-generated content" label. The narration is a synthetic voice, so label it; set false only if you are sure it is not required.
+  commercial_third_party: true       # promoting GoMining via a referral that benefits you = branded content under TikTok's rules; keeps the disclosure honest
+  commercial_own_brand: false
+  cta_line: "Link in my bio."        # TikTok captions are not clickable; add the Linkvertise URL to your TikTok bio
+  disclosure: "Referral link: I may earn a benefit if you sign up. Mining has costs and risks. Not financial advice."
+  max_hashtags: 5
 
 media:                               # videos are served to Metricool from this public GitHub repo
   raw_base: "https://raw.githubusercontent.com/XyloMining/xylomining-shorts-media/main"

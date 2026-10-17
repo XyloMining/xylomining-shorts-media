@@ -153,35 +153,80 @@ def stage_approved(cfg, db):
 
 
 # ----------------------------------------------------------------------------- metricool queue
-def metricool_info(cfg, r):
-    m = cfg["metricool"]
+DONE_COL = {"youtube": "metricool_uuid", "tiktok": "tt_metricool_uuid"}
+
+
+def _base_info(cfg, r, network, text):
     slot = from_utc_iso(r["slot_utc"], cfg)
-    yt = {"title": r["title"][:100], "type": m["yt_type"], "privacy": m["privacy"], "tags": json.loads(r["tags"]),
-          "category": m["category"], "madeForKids": bool(m["made_for_kids"]), "isAiGeneratedContent": bool(m["is_ai_generated_content"])}
-    if m.get("notify_subscribers") is not None:
-        yt["notifySubscribers"] = bool(m["notify_subscribers"])
     info = {"autoPublish": True, "draft": False, "descendants": [], "firstCommentText": "", "hasNotReadNotes": False,
-            "media": [r["video_url"]], "mediaAltText": [], "providers": [{"network": m["network"]}],
+            "media": [r["video_url"]], "mediaAltText": [], "providers": [{"network": network}],
             "publicationDate": {"dateTime": slot.strftime("%Y-%m-%dT%H:%M:%S"), "timezone": cfg["timezone"]},
-            "shortener": False, "smartLinkData": {"ids": []}, "text": r["description"], "youtubeData": yt}
-    if m.get("send_thumbnail") and r["thumb_url"]:
-        info["videoThumbnailUrl"] = r["thumb_url"]
-    return {"id": r["id"], "title": r["title"], "date": slot.isoformat(timespec="seconds"), "blogId": m["blog_id"], "info": info}
+            "shortener": False, "smartLinkData": {"ids": []}, "text": text}
+    return slot, info
+
+
+def _log_item(r):
+    """The committed log/<name>/item.json written at staging time (available in any later session)."""
+    p = ROOT / "log" / pathlib.Path(r["video_url"]).stem / "item.json"
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+def metricool_info(cfg, r, network="youtube"):
+    m = cfg["metricool"]
+    if network == "youtube":
+        slot, info = _base_info(cfg, r, "youtube", r["description"])
+        yt = {"title": r["title"][:100], "type": m["yt_type"], "privacy": m["privacy"], "tags": json.loads(r["tags"]),
+              "category": m["category"], "madeForKids": bool(m["made_for_kids"]), "isAiGeneratedContent": bool(m["is_ai_generated_content"])}
+        if m.get("notify_subscribers") is not None:
+            yt["notifySubscribers"] = bool(m["notify_subscribers"])
+        info["youtubeData"] = yt
+        if m.get("send_thumbnail") and r["thumb_url"]:
+            info["videoThumbnailUrl"] = r["thumb_url"]
+    elif network == "tiktok":
+        t = cfg["tiktok"]
+        slot, info = _base_info(cfg, r, "tiktok", content.build_tiktok_caption(cfg, _log_item(r)))
+        info["tiktokData"] = {"disableComment": bool(t["disable_comment"]), "disableDuet": bool(t["disable_duet"]),
+                              "disableStitch": bool(t["disable_stitch"]), "privacyOption": t["privacy"],
+                              "commercialContentThirdParty": bool(t["commercial_third_party"]),
+                              "commercialContentOwnBrand": bool(t["commercial_own_brand"]),
+                              "title": r["title"][:90], "autoAddMusic": bool(t["auto_add_music"]), "isAigc": bool(t["is_aigc"])}
+    else:
+        raise ValueError(f"unsupported network {network}")
+    return {"id": r["id"], "network": network, "title": r["title"], "date": slot.isoformat(timespec="seconds"),
+            "blogId": m["blog_id"], "info": info}
 
 
 def queue_items(cfg, db, now=None):
+    """One item per (staged post, network) that is not yet scheduled in Metricool."""
     now = now or dt.datetime.now(dt.timezone.utc)
     cutoff = to_utc_iso(now + dt.timedelta(minutes=5))
-    return [metricool_info(cfg, r) for r in db.by_status("staged") if r["slot_utc"] > cutoff and r["video_url"]]
+    out = []
+    for r in db.by_status("staged"):
+        if r["slot_utc"] <= cutoff or not r["video_url"]:
+            continue
+        for net in cfg["metricool"]["networks"]:
+            if not r[DONE_COL[net]]:
+                out.append(metricool_info(cfg, r, net))
+    return out
 
 
-def mark_scheduled(db, pid, metricool_id, uuid, planner_url):
+def mark_scheduled(db, pid, network, metricool_id, uuid, planner_url, cfg=None):
     r = db.get(pid)
     if r is None:
         raise ValueError(f"no post {pid}")
     if r["status"] != "staged":
         raise ValueError(f"post {pid} is '{r['status']}', not 'staged' (refusing, to avoid duplicate scheduling)")
-    db.update(pid, status="scheduled", metricool_id=str(metricool_id), metricool_uuid=str(uuid), planner_url=planner_url, error=None)
+    if network not in DONE_COL:
+        raise ValueError(f"unsupported network {network}")
+    if r[DONE_COL[network]]:
+        raise ValueError(f"post {pid} is already scheduled on {network} (refusing duplicate)")
+    cols = ({"metricool_id": str(metricool_id), "metricool_uuid": str(uuid), "planner_url": planner_url} if network == "youtube"
+            else {"tt_metricool_id": str(metricool_id), "tt_metricool_uuid": str(uuid), "tt_planner_url": planner_url})
+    db.update(pid, error=None, **cols)
+    r = db.get(pid)
+    nets = (cfg or {}).get("metricool", {}).get("networks", ["youtube"])
+    if all(r[DONE_COL[n]] for n in nets):
+        db.update(pid, status="scheduled")
 
 
 # ----------------------------------------------------------------------------- main cycle
