@@ -1,8 +1,0 @@
-run: 39036901135
-[0;93m2026-10-17 13:32:16.249858553 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
-2026-10-17 13:32:26,977 INFO narration via kokoro, 18.3s
-2026-10-17 13:32:34,880 INFO rendered /tmp/yt_dry_js3fx9vv/posts/2026-10-18_1100/video.mp4 (19.0s, tts=kokoro)
-2026-10-17 13:32:34,922 INFO built post 1 for 2026-10-18T11:00:00+11:00 (needs approval, 19.0s, tts=kokoro)
-2026-10-17 13:32:34,923 WARNING ALERT [INFO] 1 Short(s) waiting for your approval
-2026-10-18T00:00:00Z pending_approval Weekly Bitcoin Mining Recap: 3 Ideas to Remember /tmp/yt_dry_js3fx9vv/posts/2026-10-18_1100/video.mp4
-CHECK OK  2026-10-18_1100: 1080,1920 19.0s mean_volume=-16.5 dB
