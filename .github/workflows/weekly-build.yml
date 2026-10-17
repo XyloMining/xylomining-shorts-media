@@ -58,12 +58,13 @@ jobs:
         run: |
           esc() { sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}'; }
           echo "::notice title=dry-run log tail::$(tail -n 40 dryrun.log 2>&1 | cut -c1-300 | esc)"
+          echo "::notice title=alerts.log::$(tail -n 30 logs/alerts.log 2>&1 | cut -c1-400 | esc)"
           echo "::notice title=env::python $(python --version 2>&1) | $(ffmpeg -version | head -1) | whoami=$(whoami)"
           mkdir -p ci-logs
           { echo "run: $GITHUB_RUN_ID"; tail -n 150 dryrun.log; } > ci-logs/dryrun.txt
           git add ci-logs/dryrun.txt
           git commit -m "CI: dry-run log" || echo "::warning::nothing to commit"
-          out=$(git pull --rebase origin main 2>&1 && git push origin HEAD:main 2>&1) || echo "::error title=git push failed::$(echo "$out" | cut -c1-300 | esc)"
+          out=$(git pull --rebase --autostash origin main 2>&1 && git push origin HEAD:main 2>&1) || echo "::error title=git push failed::$(echo "$out" | cut -c1-300 | esc)"
       - name: Build the week
         if: ${{ !inputs.dry_run }}
         env:
