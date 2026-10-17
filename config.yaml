@@ -8,16 +8,18 @@ brand: "XyloMining"
 timezone: "Australia/Sydney"          # DST handled automatically via IANA tz database
 link: "https://link-target.net/10151711/Pp2SuETkV4xz"
 
-# One Short per weekday (Mon-Fri), same video and same time on YouTube and TikTok. Local time in the timezone above.
+# One Short per day, same video and same time on YouTube and TikTok. Local time in the timezone above.
 schedule:
   monday:    { time: "18:00", theme: "Bitcoin mining education" }
   tuesday:   { time: "18:00", theme: "Mining myths and misconceptions" }
   wednesday: { time: "18:00", theme: "Hashrate, mining efficiency, electricity costs, or mining rewards" }
   thursday:  { time: "18:00", theme: "GoMining platform explainer" }
   friday:    { time: "18:00", theme: "High-retention Bitcoin mining fact" }
+  saturday:  { time: "11:00", theme: "Practical tutorial or beginner's guide" }
+  sunday:    { time: "11:00", theme: "Weekly mining lesson or recap (no invented personal results)" }
 
 pipeline:
-  buffer_slots: 5            # one week ahead: Mon-Fri
+  buffer_slots: 7            # one week ahead: Mon-Sun
   min_lead_minutes: 30       # never schedule a slot closer than this to "now"
   generation_attempts: 3     # LLM retries (with validator feedback) before giving up on a slot
 
