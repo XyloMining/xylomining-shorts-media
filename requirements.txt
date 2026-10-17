@@ -1,0 +1,7 @@
+pyyaml>=6.0
+requests>=2.31
+Pillow>=10.1
+tzdata>=2024.1
+kokoro-onnx>=0.4
+soundfile>=0.12
+edge-tts>=7.0   # optional; only if your network can reach Microsoft's TTS

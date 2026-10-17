@@ -1,0 +1,132 @@
+# ---------------------------------------------------------------------------
+# GoMining Shorts automation - main configuration
+# Secrets (API keys, SMTP passwords, webhook URLs) do NOT go here: put them in
+# .env (see .env.example). OAuth files live in secrets/ . Both are git-ignored.
+# ---------------------------------------------------------------------------
+
+brand: "XyloMining"
+timezone: "Australia/Sydney"          # DST handled automatically via IANA tz database
+link: "https://link-target.net/10151711/Pp2SuETkV4xz"
+
+# One Short per day. Local time in the timezone above.
+schedule:
+  monday:    { time: "18:00", theme: "Bitcoin mining education" }
+  tuesday:   { time: "18:00", theme: "Mining myths and misconceptions" }
+  wednesday: { time: "18:00", theme: "Hashrate, mining efficiency, electricity costs, or mining rewards" }
+  thursday:  { time: "18:00", theme: "GoMining platform explainer" }
+  friday:    { time: "18:00", theme: "High-retention Bitcoin mining fact" }
+  saturday:  { time: "11:00", theme: "Practical tutorial or beginner's guide" }
+  sunday:    { time: "11:00", theme: "Weekly mining lesson or recap (no invented personal results)" }
+
+pipeline:
+  buffer_slots: 7            # one week ahead: a weekly session fills the whole week
+  min_lead_minutes: 30       # never schedule a slot closer than this to "now"
+  generation_attempts: 3     # LLM retries (with validator feedback) before giving up on a slot
+
+approval:
+  required_count: 3          # first N videos need `python -m yt_auto approve` before upload
+                             # after N manual approvals, new videos are auto-approved
+
+# --- Script / title / description generation --------------------------------
+# backend options:
+#   file          FREE. Reads pre-written JSON from content_bank/ (see `bank-prompt` command:
+#                 you paste a prompt into Claude chat once a month, save the reply).
+#   claude_cli    Runs `claude -p` on your PC. Needs Claude Code installed + a paid Claude plan or API login.
+#   anthropic_api Anthropic Messages API. Pay-per-use (needs ANTHROPIC_API_KEY).
+#   gemini        Google Gemini API; has a free tier with rate limits (needs GEMINI_API_KEY).
+llm:
+  backend: "file"
+  anthropic_model: "claude-haiku-5-5"
+  gemini_model: "gemini-2.5-flash"
+  timeout_seconds: 300
+
+# --- Narration ----------------------------------------------------------------
+# backend "auto" tries in order: kokoro (offline neural) -> edge (unofficial Microsoft voices) -> pyttsx3 -> espeak-ng -> silent.
+# Video is always fully captioned, so silent output is still watchable.
+tts:
+  backend: "auto"                   # auto = kokoro -> edge -> pyttsx3 -> espeak -> silent
+  kokoro_voice: "bm_george"         # offline open-source neural voice (British male). Others: bm_lewis, am_adam, af_heart ...
+  kokoro_lang: "en-gb"
+  kokoro_model_dir: "models"        # fetched by `python -m yt_auto setup` (350 MB, free, Apache-2.0)
+  voice: "en-AU-WilliamNeural"       # edge-tts voice (needs access to Microsoft; blocked in some sandboxes)
+  rate: "+0%"
+  words_per_second_fallback: 2.6
+
+# --- Video ----------------------------------------------------------------------
+video:
+  width: 1080
+  height: 1920
+  render_fps: 15            # frames drawn per second (output is encoded at 30 fps)
+  tail_seconds: 0.7
+  min_seconds: 15
+  max_seconds: 45
+  font_path: ""             # optional: path to a bold .ttf; auto-detected otherwise
+  background_music: ""      # optional: path to a track you have the licence to use
+  music_volume: 0.08
+  accent: "#F7931A"
+
+# --- Publishing via Metricool (connected in the Claude session) --------------------
+metricool:
+  blog_id: "7458399"                 # Metricool brand id (from getBrandSettings)
+  network: "youtube"
+  yt_type: "short"
+  privacy: "public"
+  category: "SCIENCE_TECHNOLOGY"
+  made_for_kids: false               # audience designation (required by YouTube)
+  is_ai_generated_content: false     # YouTube's "altered or synthetic content" declaration. Plain TTS + graphics
+                                     # normally does not need it; set true if you add realistic synthetic footage/voices of real people.
+  notify_subscribers: null           # null = Metricool/YouTube default; true/false to force
+  send_thumbnail: false              # Metricool rejects the WHOLE post if the channel can't show thumbnails; keep false until verified
+
+media:                               # videos are served to Metricool from this public GitHub repo
+  raw_base: "https://raw.githubusercontent.com/XyloMining/xylomining-shorts-media/main"
+  git_push: true
+  keep_last_videos: 30               # older videos are removed from videos/ to keep the repo small
+
+
+# Where the spoken/on-screen call to action points. Links in Shorts descriptions are NOT clickable on YouTube
+# (since 31 Aug 2023), so consider putting your link in the channel profile links and switching these two lines to
+#   where: "on my channel page"      label: "LINK ON MY CHANNEL PAGE"
+cta:
+  where: "in my description"
+  label: "LINK IN DESCRIPTION"
+
+description:
+  cta_header: "Interested in learning more about digital Bitcoin mining? Explore GoMining here:"
+  disclosure: "This is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice."
+  always_hashtags: ["#Bitcoin", "#BitcoinMining"]
+
+content_rules:
+  min_words: 50
+  max_words: 105
+  allow_dollar_figures: false   # blocks invented prices/earnings; flip only for sourced figures
+
+# Optional: facts about YOUR real results that the generator may use (leave empty if none).
+personal_results: ""
+
+# Phrases the validator rejects in any generated text (case-insensitive substring match).
+banned_phrases:
+  - "guaranteed"
+  - "guarantee"
+  - "risk-free"
+  - "risk free"
+  - "passive income"
+  - "get rich"
+  - "financial freedom"
+  - "can't lose"
+  - "cannot lose"
+  - "100% profit"
+  - "free money"
+  - "double your"
+  - "limited spots"
+  - "act now"
+  - "last chance"
+  - "will go to the moon"
+  - "to the moon"
+
+analytics:
+  lookback_days: 7
+  top_n: 3
+  metrics_json: "data/metrics.json"          # written by the Claude session from Metricool analytics (rows keyed by title)
+  linkvertise_csv: "data/linkvertise.csv"   # optional manual import: date,video_id,visits,completed
+  referrals_csv: "data/referrals.csv"        # optional manual import: date,video_id,referrals
