@@ -5,7 +5,12 @@ name: Weekly Shorts build
 on:
   schedule:
     - cron: "0 8 * * 5"      # Fridays 08:00 UTC = Friday evening in Sydney
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Render 1 test video in a scratch folder, verify it, commit nothing"
+        type: boolean
+        default: false
 
 concurrency:
   group: shorts-build
@@ -43,7 +48,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m yt_auto doctor || true
+      - name: Dry run (render + verify one video, commit nothing)
+        if: ${{ inputs.dry_run }}
+        run: python -m yt_auto dry-run --slots 1 --check
       - name: Build the week
+        if: ${{ !inputs.dry_run }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m yt_auto run

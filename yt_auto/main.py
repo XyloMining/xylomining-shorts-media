@@ -176,6 +176,26 @@ def cmd_test_render(cfg, a):
     print(f"Video: {r['path']} ({r['seconds']:.1f}s, tts={r['tts']})\nThumbnail: {out / 'thumb.jpg'}")
 
 
+def _check_outputs(cfg, rows):
+    """Fail loudly unless every rendered video is 9:16, within length limits, and has audible speech."""
+    from .tts import ffprobe_duration
+    if not rows:
+        print("CHECK FAILED: nothing was built")
+        return 1
+    bad = 0
+    for r in rows:
+        v = pathlib.Path(r["video_path"])
+        probe = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", str(v)],
+                               capture_output=True, text=True).stdout.strip()
+        dur = ffprobe_duration(v)
+        vol = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(v), "-af", "volumedetect", "-vn", "-f", "null", "-"], capture_output=True, text=True).stderr
+        mean = next((float(l.split("mean_volume:")[1].split()[0]) for l in vol.splitlines() if "mean_volume:" in l), -99.0)
+        ok = probe == "1080,1920" and cfg["video"]["min_seconds"] <= dur <= cfg["video"]["max_seconds"] and mean > -30
+        print(f"CHECK {'OK ' if ok else 'FAIL'} {v.parent.name}: {probe} {dur:.1f}s mean_volume={mean} dB")
+        bad += not ok
+    return 1 if bad else 0
+
+
 def cmd_dry_run(cfg, a):
     """Full build against a throwaway state + scratch dir: nothing is staged, pushed or scheduled."""
     import tempfile
@@ -187,8 +207,11 @@ def cmd_dry_run(cfg, a):
         cfg["tts"]["backend"] = "silent"
     cfg["pipeline"]["buffer_slots"] = a.slots
     db = pipeline.run(cfg, stage=False)
-    for r in db.all():
+    rows = db.all()
+    for r in rows:
         print(r["slot_utc"], r["status"], r["title"], r["video_path"])
+    if getattr(a, "check", False):
+        return _check_outputs(cfg, rows)
 
 
 def main(argv=None):
@@ -208,7 +231,7 @@ def main(argv=None):
     x = sub.add_parser("bank-prompt"); x.add_argument("count", type=int, nargs="?", default=30); x.set_defaults(fn=cmd_bank_prompt)
     x = sub.add_parser("bank-import"); x.add_argument("file"); x.set_defaults(fn=cmd_bank_import)
     x = sub.add_parser("test-render"); x.add_argument("--silent", action="store_true"); x.set_defaults(fn=cmd_test_render)
-    x = sub.add_parser("dry-run"); x.add_argument("--silent", action="store_true"); x.add_argument("--slots", type=int, default=3); x.set_defaults(fn=cmd_dry_run)
+    x = sub.add_parser("dry-run"); x.add_argument("--silent", action="store_true"); x.add_argument("--slots", type=int, default=3); x.add_argument("--check", action="store_true"); x.set_defaults(fn=cmd_dry_run)
     args = p.parse_args(argv)
     cfg = config.load(args.config)
     try:
