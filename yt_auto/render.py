@@ -4,7 +4,7 @@ import math
 import pathlib
 import subprocess
 
-from PIL import Image, ImageDraw, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps
 
 from .fonts import fit, font, wrap
 from .tts import ffprobe_duration, synthesize
@@ -26,6 +26,29 @@ def ease(t):
 def make_bg(w, h):
     g = Image.linear_gradient("L").resize((w, h))
     return ImageOps.colorize(g, BG_TOP, BG_BOT).convert("RGBA")
+
+
+def make_bg_aurora(w, h):
+    """Alternative background: deep indigo with soft purple (top) and teal (bottom) glows."""
+    base = ImageOps.colorize(Image.linear_gradient("L").resize((w, h)), (18, 12, 52), (4, 14, 30)).convert("RGBA")
+    glow = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    gd.ellipse([-250, -350, w + 250, 700], fill=(120, 70, 255, 110))
+    gd.ellipse([-300, h - 800, w // 2 + 200, h + 300], fill=(0, 190, 170, 80))
+    gd.ellipse([w // 2, h - 1100, w + 400, h - 100], fill=(247, 147, 26, 45))
+    return Image.alpha_composite(base, glow.filter(ImageFilter.GaussianBlur(170)))
+
+
+def load_shot(path, max_w, max_h, radius=36):
+    """User screenshot scaled to fit, rounded corners, thin outline."""
+    im = Image.open(path).convert("RGBA")
+    sc = min(max_w / im.width, max_h / im.height)
+    im = im.resize((int(im.width * sc), int(im.height * sc)), Image.LANCZOS)
+    mask = Image.new("L", im.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, im.width - 1, im.height - 1], radius, fill=255)
+    im.putalpha(ImageChops.multiply(im.getchannel("A"), mask))
+    ImageDraw.Draw(im).rounded_rectangle([0, 0, im.width - 1, im.height - 1], radius, outline=(255, 255, 255, 70), width=3)
+    return im
 
 
 def draw_chain(d, w, y, t, accent, seed):
@@ -103,7 +126,8 @@ def render_video(cfg, item, outdir: pathlib.Path, no_audio_fail=False):
     if not v["min_seconds"] <= total <= v["max_seconds"]:
         raise RuntimeError(f"video length {total:.1f}s outside {v['min_seconds']}-{v['max_seconds']}s")
 
-    bg = make_bg(W, H)
+    bg = make_bg_aurora(W, H) if (item.get("style") or {}).get("bg") == "aurora" else make_bg(W, H)
+    shots = {i: load_shot(sc["image"], 960, 660) for i, sc in enumerate(spec) if sc.get("image")}
     groups = [word_groups(s["narration"], tm["speech"]) for s, tm in zip(spec, timing)]
     out = outdir / "video.mp4"
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
@@ -146,7 +170,15 @@ def render_video(cfg, item, outdir: pathlib.Path, no_audio_fail=False):
             d = ImageDraw.Draw(img, "RGBA")
 
             # visual: big stat (pulse in) or block chain
-            if s.get("stat"):
+            if idx in shots:
+                im = shots[idx]
+                ia = ease((lt - 0.15) / 0.5)
+                lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+                lay.paste(im, ((W - im.width) // 2, 640 + int((1 - ia) * 50) + (660 - im.height) // 2), im)
+                lay.putalpha(lay.getchannel("A").point(lambda v: int(v * ia)))
+                img = Image.alpha_composite(img, lay)
+                d = ImageDraw.Draw(img, "RGBA")
+            elif s.get("stat"):
                 sa = ease((lt - 0.2) / 0.5)
                 sf = fit(str(s["stat"]), W - 140, 300, int(150 + 40 * sa), 60, ff, max_lines=1)[0]
                 d.text((W // 2, 1000), str(s["stat"]), font=sf, fill=accent + (int(255 * sa),), anchor="mm")

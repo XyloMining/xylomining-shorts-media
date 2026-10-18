@@ -6,12 +6,10 @@
   "scenes": [
     {
       "text": "My real miner",
-      "stat": "114.45 TH",
       "narration": "My miner is 114.45 terahash at 14.92 watts per terahash, with an 18.72 percent discount."
     },
     {
       "text": "Dashboard earnings",
-      "stat": "$4.30 yesterday",
       "narration": "Yesterday the dashboard showed $4.30. This month so far, $77.53. All time, $888.99."
     },
     {
@@ -43,5 +41,8 @@
       "title": "Background: what a digital miner is (Forklog)",
       "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
     }
-  ]
+  ],
+  "style": {
+    "bg": "aurora"
+  }
 }
