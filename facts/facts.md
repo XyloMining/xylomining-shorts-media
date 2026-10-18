@@ -27,3 +27,13 @@ difficulty) must NOT be quoted as current unless you add a dated, sourced line.
 
 ## Proof of work (stable)
 - Finding a valid block is computationally hard, but other nodes can check a block's proof of work cheaply. Source: https://bitcoin.org/bitcoin.pdf
+
+## Blocks and validation (stable; added 18 Oct 2026, from developer.bitcoin.org and the whitepaper)
+- Each block stores the hash of the previous block's header, which links blocks into a chain. Source: https://developer.bitcoin.org/devguide/block_chain.html
+- Only the 80-byte block header is hashed for proof of work; the merkle root of the block's transactions is stored in the header. Source: https://developer.bitcoin.org/devguide/block_chain.html
+- The block header has an easy-to-modify nonce field, so miners can change it to try new hashes. Source: https://developer.bitcoin.org/devguide/block_chain.html
+- Each full node independently validates blocks using the same consensus rules. Source: https://developer.bitcoin.org/devguide/block_chain.html
+- Nodes accept a block only if all transactions in it are valid and not already spent. Source: https://bitcoin.org/bitcoin.pdf (section 5, Network)
+- The first transaction in a block is a special transaction that starts a new coin; transaction fees are added to the block's incentive value. Source: https://bitcoin.org/bitcoin.pdf (section 6, Incentive)
+- At each 2,016-block adjustment, difficulty can rise by as much as 300% or fall by as much as 75%. Source: https://developer.bitcoin.org/devguide/block_chain.html (Proof Of Work)
+- Proof of work means a block's header hash must not exceed a certain value; new blocks are only added if their hash meets the expected difficulty. Source: https://developer.bitcoin.org/devguide/block_chain.html

@@ -5,7 +5,7 @@ Metricool tools only exist inside a Claude session, so scheduling is done by you
 Never schedule anything the user has not approved. Never claim a step worked without checking its output.
 
 ## NOTE (18 Oct 2026): publishing moved from Metricool to Buffer
-- Buffer org `6ad38249b692c4ab06ad53ec`; channels YouTube `6ad382fe778b240e2f3a0081`, TikTok `6ad3833b778b240e2f3a0347`. Posts 1-7 (all 7 days) are scheduled there (ids in `state/buffer_posts.json`), Mon-Fri 18:00, Sat-Sun 11:00 Sydney, same video and time on both.
+- Buffer org `6ad38249b692c4ab06ad53ec`; channels YouTube `6ad382fe778b240e2f3a0081`, TikTok `6ad3833b778b240e2f3a0347`, Instagram `6ad3cd59778b240e2f3e1aff` (Reels: metadata type reel, shouldShareToFeed true, isAiGenerated true; caption = title, body, "Link in my bio.", disclosure, hashtags; branded-content toggle cannot be set via Buffer). Posts 1-7 (all 7 days) are scheduled there (ids in `state/buffer_posts.json`), Mon-Fri 18:00, Sat-Sun 11:00 Sydney, same video and time on all three channels.
 - Use `mcp__Buffer__create_post` (mode customScheduled, schedulingType automatic, video asset = raw GitHub URL, YouTube metadata title + categoryId 28, TikTok metadata title + isAiGenerated true). Check `list_posts` for duplicates first.
 - Buffer free plan: 10 scheduled posts at once PER CHANNEL (verified: an 11th org-wide post was accepted), so up to 10 videos ahead; 7 a week fits. Buffer has no best-time API; times are fixed at 18:00 unless the user sets others.
 - Buffer cannot set TikTok's "branded content" toggle; the caption carries the referral disclosure.

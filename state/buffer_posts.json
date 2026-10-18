@@ -3,28 +3,34 @@
  "org": "6ad38249b692c4ab06ad53ec",
  "channels": {
   "youtube": "6ad382fe778b240e2f3a0081",
-  "tiktok": "6ad3833b778b240e2f3a0347"
+  "tiktok": "6ad3833b778b240e2f3a0347",
+  "instagram": "6ad3cd59778b240e2f3e1aff"
  },
  "posts": {
   "2": {
    "youtube": "6ad3bf11ae173d6e00cc0e38",
-   "tiktok": "6ad3bf13769b4579348da03b"
+   "tiktok": "6ad3bf13769b4579348da03b",
+   "instagram": "6ad3ce5bf7ec2cca4096d1f2"
   },
   "3": {
    "youtube": "6ad3bf180a208cb32332c808",
-   "tiktok": "6ad3bf1a0b0d72757aed6b3c"
+   "tiktok": "6ad3bf1a0b0d72757aed6b3c",
+   "instagram": "6ad431d70a208cb323494dc0"
   },
   "4": {
    "youtube": "6ad3bf1c0b0d72757aed6bb8",
-   "tiktok": "6ad3bf1e769b4579348da280"
+   "tiktok": "6ad3bf1e769b4579348da280",
+   "instagram": "6ad431d90a208cb323494e35"
   },
   "5": {
    "youtube": "6ad3bf210a208cb32332c97e",
-   "tiktok": "6ad3bf230b0d72757aed6ca7"
+   "tiktok": "6ad3bf230b0d72757aed6ca7",
+   "instagram": "6ad431db0a208cb323494e6c"
   },
   "6": {
    "youtube": "6ad3bf26938409f1d09aee5f",
-   "tiktok": "6ad3bf28769b4579348da587"
+   "tiktok": "6ad3bf28769b4579348da587",
+   "instagram": "6ad431dd769b457934a4a2c0"
   },
   "1": {
    "youtube": "6ad3c01ae272c4918f995d1f",
@@ -32,7 +38,8 @@
   },
   "7": {
    "youtube": "6ad3c00c938409f1d09b0d3a",
-   "tiktok": "6ad3c017ae173d6e00cc3a03"
+   "tiktok": "6ad3c017ae173d6e00cc3a03",
+   "instagram": "6ad431dfe272c4918faffc70"
   }
  }
 }

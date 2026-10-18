@@ -1,0 +1,264 @@
+[
+  {
+    "day": "sunday",
+    "topic": "Recap: what a block, a hash and a node each do",
+    "title": "Bitcoin Mining Recap: Blocks, Hashes and Nodes",
+    "hook": "Three words explain most of Bitcoin mining.",
+    "scenes": [
+      {
+        "text": "Block: a batch",
+        "narration": "A block is a batch of transactions. Its header stores the hash of the previous block, which links blocks into a chain."
+      },
+      {
+        "text": "Hash: the guess",
+        "narration": "Miners hash the block header over and over, looking for a result that does not exceed the network's target."
+      },
+      {
+        "text": "Node: the checker",
+        "narration": "Full nodes independently validate every block using the same rules, so miners cannot simply write their own."
+      }
+    ],
+    "cta": "If this helped, the link in my description goes deeper on digital mining.",
+    "description_body": "A quick recap of three core ideas: blocks link to each other, hashes are the search, and nodes check the result.",
+    "tags": [
+      "bitcoin mining",
+      "blockchain basics",
+      "bitcoin nodes",
+      "proof of work"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "3 WORDS",
+      "line2": "BLOCK, HASH, NODE"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      }
+    ]
+  },
+  {
+    "day": "monday",
+    "topic": "What miners change to get a new hash: the nonce",
+    "title": "What Is a Nonce in Bitcoin Mining?",
+    "hook": "Miners keep changing one tiny number. Here is why.",
+    "scenes": [
+      {
+        "text": "Same block, same hash",
+        "narration": "Hash the same block header twice and you get the same answer, so a miner has to change something to try again."
+      },
+      {
+        "text": "Meet the nonce",
+        "narration": "The block header has an easy-to-modify nonce field. Changing it gives a brand new hash to test."
+      },
+      {
+        "text": "Check against target",
+        "narration": "Each new hash is compared with the network target. If it does not exceed it, the block is valid proof of work."
+      }
+    ],
+    "cta": "Curious how digital mining fits in? The link is in the description.",
+    "description_body": "The nonce is the field miners adjust to produce new hashes until one meets the network target.",
+    "tags": [
+      "nonce",
+      "bitcoin mining",
+      "block header",
+      "SHA-256"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "THE NONCE",
+      "line2": "MINING'S TINY NUMBER"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: miners can approve any transactions they like",
+    "title": "Myth: Can Bitcoin Miners Approve Anything?",
+    "hook": "Can a miner just add any transaction they want?",
+    "scenes": [
+      {
+        "text": "Myth: miners rule",
+        "narration": "Some people think whoever mines a block decides what is valid. That is not how Bitcoin works."
+      },
+      {
+        "text": "Nodes check blocks",
+        "narration": "Each full node independently validates blocks using the same consensus rules."
+      },
+      {
+        "text": "Invalid means rejected",
+        "narration": "Nodes accept a block only if all its transactions are valid and not already spent."
+      }
+    ],
+    "cta": "More mining basics are waiting, and the link is in the description.",
+    "description_body": "Miners propose blocks, but full nodes validate them. A block with invalid or already-spent transactions is not accepted.",
+    "tags": [
+      "bitcoin myths",
+      "bitcoin nodes",
+      "bitcoin mining",
+      "consensus"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "MYTH",
+      "line2": "MINERS DON'T DECIDE ALONE"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "Difficulty adjustment: rising and falling",
+    "title": "How Bitcoin Mining Difficulty Adjusts",
+    "hook": "Bitcoin changes its own difficulty. Here is how.",
+    "scenes": [
+      {
+        "text": "Every 2,016 blocks",
+        "stat": "2,016",
+        "narration": "Every 2,016 blocks, the network checks how long those blocks took, using the timestamps in each block header."
+      },
+      {
+        "text": "Too fast? Harder",
+        "narration": "The target is about two weeks. If blocks came too fast, difficulty rises, by as much as 300 percent."
+      },
+      {
+        "text": "Too slow? Easier",
+        "narration": "If blocks came too slowly, difficulty falls, by as much as 75 percent. That keeps block time near ten minutes."
+      }
+    ],
+    "cta": "Want the bigger picture? The link is in my description.",
+    "description_body": "Difficulty is recalculated every 2,016 blocks to keep block time near ten minutes, and it can move up or down.",
+    "tags": [
+      "mining difficulty",
+      "bitcoin difficulty adjustment",
+      "bitcoin mining",
+      "hashrate"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "DIFFICULTY",
+      "line2": "HOW IT ADJUSTS ITSELF"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "GoMining: what you hold is not the hardware",
+    "title": "GoMining Digital Miners: What You Actually Hold",
+    "hook": "A digital miner is not a machine you can touch.",
+    "scenes": [
+      {
+        "text": "An NFT, not a rig",
+        "narration": "According to a Forklog explainer, a GoMining digital miner is an NFT representing a share of hashrate hosted in GoMining's data centres."
+      },
+      {
+        "text": "Rewards, not hardware",
+        "narration": "Owners are credited daily bitcoin rewards. They do not hold the underlying hardware, and miners are not redeemable for bitcoin."
+      },
+      {
+        "text": "Results vary",
+        "narration": "Rewards and maintenance charges move with the bitcoin price, difficulty and hashrate, so net results vary and can be low or negative."
+      }
+    ],
+    "cta": "Do your own research first. The link in my description is a starting point.",
+    "description_body": "What a GoMining digital miner represents, what owners receive, and why results vary. Based on a third-party explainer; check gomining.com for current details.",
+    "tags": [
+      "GoMining",
+      "digital miner",
+      "bitcoin mining",
+      "NFT miner"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NOT A RIG",
+      "line2": "WHAT YOU ACTUALLY HOLD"
+    },
+    "sources": [
+      {
+        "title": "Forklog: What is a digital miner",
+        "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Where new bitcoin comes from: the first transaction in a block",
+    "title": "Where Does New Bitcoin Come From?",
+    "hook": "Every new bitcoin starts in the same place.",
+    "scenes": [
+      {
+        "text": "The first transaction",
+        "narration": "The first transaction in a block is a special transaction that starts a new coin."
+      },
+      {
+        "text": "Plus the fees",
+        "narration": "Transaction fees are added to the block's incentive value, so the winning miner collects both."
+      },
+      {
+        "text": "Capped supply",
+        "stat": "21 million",
+        "narration": "New issuance is not endless. Bitcoin's supply is capped at 21 million coins."
+      }
+    ],
+    "cta": "More short lessons like this are coming, and the link is in the description.",
+    "description_body": "New coins enter circulation through a special first transaction in each block, alongside fees, within a 21 million cap.",
+    "tags": [
+      "bitcoin supply",
+      "block reward",
+      "coinbase transaction",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NEW BTC",
+      "line2": "WHERE IT COMES FROM"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  }
+]
