@@ -6,6 +6,7 @@ Captions are always burned in, so a silent fallback still gives a watchable Shor
 """
 import asyncio
 import pathlib
+import re
 import shutil
 import subprocess
 
@@ -57,7 +58,34 @@ def _kokoro(cfg, text, out):
         _KOKORO = Kokoro(str(model), str(voices))
     samples, sr = _KOKORO.create(text, voice=t.get("kokoro_voice", "bm_george"), speed=float(t.get("kokoro_speed", 1.0)),
                                  lang=t.get("kokoro_lang", "en-gb"))
+    if isinstance(out, list):  # clause mode: hand the samples back instead of writing a file
+        return samples, sr
     sf.write(str(out), samples, sr, format="WAV")
+
+
+CLAUSE_SPLIT = re.compile(r"(?<=[,.;:?!])\s+")
+
+
+def _kokoro_clauses(cfg, text, out):
+    """Synthesise clause by clause so each clause's start/end is MEASURED (caption sync). Returns [{text,start,end}]."""
+    import numpy as np
+    import soundfile as sf
+
+    gaps = cfg["tts"].get("clause_gap_seconds", {"comma": 0.10, "end": 0.22})
+    parts = [c for c in CLAUSE_SPLIT.split(text.strip()) if c]
+    chunks, clauses, t, sr = [], [], 0.0, 24000
+    for k, c in enumerate(parts):
+        samples, sr = _kokoro(cfg, c, [])
+        dur = len(samples) / sr
+        clauses.append({"text": c, "start": t, "end": t + dur})
+        chunks.append(samples)
+        t += dur
+        if k < len(parts) - 1:
+            g = gaps["end"] if c[-1] in ".?!" else gaps["comma"]
+            chunks.append(np.zeros(int(g * sr), dtype=samples.dtype))
+            t += g
+    sf.write(str(out), np.concatenate(chunks), sr, format="WAV")
+    return clauses
 
 
 def _pyttsx3(cfg, text, out):
@@ -96,9 +124,13 @@ def synthesize(cfg, narrations, workdir: pathlib.Path):
     for i, text in enumerate(narrations):
         raw = workdir / f"raw_{i}.audio"
         ok = False
+        clauses = None
         for name, fn in (chain if used is None else [c for c in chain if c[0] == used]):
             try:
-                fn(cfg, text, raw)
+                if name == "kokoro" and cfg["tts"].get("clause_sync"):
+                    clauses = _kokoro_clauses(cfg, text, raw)
+                else:
+                    fn(cfg, text, raw)
                 used, ok = name, True
                 break
             except Exception as e:  # noqa: BLE001
@@ -109,7 +141,7 @@ def synthesize(cfg, narrations, workdir: pathlib.Path):
         wav = workdir / f"scene_{i}.wav"
         _ff("-i", str(raw), "-ar", "44100", "-ac", "1", "-af", f"apad=pad_dur={pad}", str(wav))
         wavs.append(wav)
-        scenes.append({"start": t, "end": t + speech + pad, "speech": speech})
+        scenes.append({"start": t, "end": t + speech + pad, "speech": speech, "clauses": clauses})
         t += speech + pad
     lst = workdir / "list.txt"
     lst.write_text("".join(f"file '{w.resolve().as_posix()}'\n" for w in wavs))

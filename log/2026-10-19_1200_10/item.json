@@ -1,0 +1,53 @@
+{
+  "day": "monday",
+  "topic": "My real GoMining dashboard numbers (18 Oct 2026 snapshot)",
+  "title": "My Real Bitcoin Mining Stats: 114 TH GoMining Dashboard",
+  "hook": "Here’s what my GoMining dashboard actually looks like.",
+  "scenes": [
+    {
+      "text": "My real miner",
+      "narration": "My miner is running at 114.45 terahash, with an average efficiency of 14.92 watts per terahash and an 18.72 percent discount."
+    },
+    {
+      "text": "Dashboard earnings",
+      "narration": "Yesterday, I earned 4 dollars and 30 cents. This month so far, I’ve earned 77 dollars and 53 cents, with total lifetime earnings of 888 dollars and 99 cents."
+    },
+    {
+      "text": "Only my numbers",
+      "stat": "Results vary",
+      "narration": "Remember, these are my personal results. Rewards fluctuate with Bitcoin’s price and mining difficulty, so your earnings could be lower. This isn’t a promise of returns or financial advice."
+    }
+  ],
+  "cta": "Curious about how digital Bitcoin mining works? Check out the link in my bio.",
+  "description_body": "Real Bitcoin mining stats from my GoMining digital miner dashboard (18 Oct 2026): 114.45 TH at 14.92 W/TH with an 18.72% discount. The dashboard showed $4.30 yesterday, $77.53 this month and $888.99 lifetime. These are my personal results only, they are not typical, and yours could be lower.",
+  "tags": [
+    "gomining",
+    "bitcoin mining",
+    "gomining dashboard",
+    "digital miner",
+    "bitcoin mining explained",
+    "hashrate",
+    "mining efficiency",
+    "W/TH",
+    "crypto mining",
+    "bitcoin mining for beginners"
+  ],
+  "hashtags": [
+    "#GoMining",
+    "#CryptoMining",
+    "#Shorts"
+  ],
+  "thumbnail": {
+    "line1": "REAL STATS",
+    "line2": "MY GOMINING DASHBOARD"
+  },
+  "style": {
+    "bg": "aurora"
+  },
+  "sources": [
+    {
+      "title": "Background: what a digital miner is (Forklog)",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

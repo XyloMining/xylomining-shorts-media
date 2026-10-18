@@ -2,6 +2,7 @@
 karaoke captions, progress bar. Frames are drawn with Pillow and piped straight into FFmpeg."""
 import math
 import pathlib
+import re
 import subprocess
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps
@@ -75,13 +76,44 @@ def draw_dots(d, w, h, t):
         d.ellipse([x - r, y - r, x + r, y + r], fill=(255, 255, 255, 30 + (i % 4) * 12))
 
 
-def word_groups(narr, speech, n=4):
-    """Split narration into caption groups of ~n words with estimated per-word timings."""
-    words = narr.split()
-    weights = [max(2, len(w)) for w in words]
-    total = sum(weights)
+DOLLARS = re.compile(r"^\d[\d,]*$")
+
+
+def _display_tokens(words):
+    """(shown, spoken_weight) per caption token. 'N dollars and M cents' is spoken in words but captioned as $N.MM."""
+    out, i = [], 0
+    while i < len(words):
+        w = words[i]
+        if (i + 4 < len(words) and DOLLARS.match(w) and words[i + 1].lower().startswith("dollar") and words[i + 2].lower() == "and"
+                and DOLLARS.match(words[i + 3]) and words[i + 4].lower().startswith("cent")):
+            tail = re.search(r"[^\w]+$", words[i + 4])
+            shown = f"${w}.{int(words[i + 3]):02d}" + (tail.group(0) if tail else "")
+            out.append((shown, sum(max(2, len(x)) for x in words[i:i + 5])))
+            i += 5
+        else:
+            out.append((w, max(2, len(w))))
+            i += 1
+    return out
+
+
+def word_groups(narr, speech, n=4, clauses=None):
+    """Caption groups of ~n words with per-word timings. With measured `clauses` (tts.clause_sync) words are spread
+    inside each clause's real start/end; otherwise estimated across the whole scene."""
+    if clauses:
+        timed = []
+        for c in clauses:
+            toks = _display_tokens(c["text"].split())
+            total = sum(wt for _, wt in toks)
+            t = c["start"]
+            for w, wt in toks:
+                d = (c["end"] - c["start"]) * wt / total
+                timed.append((w, t, t + d))
+                t += d
+        return [timed[i:i + n] for i in range(0, len(timed), n)]
+    toks = _display_tokens(narr.split())
+    total = sum(wt for _, wt in toks)
     t, timed = 0.0, []
-    for w, wt in zip(words, weights):
+    for w, wt in toks:
         d = speech * wt / total
         timed.append((w, t, t + d))
         t += d
@@ -128,7 +160,7 @@ def render_video(cfg, item, outdir: pathlib.Path, no_audio_fail=False):
 
     bg = make_bg_aurora(W, H) if (item.get("style") or {}).get("bg") == "aurora" else make_bg(W, H)
     shots = {i: load_shot(sc["image"], 960, 660) for i, sc in enumerate(spec) if sc.get("image")}
-    groups = [word_groups(s["narration"], tm["speech"]) for s, tm in zip(spec, timing)]
+    groups = [word_groups(s["narration"], tm["speech"], clauses=tm.get("clauses")) for s, tm in zip(spec, timing)]
     out = outdir / "video.mp4"
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
            "-r", str(FPS), "-i", "-", "-i", str(wav)]

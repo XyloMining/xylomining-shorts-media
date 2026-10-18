@@ -50,3 +50,8 @@ Link clicks and "viewed vs swiped away" are not available via API; say so. Never
 - No profit promises, no invented results, no claims outside `facts/facts.md`. The validator enforces banned phrases and dollar figures.
 - The referral link always carries the disclosure (added by code in the description; TikTok gets the same disclosure and is flagged as third-party commercial content plus AI-generated content, see config `tiktok`).
 - Uploaded media URLs must be public raw GitHub URLs under `media.raw_base`; GitHub Releases are blocked for these sessions, so media is committed under `videos/`.
+
+## Video style rules (set by the user, 18 Oct 2026)
+- Money in narration is spoken in words ("4 dollars and 30 cents") but captioned as "$4.30"; `render.py` merges "N dollars and M cents" into "$N.MM" automatically.
+- Dollar figures are only allowed if they appear in `personal_results` (config.yaml). Personal-results videos always say they are the creator's own numbers, not typical, and can be lower.
+- `tts.clause_sync: true` synthesises clause by clause so caption timing is measured (off by default; the dashboard Short was built with it). Scenes may carry `"image": <path>` (screenshot) and an item may set `"style": {"bg": "aurora"}`.
