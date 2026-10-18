@@ -1,0 +1,47 @@
+{
+  "day": "monday",
+  "topic": "My real GoMining dashboard numbers (18 Oct 2026 snapshot)",
+  "title": "My Real GoMining Miner Dashboard (Not Typical)",
+  "hook": "Here is what my GoMining dashboard actually shows.",
+  "scenes": [
+    {
+      "text": "My real miner",
+      "stat": "114.45 TH",
+      "narration": "My miner is 114.45 terahash at 14.92 watts per terahash, with an 18.72 percent discount."
+    },
+    {
+      "text": "Dashboard earnings",
+      "stat": "$4.30 yesterday",
+      "narration": "Yesterday the dashboard showed $4.30. This month so far, $77.53. All time, $888.99."
+    },
+    {
+      "text": "Only my numbers",
+      "stat": "Results vary",
+      "narration": "These are only my numbers. Rewards move with the bitcoin price and difficulty, so yours could be lower. This is not a promise or financial advice."
+    }
+  ],
+  "cta": "Curious how digital mining works? The link is on my channel page.",
+  "description_body": "A real snapshot of my GoMining miner dashboard from 18 Oct 2026: 114.45 TH at 14.92 W/TH. The dashboard showed $4.30 yesterday, $77.53 this month and $888.99 all time. These are only my numbers, they are not typical, and results can be lower.",
+  "tags": [
+    "gomining",
+    "bitcoin mining",
+    "digital miner",
+    "bitcoin mining explained",
+    "bitcoin mining for beginners"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto",
+    "#GoMining"
+  ],
+  "thumbnail": {
+    "line1": "REAL NUMBERS",
+    "line2": "MY GOMINING DASHBOARD"
+  },
+  "sources": [
+    {
+      "title": "Background: what a digital miner is (Forklog)",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

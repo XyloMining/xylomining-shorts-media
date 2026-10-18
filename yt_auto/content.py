@@ -158,8 +158,12 @@ def validate(cfg, item) -> list:
         for bad in cfg.get("banned_phrases", []):
             if bad.lower() in blob:
                 p.append(f"banned phrase: '{bad}'")
-        if re.search(r"\$\s?\d", blob) and not rules.get("allow_dollar_figures", False):
-            p.append("dollar figures are not allowed unless in the fact sheet (set content_rules.allow_dollar_figures)")
+        if not rules.get("allow_dollar_figures", False):
+            pr = str(cfg.get("personal_results") or "")
+            for m in re.findall(r"\$\s?\d[\d,]*(?:\.\d+)?", blob):
+                if m.replace(" ", "") not in pr:
+                    p.append(f"dollar figure {m} is not in personal_results (set content_rules.allow_dollar_figures)")
+                    break
         if not str(item.get("thumbnail", {}).get("line1", "")).strip():
             p.append("thumbnail.line1 missing")
     except (KeyError, TypeError, AttributeError) as e:

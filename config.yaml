@@ -118,7 +118,7 @@ content_rules:
   allow_dollar_figures: false   # blocks invented prices/earnings; flip only for sourced figures
 
 # Optional: facts about YOUR real results that the generator may use (leave empty if none).
-personal_results: ""
+personal_results: "User-supplied dashboard snapshot, 18 Oct 2026: GoMining miner 114.45 TH at 14.92 W/TH with an 18.72% discount; dashboard showed $4.30 yesterday, $77.53 this month, $821.66 this year, $888.99 all time. Only use with a not-typical, not-a-promise disclaimer."
 
 # Phrases the validator rejects in any generated text (case-insensitive substring match).
 banned_phrases:
