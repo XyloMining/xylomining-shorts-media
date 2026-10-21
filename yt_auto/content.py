@@ -60,6 +60,10 @@ HARD RULES
 - title: <= 70 chars, specific and honest. description_body: 1-3 sentences summarising the lesson (the link, disclosure and hashtags are added by code).
 - thumbnail.line1 <= 3 words (big), line2 <= 6 words.
 - sources: 1-3 entries with real https URLs taken from the FACT SHEET.
+- ENGAGEMENT (without breaking the rules above): open with a tension or curiosity hook (a myth, a surprising number from the fact sheet, or a direct question to the viewer) that the video pays off by the last scene.
+  Put the surprise in scene 1, not at the end. Include one "catch" or "the honest part" beat mid-way, since contrast holds attention. Write short, spoken sentences addressed to "you".
+  Use a stat on at least one scene. Finish with ONE comment-inviting question the viewer can answer in a few words ("Which one surprised you?"), joined to the description-link sentence in the cta.
+  No fake urgency, no "wait for it" or "you won't believe" filler, and the hook must be true.
 - Do not repeat these past topics: {json.dumps(list(past_topics)[-40:])}
 {hints}
 

@@ -1,0 +1,680 @@
+[
+  {
+    "day": "monday",
+    "topic": "What a block header holds: the previous hash and the merkle root",
+    "hook": "Bitcoin miners don't hash the whole block. Just 80 bytes.",
+    "scenes": [
+      {
+        "text": "Just the header",
+        "stat": "80 bytes",
+        "narration": "Here is the surprise. Miners only run proof of work on the 80-byte block header."
+      },
+      {
+        "text": "What is inside",
+        "narration": "That header holds the previous block's hash, which links the chain together, plus the merkle root of the block's transactions."
+      },
+      {
+        "text": "The trick",
+        "narration": "It also has a nonce, an easy field to change, so miners can try fresh hashes over and over."
+      },
+      {
+        "text": "So what changes?",
+        "narration": "Every attempt changes only that tiny nonce, and the header is hashed again."
+      }
+    ],
+    "cta": "Which part surprised you most? Tell me below, and the link is in my description.",
+    "title": "Bitcoin Miners Only Hash 80 Bytes",
+    "description_body": "Only the 80-byte block header is hashed for proof of work. It stores the previous block hash, the merkle root and a nonce.",
+    "tags": [
+      "bitcoin",
+      "bitcoin mining",
+      "block header",
+      "merkle root"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "80 BYTES",
+      "line2": "WHAT MINERS REALLY HASH"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      }
+    ]
+  },
+  {
+    "day": "monday",
+    "topic": "SHA-256 mining is a search for a hash below a target",
+    "hook": "Bitcoin mining isn't solving a puzzle. It's a lottery with a target.",
+    "scenes": [
+      {
+        "text": "Not a puzzle",
+        "narration": "Miners aren't doing clever maths. They run SHA-256 hashing and look for a block header hash below the network target."
+      },
+      {
+        "text": "Miss? Go again",
+        "narration": "If the hash is too high, the miner changes the nonce and tries again."
+      },
+      {
+        "text": "Who sets the bar?",
+        "narration": "Difficulty sets how low the hash must be, and it is recalculated every 2,016 blocks."
+      },
+      {
+        "text": "The catch",
+        "narration": "A lower target means a rarer winning hash, so more attempts are needed on average."
+      }
+    ],
+    "cta": "Does lottery describe mining better than puzzle? Say so below, and see my description link.",
+    "title": "Bitcoin Mining Is a Lottery, Not a Puzzle",
+    "description_body": "Miners repeatedly hash a block header and look for a result below the network target. Difficulty sets that target.",
+    "tags": [
+      "bitcoin mining",
+      "sha-256",
+      "proof of work",
+      "difficulty"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "LOTTERY",
+      "line2": "NOT A PUZZLE"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: the biggest miner always wins the next block",
+    "hook": "Does the biggest miner win every Bitcoin block? Most people say yes.",
+    "scenes": [
+      {
+        "text": "The myth",
+        "narration": "Many people think the miner with the most hashrate wins every block."
+      },
+      {
+        "text": "The truth",
+        "narration": "Finding a block is a matter of probability. Your chance per block is your share of the total network hashrate."
+      },
+      {
+        "text": "Bigger helps",
+        "narration": "A bigger share raises your odds, but it never decides any single block."
+      },
+      {
+        "text": "So expect variation",
+        "narration": "Even a large miner can go a while without finding one."
+      }
+    ],
+    "cta": "Did you believe this one? Tell me in the comments, and my description link has more.",
+    "title": "Myth: The Biggest Miner Always Wins?",
+    "description_body": "Block finding is probability based. Your chance per block matches your share of network hashrate, and nothing is certain.",
+    "tags": [
+      "bitcoin mining myths",
+      "hashrate",
+      "probability",
+      "mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "MYTH",
+      "line2": "BIGGEST MINER ALWAYS WINS?"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: mining rewards mean a fixed income",
+    "hook": "Mining rewards arrive in bitcoin. Your electricity bill doesn't.",
+    "scenes": [
+      {
+        "text": "The myth",
+        "narration": "People assume mining rewards are a steady, fixed income."
+      },
+      {
+        "text": "Two currencies",
+        "narration": "Rewards are paid in BTC, but electricity and hosting costs are paid in fiat."
+      },
+      {
+        "text": "The catch",
+        "narration": "So profitability moves with the bitcoin price, and returns are never certain."
+      },
+      {
+        "text": "What to watch",
+        "narration": "Electricity is typically a miner's largest ongoing cost, so check it before anything else."
+      }
+    ],
+    "cta": "Would you have checked the costs first? Tell me below, and see the link in my description.",
+    "title": "Myth: Bitcoin Mining Rewards Are Steady Income",
+    "description_body": "Mining rewards are paid in BTC while costs are paid in fiat, so results move with the bitcoin price and are never certain.",
+    "tags": [
+      "mining myths",
+      "mining costs",
+      "bitcoin price",
+      "electricity"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "MYTH",
+      "line2": "REWARDS VS BILLS"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "What 1 TH/s means",
+    "hook": "One TH/s is a trillion guesses every single second.",
+    "scenes": [
+      {
+        "text": "What it counts",
+        "narration": "Hashrate is the number of hash attempts a miner makes each second."
+      },
+      {
+        "text": "One terahash",
+        "stat": "1 TH/s",
+        "narration": "One TH/s means one trillion hashes per second."
+      },
+      {
+        "text": "Sounds huge, right?",
+        "narration": "But it is only a share of the whole network's work, and your chance per block follows that share."
+      },
+      {
+        "text": "The catch",
+        "narration": "More hashrate also means more electricity, so efficiency in W/TH matters too."
+      }
+    ],
+    "cta": "What number would you check first? Comment below, and the link is in my description.",
+    "title": "What Does 1 TH/s Actually Mean?",
+    "description_body": "Hashrate counts hash attempts per second, and one TH/s is one trillion of them.",
+    "tags": [
+      "hashrate",
+      "th/s",
+      "bitcoin mining",
+      "terahash"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "1 TH/S",
+      "line2": "= A TRILLION HASHES"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "The block reward is the subsidy plus transaction fees",
+    "hook": "Most people only know half of the Bitcoin block reward.",
+    "scenes": [
+      {
+        "text": "Half one: subsidy",
+        "narration": "The block subsidy is newly created bitcoin. It halves every 210,000 blocks, and became 3.125 BTC in April 2024."
+      },
+      {
+        "text": "Half two: fees",
+        "narration": "Transaction fees are added to the block's incentive value, so the winning miner earns both."
+      },
+      {
+        "text": "Who gets it?",
+        "narration": "The miner who adds the next block earns that combined reward."
+      },
+      {
+        "text": "Why it matters",
+        "narration": "Only the subsidy follows the halving schedule. Fees are the other part."
+      }
+    ],
+    "cta": "Did you know about the fees part? Comment below, and my description link has more.",
+    "title": "The Bitcoin Block Reward Has Two Parts",
+    "description_body": "The block reward combines the newly created subsidy with transaction fees, and the subsidy halves every 210,000 blocks.",
+    "tags": [
+      "block reward",
+      "bitcoin halving",
+      "transaction fees",
+      "mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "TWO PARTS",
+      "line2": "SUBSIDY PLUS FEES"
+    },
+    "sources": [
+      {
+        "title": "Blockstream: halving",
+        "url": "https://help.blockstream.com/education/glossary/halving"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "Reading a GoMining digital miner: TH/s and W/TH",
+    "hook": "Two numbers on a GoMining digital miner decide a lot. Do you know them?",
+    "scenes": [
+      {
+        "text": "Number one: TH/s",
+        "narration": "TH/s is the hashrate the digital miner represents in the data centre."
+      },
+      {
+        "text": "Number two: W/TH",
+        "narration": "W/TH is its efficiency in watts per terahash. Lower is more efficient."
+      },
+      {
+        "text": "The catch",
+        "narration": "Digital miners are not redeemable for bitcoin, and owners do not hold the underlying hardware."
+      },
+      {
+        "text": "Always verify",
+        "narration": "Details change, so check gomining.com for the current numbers."
+      }
+    ],
+    "cta": "Which number do you look at first? Tell me below, and my referral link is in the description.",
+    "title": "GoMining Digital Miners: TH/s and W/TH Explained",
+    "description_body": "A digital miner represents a share of hashrate with an efficiency in W/TH. Check gomining.com for current details.",
+    "tags": [
+      "gomining",
+      "digital miner",
+      "th/s",
+      "w/th"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "2 NUMBERS",
+      "line2": "TH/S AND W/TH"
+    },
+    "sources": [
+      {
+        "title": "Forklog: What is a digital miner",
+        "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "Why GoMining net results vary and can be low or negative",
+    "hook": "A digital miner's results can be low or even negative. Here's why.",
+    "scenes": [
+      {
+        "text": "How it works",
+        "narration": "Owners are credited daily bitcoin rewards, minus a maintenance charge for electricity and service costs."
+      },
+      {
+        "text": "What moves it",
+        "narration": "Rewards and fees change with the bitcoin price, network difficulty and hashrate."
+      },
+      {
+        "text": "The honest part",
+        "narration": "So net results vary and can be low or negative."
+      },
+      {
+        "text": "Rule of thumb",
+        "narration": "Treat every projection as an estimate, never a promise."
+      }
+    ],
+    "cta": "Would this change how you look at it? Comment below. My referral link is in the description.",
+    "title": "Why GoMining Results Vary (and Can Be Negative)",
+    "description_body": "Rewards minus maintenance depend on price, difficulty and hashrate, so net results can be low or negative.",
+    "tags": [
+      "gomining",
+      "mining risk",
+      "maintenance fees",
+      "digital mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NOT FIXED",
+      "line2": "RESULTS CAN GO NEGATIVE"
+    },
+    "sources": [
+      {
+        "title": "Forklog: What is a digital miner",
+        "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Difficulty can rise 300% or fall 75% in one adjustment",
+    "hook": "Bitcoin's difficulty can jump 300% in a single adjustment.",
+    "scenes": [
+      {
+        "text": "Every 2,016 blocks",
+        "stat": "2,016",
+        "narration": "Difficulty is recalculated every 2,016 blocks, about two weeks."
+      },
+      {
+        "text": "The limits",
+        "narration": "At each adjustment it can rise by as much as 300%, or fall by as much as 75%."
+      },
+      {
+        "text": "Why bother?",
+        "narration": "The goal is to keep block time near ten minutes."
+      },
+      {
+        "text": "The catch",
+        "narration": "Higher difficulty means more attempts per block, so miners feel it."
+      }
+    ],
+    "cta": "Did you know there were limits? Comment below, and the link is in my description.",
+    "title": "Bitcoin Difficulty Can Jump 300% at Once",
+    "description_body": "At each 2,016-block adjustment, difficulty can rise by as much as 300% or fall by as much as 75%.",
+    "tags": [
+      "bitcoin facts",
+      "difficulty",
+      "mining",
+      "bitcoin"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "+300% / -75%",
+      "line2": "DIFFICULTY LIMITS"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      },
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Every full node checks every block itself",
+    "hook": "Miners can't force Bitcoin to accept a bad block.",
+    "scenes": [
+      {
+        "text": "Who checks?",
+        "narration": "Each full node validates blocks on its own, using the same consensus rules."
+      },
+      {
+        "text": "What fails",
+        "narration": "Nodes accept a block only if every transaction in it is valid and not already spent."
+      },
+      {
+        "text": "The asymmetry",
+        "narration": "Finding a valid block is hard, but checking its proof of work is cheap."
+      },
+      {
+        "text": "So what?",
+        "narration": "Nobody needs to trust a miner's word. The network can check the work."
+      }
+    ],
+    "cta": "Did that surprise you? Tell me below, and see my description for more.",
+    "title": "Why Miners Can't Force a Bad Bitcoin Block",
+    "description_body": "Full nodes validate blocks independently, and proof of work is hard to find but cheap to check.",
+    "tags": [
+      "bitcoin nodes",
+      "validation",
+      "proof of work",
+      "bitcoin facts"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NODES CHECK",
+      "line2": "BAD BLOCKS GET REJECTED"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "saturday",
+    "topic": "Checklist: spot a mining offer that ignores costs",
+    "hook": "Ask this one question before trusting any mining pitch.",
+    "scenes": [
+      {
+        "text": "Where are the costs?",
+        "narration": "Electricity is typically a miner's largest ongoing cost, so an offer that skips it is incomplete."
+      },
+      {
+        "text": "Check the currency",
+        "narration": "Rewards are paid in BTC but costs are paid in fiat, so the price matters too."
+      },
+      {
+        "text": "Watch the wording",
+        "narration": "Returns are never certain, so treat any promise of fixed earnings as a red flag."
+      },
+      {
+        "text": "Save this",
+        "narration": "Save this checklist and ask those three questions every time."
+      }
+    ],
+    "cta": "What would you add to the list? Comment below, and my description link has the risks.",
+    "title": "3 Questions to Ask Before Any Mining Offer",
+    "description_body": "Check electricity and fees, remember costs are paid in fiat, and be wary of promised returns.",
+    "tags": [
+      "mining checklist",
+      "beginner guide",
+      "mining risk",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "3 QUESTIONS",
+      "line2": "BEFORE YOU TRUST A PITCH"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "saturday",
+    "topic": "Beginner guide: why ASICs beat GPUs and CPUs for SHA-256",
+    "hook": "Why do Bitcoin miners avoid graphics cards entirely?",
+    "scenes": [
+      {
+        "text": "Meet the ASIC",
+        "narration": "An ASIC is a chip built specifically for SHA-256 hashing."
+      },
+      {
+        "text": "The gap",
+        "narration": "ASICs are far more efficient at it than GPUs or CPUs."
+      },
+      {
+        "text": "The result",
+        "narration": "That is why GPU mining Bitcoin is not practical today."
+      },
+      {
+        "text": "Remember",
+        "narration": "Efficiency is measured in W/TH, and lower means less power per terahash."
+      }
+    ],
+    "cta": "Did you think GPUs still worked? Tell me below. My description link has more.",
+    "title": "ASIC vs GPU: Why Bitcoin Miners Use ASICs",
+    "description_body": "ASICs are built for SHA-256 and are far more efficient than GPUs or CPUs, so GPU mining Bitcoin is not practical today.",
+    "tags": [
+      "asic",
+      "gpu mining",
+      "beginner guide",
+      "sha-256"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "ASIC VS GPU",
+      "line2": "WHY SPECIAL CHIPS?"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "sunday",
+    "topic": "Recap: hashrate, probability and why block luck varies",
+    "hook": "Why can a huge miner still wait a long time for a block?",
+    "scenes": [
+      {
+        "text": "Your share",
+        "narration": "Your chance per block is your share of the total network hashrate."
+      },
+      {
+        "text": "Probability",
+        "narration": "Finding a block is a matter of probability, so luck varies between miners."
+      },
+      {
+        "text": "Pools",
+        "narration": "Pools smooth payouts by sharing rewards in proportion to the work each miner contributes."
+      },
+      {
+        "text": "This week's lesson",
+        "narration": "A bigger share raises your odds, but it never fixes the timing."
+      }
+    ],
+    "cta": "Which lesson stuck with you this week? Comment below, and the link is in my description.",
+    "title": "Weekly Recap: Hashrate, Probability and Luck",
+    "description_body": "Your chance per block follows your hashrate share, and pools smooth payouts by sharing rewards by work contributed.",
+    "tags": [
+      "weekly recap",
+      "hashrate",
+      "mining pools",
+      "probability"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "WEEKLY RECAP",
+      "line2": "HASHRATE AND LUCK"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "sunday",
+    "topic": "Recap: supply cap, halvings and the block reward",
+    "hook": "Three Bitcoin numbers worth remembering. Can you name them?",
+    "scenes": [
+      {
+        "text": "Number one",
+        "stat": "21M",
+        "narration": "Bitcoin's supply is capped at 21 million coins."
+      },
+      {
+        "text": "Number two",
+        "stat": "210,000",
+        "narration": "The block subsidy halves every 210,000 blocks, and became 3.125 BTC in April 2024."
+      },
+      {
+        "text": "Number three",
+        "stat": "2,016",
+        "narration": "Difficulty is recalculated every 2,016 blocks to keep block time near ten minutes."
+      },
+      {
+        "text": "Bonus",
+        "narration": "Transaction fees are added on top of the subsidy."
+      }
+    ],
+    "cta": "How many did you get? Tell me below, and my description link has more.",
+    "title": "Weekly Recap: 3 Bitcoin Numbers to Remember",
+    "description_body": "A recap of the 21 million cap, the 210,000-block halving cycle and the 2,016-block difficulty adjustment.",
+    "tags": [
+      "weekly recap",
+      "bitcoin halving",
+      "supply cap",
+      "difficulty"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "3 NUMBERS",
+      "line2": "TO REMEMBER"
+    },
+    "sources": [
+      {
+        "title": "Blockstream: halving",
+        "url": "https://help.blockstream.com/education/glossary/halving"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      },
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  }
+]
