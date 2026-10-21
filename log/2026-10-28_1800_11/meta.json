@@ -1,0 +1,21 @@
+{
+  "title": "How Bitcoin Mining Difficulty Adjusts",
+  "description": "Difficulty is recalculated every 2,016 blocks to keep block time near ten minutes, and it can move up or down.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin developer guide: block chain: https://developer.bitcoin.org/devguide/block_chain.html\n- Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "tags": [
+    "mining difficulty",
+    "bitcoin difficulty adjustment",
+    "bitcoin mining",
+    "hashrate"
+  ],
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ],
+  "publish_local": "2026-10-28T18:00:00+11:00"
+}

@@ -1,0 +1,47 @@
+{
+  "day": "wednesday",
+  "topic": "Difficulty adjustment: rising and falling",
+  "title": "How Bitcoin Mining Difficulty Adjusts",
+  "hook": "Bitcoin changes its own difficulty. Here is how.",
+  "scenes": [
+    {
+      "text": "Every 2,016 blocks",
+      "stat": "2,016",
+      "narration": "Every 2,016 blocks, the network checks how long those blocks took, using the timestamps in each block header."
+    },
+    {
+      "text": "Too fast? Harder",
+      "narration": "The target is about two weeks. If blocks came too fast, difficulty rises, by as much as 300 percent."
+    },
+    {
+      "text": "Too slow? Easier",
+      "narration": "If blocks came too slowly, difficulty falls, by as much as 75 percent. That keeps block time near ten minutes."
+    }
+  ],
+  "cta": "Want the bigger picture? The link is on my channel page.",
+  "description_body": "Difficulty is recalculated every 2,016 blocks to keep block time near ten minutes, and it can move up or down.",
+  "tags": [
+    "mining difficulty",
+    "bitcoin difficulty adjustment",
+    "bitcoin mining",
+    "hashrate"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "DIFFICULTY",
+    "line2": "HOW IT ADJUSTS ITSELF"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

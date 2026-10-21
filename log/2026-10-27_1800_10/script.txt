@@ -1,0 +1,1 @@
+Can a miner just add any transaction they want? Some people think whoever mines a block decides what is valid. That is not how Bitcoin works. Each full node independently validates blocks using the same consensus rules. Nodes accept a block only if all its transactions are valid and not already spent. More mining basics are waiting, and the link is in the description.

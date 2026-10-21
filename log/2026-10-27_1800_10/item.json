@@ -1,0 +1,46 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: miners can approve any transactions they like",
+  "title": "Myth: Can Bitcoin Miners Approve Anything?",
+  "hook": "Can a miner just add any transaction they want?",
+  "scenes": [
+    {
+      "text": "Myth: miners rule",
+      "narration": "Some people think whoever mines a block decides what is valid. That is not how Bitcoin works."
+    },
+    {
+      "text": "Nodes check blocks",
+      "narration": "Each full node independently validates blocks using the same consensus rules."
+    },
+    {
+      "text": "Invalid means rejected",
+      "narration": "Nodes accept a block only if all its transactions are valid and not already spent."
+    }
+  ],
+  "cta": "More mining basics are waiting, and the link is in the description.",
+  "description_body": "Miners propose blocks, but full nodes validate them. A block with invalid or already-spent transactions is not accepted.",
+  "tags": [
+    "bitcoin myths",
+    "bitcoin nodes",
+    "bitcoin mining",
+    "consensus"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "MYTH",
+    "line2": "MINERS DON'T DECIDE ALONE"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

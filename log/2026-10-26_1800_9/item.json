@@ -1,0 +1,42 @@
+{
+  "day": "monday",
+  "topic": "What miners change to get a new hash: the nonce",
+  "title": "What Is a Nonce in Bitcoin Mining?",
+  "hook": "Miners keep changing one tiny number. Here is why.",
+  "scenes": [
+    {
+      "text": "Same block, same hash",
+      "narration": "Hash the same block header twice and you get the same answer, so a miner has to change something to try again."
+    },
+    {
+      "text": "Meet the nonce",
+      "narration": "The block header has an easy-to-modify nonce field. Changing it gives a brand new hash to test."
+    },
+    {
+      "text": "Check against target",
+      "narration": "Each new hash is compared with the network target. If it does not exceed it, the block is valid proof of work."
+    }
+  ],
+  "cta": "Curious how digital mining fits in? The link is in the description.",
+  "description_body": "The nonce is the field miners adjust to produce new hashes until one meets the network target.",
+  "tags": [
+    "nonce",
+    "bitcoin mining",
+    "block header",
+    "SHA-256"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "THE NONCE",
+    "line2": "MINING'S TINY NUMBER"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ]
+}
