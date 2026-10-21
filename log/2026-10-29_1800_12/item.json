@@ -1,0 +1,42 @@
+{
+  "day": "thursday",
+  "topic": "GoMining: what you hold is not the hardware",
+  "title": "GoMining Digital Miners: What You Actually Hold",
+  "hook": "A digital miner is not a machine you can touch.",
+  "scenes": [
+    {
+      "text": "An NFT, not a rig",
+      "narration": "According to a Forklog explainer, a GoMining digital miner is an NFT representing a share of hashrate hosted in GoMining's data centres."
+    },
+    {
+      "text": "Rewards, not hardware",
+      "narration": "Owners are credited daily bitcoin rewards. They do not hold the underlying hardware, and miners are not redeemable for bitcoin."
+    },
+    {
+      "text": "Results vary",
+      "narration": "Rewards and maintenance charges move with the bitcoin price, difficulty and hashrate, so net results vary and can be low or negative."
+    }
+  ],
+  "cta": "Do your own research first. The link on my channel page is a starting point.",
+  "description_body": "What a GoMining digital miner represents, what owners receive, and why results vary. Based on a third-party explainer; check gomining.com for current details.",
+  "tags": [
+    "GoMining",
+    "digital miner",
+    "bitcoin mining",
+    "NFT miner"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NOT A RIG",
+    "line2": "WHAT YOU ACTUALLY HOLD"
+  },
+  "sources": [
+    {
+      "title": "Forklog: What is a digital miner",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

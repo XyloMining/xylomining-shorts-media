@@ -1,0 +1,43 @@
+{
+  "day": "friday",
+  "topic": "Where new bitcoin comes from: the first transaction in a block",
+  "title": "Where Does New Bitcoin Come From?",
+  "hook": "Every new bitcoin starts in the same place.",
+  "scenes": [
+    {
+      "text": "The first transaction",
+      "narration": "The first transaction in a block is a special transaction that starts a new coin."
+    },
+    {
+      "text": "Plus the fees",
+      "narration": "Transaction fees are added to the block's incentive value, so the winning miner collects both."
+    },
+    {
+      "text": "Capped supply",
+      "stat": "21 million",
+      "narration": "New issuance is not endless. Bitcoin's supply is capped at 21 million coins."
+    }
+  ],
+  "cta": "More short lessons like this are coming, and the link is in the description.",
+  "description_body": "New coins enter circulation through a special first transaction in each block, alongside fees, within a 21 million cap.",
+  "tags": [
+    "bitcoin supply",
+    "block reward",
+    "coinbase transaction",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NEW BTC",
+    "line2": "WHERE IT COMES FROM"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

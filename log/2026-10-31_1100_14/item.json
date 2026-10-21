@@ -1,0 +1,46 @@
+{
+  "day": "saturday",
+  "topic": "Beginner checklist: reading a miner's hashrate and efficiency",
+  "title": "Beginner Guide: Read Hashrate and Efficiency",
+  "hook": "Two numbers tell you a lot about any miner.",
+  "scenes": [
+    {
+      "text": "Hashrate in TH/s",
+      "narration": "Hashrate is hash attempts per second. One terahash per second is one trillion hashes every second."
+    },
+    {
+      "text": "Efficiency in W/TH",
+      "narration": "Efficiency is measured in watts per terahash, the same as joules per terahash. Lower is more efficient."
+    },
+    {
+      "text": "Then power cost",
+      "narration": "Electricity is typically a miner's largest ongoing cost, so efficiency and power price matter together. Profit is never certain."
+    }
+  ],
+  "cta": "Want to keep learning? Find the link on my channel page.",
+  "description_body": "A beginner's guide to hashrate (TH/s) and efficiency (W/TH), and why electricity cost matters. Profit is never certain.",
+  "tags": [
+    "hashrate",
+    "mining efficiency",
+    "W/TH",
+    "bitcoin mining for beginners"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "2 NUMBERS",
+    "line2": "HASHRATE AND EFFICIENCY"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

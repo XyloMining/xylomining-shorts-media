@@ -1,0 +1,1 @@
+Every new bitcoin starts in the same place. The first transaction in a block is a special transaction that starts a new coin. Transaction fees are added to the block's incentive value, so the winning miner collects both. New issuance is not endless. Bitcoin's supply is capped at 21 million coins. More short lessons like this are coming, and the link is in the description.
