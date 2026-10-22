@@ -51,7 +51,7 @@ Slot: {slot.strftime('%A %d %B %Y')} - theme: "{theme}".
 HARD RULES
 - Educational first: the viewer must learn one concrete takeaway even if they never click anything.
 - Only make factual claims that appear in the FACT SHEET below. No other numbers, prices, or platform features.
-- Never promise or imply profits, "passive income", guaranteed or typical returns, scarcity or urgency.
+- Never promise or imply profits, guaranteed or typical returns, scarcity or urgency.
 - Do not invent testimonials or personal results. Personal results you may mention: {personal}
 - Narration total {cfg['content_rules']['min_words']}-{cfg['content_rules']['max_words']} words (about 20-40 seconds spoken).
 - hook: <= 14 words, grabs attention in 2 seconds, honest (no clickbait that the video does not deliver).
