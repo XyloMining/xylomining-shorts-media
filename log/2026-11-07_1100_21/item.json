@@ -1,0 +1,46 @@
+{
+  "day": "saturday",
+  "topic": "Checklist: spot a mining offer that ignores costs",
+  "hook": "Ask this one question before trusting any mining pitch.",
+  "scenes": [
+    {
+      "text": "Where are the costs?",
+      "narration": "Electricity is typically a miner's largest ongoing cost, so an offer that skips it is incomplete."
+    },
+    {
+      "text": "Check the currency",
+      "narration": "Rewards are paid in BTC but costs are paid in fiat, so the price matters too."
+    },
+    {
+      "text": "Watch the wording",
+      "narration": "Returns are never certain, so treat any promise of fixed earnings as a red flag."
+    },
+    {
+      "text": "Save this",
+      "narration": "Save this checklist and ask those three questions every time."
+    }
+  ],
+  "cta": "What would you add to the list? Comment below, and my description link has the risks.",
+  "title": "3 Questions to Ask Before Any Mining Offer",
+  "description_body": "Check electricity and fees, remember costs are paid in fiat, and be wary of promised returns.",
+  "tags": [
+    "mining checklist",
+    "beginner guide",
+    "mining risk",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "3 QUESTIONS",
+    "line2": "BEFORE YOU TRUST A PITCH"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

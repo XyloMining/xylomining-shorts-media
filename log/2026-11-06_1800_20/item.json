@@ -1,0 +1,51 @@
+{
+  "day": "friday",
+  "topic": "Difficulty can rise 300% or fall 75% in one adjustment",
+  "hook": "Bitcoin's difficulty can jump 300% in a single adjustment.",
+  "scenes": [
+    {
+      "text": "Every 2,016 blocks",
+      "stat": "2,016",
+      "narration": "Difficulty is recalculated every 2,016 blocks, about two weeks."
+    },
+    {
+      "text": "The limits",
+      "narration": "At each adjustment it can rise by as much as 300%, or fall by as much as 75%."
+    },
+    {
+      "text": "Why bother?",
+      "narration": "The goal is to keep block time near ten minutes."
+    },
+    {
+      "text": "The catch",
+      "narration": "Higher difficulty means more attempts per block, so miners feel it."
+    }
+  ],
+  "cta": "Did you know there were limits? Comment below, and the link is on my channel page.",
+  "title": "Bitcoin Difficulty Can Jump 300% at Once",
+  "description_body": "At each 2,016-block adjustment, difficulty can rise by as much as 300% or fall by as much as 75%.",
+  "tags": [
+    "bitcoin facts",
+    "difficulty",
+    "mining",
+    "bitcoin"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "+300% / -75%",
+    "line2": "DIFFICULTY LIMITS"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

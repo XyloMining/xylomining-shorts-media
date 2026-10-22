@@ -1,0 +1,47 @@
+{
+  "day": "wednesday",
+  "topic": "What 1 TH/s means",
+  "hook": "One TH/s is a trillion guesses every single second.",
+  "scenes": [
+    {
+      "text": "What it counts",
+      "narration": "Hashrate is the number of hash attempts a miner makes each second."
+    },
+    {
+      "text": "One terahash",
+      "stat": "1 TH/s",
+      "narration": "One TH/s means one trillion hashes per second."
+    },
+    {
+      "text": "Sounds huge, right?",
+      "narration": "But it is only a share of the whole network's work, and your chance per block follows that share."
+    },
+    {
+      "text": "The catch",
+      "narration": "More hashrate also means more electricity, so efficiency in W/TH matters too."
+    }
+  ],
+  "cta": "What number would you check first? Comment below, and the link is on my channel page.",
+  "title": "What Does 1 TH/s Actually Mean?",
+  "description_body": "Hashrate counts hash attempts per second, and one TH/s is one trillion of them.",
+  "tags": [
+    "hashrate",
+    "th/s",
+    "bitcoin mining",
+    "terahash"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "1 TH/S",
+    "line2": "= A TRILLION HASHES"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

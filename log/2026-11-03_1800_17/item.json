@@ -1,0 +1,46 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: mining rewards mean a fixed income",
+  "hook": "Mining rewards arrive in bitcoin. Your electricity bill doesn't.",
+  "scenes": [
+    {
+      "text": "The myth",
+      "narration": "People assume mining rewards are a steady, fixed income."
+    },
+    {
+      "text": "Two currencies",
+      "narration": "Rewards are paid in BTC, but electricity and hosting costs are paid in fiat."
+    },
+    {
+      "text": "The catch",
+      "narration": "So profitability moves with the bitcoin price, and returns are never certain."
+    },
+    {
+      "text": "What to watch",
+      "narration": "Electricity is typically a miner's largest ongoing cost, so check it before anything else."
+    }
+  ],
+  "cta": "Would you have checked the costs first? Tell me below, and see the link on my channel page.",
+  "title": "Myth: Bitcoin Mining Rewards Are Steady Income",
+  "description_body": "Mining rewards are paid in BTC while costs are paid in fiat, so results move with the bitcoin price and are never certain.",
+  "tags": [
+    "mining myths",
+    "mining costs",
+    "bitcoin price",
+    "electricity"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "MYTH",
+    "line2": "REWARDS VS BILLS"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

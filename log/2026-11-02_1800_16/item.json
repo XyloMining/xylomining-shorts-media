@@ -1,0 +1,50 @@
+{
+  "day": "monday",
+  "topic": "SHA-256 mining is a search for a hash below a target",
+  "hook": "Bitcoin mining isn't solving a puzzle. It's a lottery with a target.",
+  "scenes": [
+    {
+      "text": "Not a puzzle",
+      "narration": "Miners aren't doing clever maths. They run SHA-256 hashing and look for a block header hash below the network target."
+    },
+    {
+      "text": "Miss? Go again",
+      "narration": "If the hash is too high, the miner changes the nonce and tries again."
+    },
+    {
+      "text": "Who sets the bar?",
+      "narration": "Difficulty sets how low the hash must be, and it is recalculated every 2,016 blocks."
+    },
+    {
+      "text": "The catch",
+      "narration": "A lower target means a rarer winning hash, so more attempts are needed on average."
+    }
+  ],
+  "cta": "Does lottery describe mining better than puzzle? Say so below, and see my description link.",
+  "title": "Bitcoin Mining Is a Lottery, Not a Puzzle",
+  "description_body": "Miners repeatedly hash a block header and look for a result below the network target. Difficulty sets that target.",
+  "tags": [
+    "bitcoin mining",
+    "sha-256",
+    "proof of work",
+    "difficulty"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "LOTTERY",
+    "line2": "NOT A PUZZLE"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

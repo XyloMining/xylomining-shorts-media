@@ -1,0 +1,57 @@
+{
+  "day": "sunday",
+  "topic": "Recap: supply cap, halvings and the block reward",
+  "hook": "Three Bitcoin numbers worth remembering. Can you name them?",
+  "scenes": [
+    {
+      "text": "Number one",
+      "stat": "21M",
+      "narration": "Bitcoin's supply is capped at 21 million coins."
+    },
+    {
+      "text": "Number two",
+      "stat": "210,000",
+      "narration": "The block subsidy halves every 210,000 blocks, and became 3.125 BTC in April 2024."
+    },
+    {
+      "text": "Number three",
+      "stat": "2,016",
+      "narration": "Difficulty is recalculated every 2,016 blocks to keep block time near ten minutes."
+    },
+    {
+      "text": "Bonus",
+      "narration": "Transaction fees are added on top of the subsidy."
+    }
+  ],
+  "cta": "How many did you get? Tell me below, and my description link has more.",
+  "title": "Weekly Recap: 3 Bitcoin Numbers to Remember",
+  "description_body": "A recap of the 21 million cap, the 210,000-block halving cycle and the 2,016-block difficulty adjustment.",
+  "tags": [
+    "weekly recap",
+    "bitcoin halving",
+    "supply cap",
+    "difficulty"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "3 NUMBERS",
+    "line2": "TO REMEMBER"
+  },
+  "sources": [
+    {
+      "title": "Blockstream: halving",
+      "url": "https://help.blockstream.com/education/glossary/halving"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}
