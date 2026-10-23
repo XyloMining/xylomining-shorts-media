@@ -1,0 +1,46 @@
+{
+  "day": "sunday",
+  "topic": "Recap: hashrate, probability and why block luck varies",
+  "hook": "Why can a huge miner still wait a long time for a block?",
+  "scenes": [
+    {
+      "text": "Your share",
+      "narration": "Your chance per block is your share of the total network hashrate."
+    },
+    {
+      "text": "Probability",
+      "narration": "Finding a block is a matter of probability, so luck varies between miners."
+    },
+    {
+      "text": "Pools",
+      "narration": "Pools smooth payouts by sharing rewards in proportion to the work each miner contributes."
+    },
+    {
+      "text": "This week's lesson",
+      "narration": "A bigger share raises your odds, but it never fixes the timing."
+    }
+  ],
+  "cta": "Which lesson stuck with you this week? Comment below, and the link is on my channel page.",
+  "title": "Weekly Recap: Hashrate, Probability and Luck",
+  "description_body": "Your chance per block follows your hashrate share, and pools smooth payouts by sharing rewards by work contributed.",
+  "tags": [
+    "weekly recap",
+    "hashrate",
+    "mining pools",
+    "probability"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "WEEKLY RECAP",
+    "line2": "HASHRATE AND LUCK"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}
