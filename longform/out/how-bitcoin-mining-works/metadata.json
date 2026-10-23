@@ -1,0 +1,76 @@
+{
+  "title": "How Bitcoin Mining Actually Works (Beginner Guide: Blocks, Hashes, Difficulty and Costs)",
+  "description": "A plain-English guide to how Bitcoin mining works: what a block is, what miners are really doing, why difficulty exists, how rewards work, and what costs and risks sit behind it. Educational only, with no promises of returns.\n\nChapters:\n0:00 Introduction\n0:15 What mining is\n0:34 Inside a block\n0:58 Hashing is a lottery\n1:28 Difficulty\n1:54 Who checks the work\n2:17 Rewards and supply\n2:42 Chance and pools\n3:04 Costs and efficiency\n3:41 Digital mining\n4:26 Recap\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin developer guide: mining: https://bitcoin.org/en/developer-guide#mining\n- Bitcoin developer guide: block chain: https://developer.bitcoin.org/devguide/block_chain.html\n- Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf\n- Blockstream: halving: https://help.blockstream.com/education/glossary/halving\n- Forklog: What is a digital miner: https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/\n\n#Bitcoin #BitcoinMining #HowItWorks",
+  "tags": [
+    "how bitcoin mining works",
+    "bitcoin mining explained",
+    "bitcoin mining for beginners",
+    "proof of work",
+    "sha-256",
+    "bitcoin difficulty",
+    "bitcoin halving",
+    "block reward",
+    "hashrate",
+    "TH/s",
+    "W/TH",
+    "ASIC",
+    "mining pools",
+    "bitcoin nodes",
+    "gomining",
+    "digital mining",
+    "bitcoin 2026",
+    "crypto mining"
+  ],
+  "category": "SCIENCE_TECHNOLOGY",
+  "categoryId": "28",
+  "privacy": "public",
+  "madeForKids": false,
+  "type": "long",
+  "durationSeconds": 296,
+  "chapters": [
+    {
+      "start": "0:00",
+      "name": "Introduction"
+    },
+    {
+      "start": "0:15",
+      "name": "What mining is"
+    },
+    {
+      "start": "0:34",
+      "name": "Inside a block"
+    },
+    {
+      "start": "0:58",
+      "name": "Hashing is a lottery"
+    },
+    {
+      "start": "1:28",
+      "name": "Difficulty"
+    },
+    {
+      "start": "1:54",
+      "name": "Who checks the work"
+    },
+    {
+      "start": "2:17",
+      "name": "Rewards and supply"
+    },
+    {
+      "start": "2:42",
+      "name": "Chance and pools"
+    },
+    {
+      "start": "3:04",
+      "name": "Costs and efficiency"
+    },
+    {
+      "start": "3:41",
+      "name": "Digital mining"
+    },
+    {
+      "start": "4:26",
+      "name": "Recap"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "how-bitcoin-mining-works",
+  "title": "How Bitcoin Mining Actually Works (Beginner Guide: Blocks, Hashes, Difficulty and Costs)",
+  "thumbnail": {"line1": "HOW MINING WORKS", "line2": "Blocks, hashes, difficulty and costs"},
+  "intro": "A plain-English guide to how Bitcoin mining works: what a block is, what miners are really doing, why difficulty exists, how rewards work, and what costs and risks sit behind it. Educational only, with no promises of returns.",
+  "tags": ["how bitcoin mining works", "bitcoin mining explained", "bitcoin mining for beginners", "proof of work", "sha-256", "bitcoin difficulty", "bitcoin halving", "block reward", "hashrate", "TH/s", "W/TH", "ASIC", "mining pools", "bitcoin nodes", "gomining", "digital mining", "bitcoin 2026", "crypto mining"],
+  "sources": [
+    ["Bitcoin developer guide: mining", "https://bitcoin.org/en/developer-guide#mining"],
+    ["Bitcoin developer guide: block chain", "https://developer.bitcoin.org/devguide/block_chain.html"],
+    ["Bitcoin whitepaper", "https://bitcoin.org/bitcoin.pdf"],
+    ["Blockstream: halving", "https://help.blockstream.com/education/glossary/halving"],
+    ["Forklog: What is a digital miner", "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"]
+  ],
+  "chapters": [
+    {"name": "Introduction", "scenes": [
+      {"text": "How Bitcoin mining works", "visual": {"type": "none"},
+       "narration": "If you have ever wondered how Bitcoin mining actually works, this video explains it from the ground up, with no hype and no promises. By the end, you will know what a block is, what miners are really doing, why difficulty exists, how rewards work, and what costs and risks sit behind it all."}
+    ]},
+    {"name": "What mining is", "scenes": [
+      {"text": "Miners compete", "visual": {"type": "bullets", "items": ["Compete to add the next block", "Winner earns the block reward", "Reward = subsidy + fees"]},
+       "narration": "Bitcoin miners compete to add the next block of transactions to the blockchain. The winner earns the block reward, which is the block subsidy plus transaction fees."},
+      {"text": "One block every ten minutes", "visual": {"type": "stat", "value": "~10 min"},
+       "narration": "The protocol aims for one new block roughly every ten minutes on average. Mining is how the network decides who adds each one, and it does that using something called proof of work."}
+    ]},
+    {"name": "Inside a block", "scenes": [
+      {"text": "Blocks link together", "visual": {"type": "chain"},
+       "narration": "Each block stores the hash of the previous block's header. That is what links the blocks together into a chain."},
+      {"text": "Miners hash the header", "visual": {"type": "header", "items": ["Previous block hash", "Merkle root of transactions", "Nonce"], "stat": "80 bytes"},
+       "narration": "Miners do not hash the whole block. Only the 80 byte block header goes through proof of work. That header holds the previous block's hash, the merkle root of the block's transactions, and a field called the nonce."},
+      {"text": "The nonce is easy to change", "visual": {"type": "header", "items": ["Previous block hash", "Merkle root of transactions", "Nonce"], "focus": 2},
+       "narration": "The nonce is easy to modify. That matters, because it lets a miner change one small value and try a new hash, again and again."}
+    ]},
+    {"name": "Hashing is a lottery", "scenes": [
+      {"text": "Searching for a low hash", "visual": {"type": "flow", "items": ["Change the nonce", "Hash the header", "Below the target?", "Block found"]},
+       "narration": "Bitcoin mining uses SHA-256 hashing. Miners search for a block header hash that does not exceed a certain value, called the network target. It is not a puzzle you solve with clever maths. It is a search. If the hash is too high, the miner changes the nonce and tries again."},
+      {"text": "A lower target is rarer", "visual": {"type": "none"},
+       "narration": "The lower the target, the rarer a winning hash is, so more attempts are needed on average."},
+      {"text": "What hashrate means", "visual": {"type": "stat", "value": "1 TH/s", "caption": "= 1 trillion hashes per second"},
+       "narration": "The number of attempts a miner makes each second is called hashrate. One terahash per second, written T H slash S, means one trillion hashes every second."}
+    ]},
+    {"name": "Difficulty", "scenes": [
+      {"text": "Difficulty keeps the pace", "visual": {"type": "stat", "value": "2,016", "caption": "blocks between adjustments"},
+       "narration": "If more miners join, do blocks come faster? Not for long. Difficulty is recalculated every 2,016 blocks, about two weeks, to keep block time near ten minutes."},
+      {"text": "It can rise or fall", "visual": {"type": "stat", "value": "+300% / -75%", "caption": "the most it can move at once"},
+       "narration": "At each adjustment, difficulty can rise by as much as 300 percent, or fall by as much as 75 percent. So it can move in both directions."},
+      {"text": "More miners, same pace", "visual": {"type": "none"},
+       "narration": "That is why more miners does not simply mean faster blocks. The network adjusts the difficulty to keep the pace steady."}
+    ]},
+    {"name": "Who checks the work", "scenes": [
+      {"text": "Hard to find, easy to check", "visual": {"type": "bullets", "items": ["Finding a block: hard", "Checking its proof of work: cheap"]},
+       "narration": "Finding a valid block is computationally hard, but checking it is cheap. Other nodes can verify a block's proof of work quickly."},
+      {"text": "Nodes validate every block", "visual": {"type": "bullets", "items": ["Every full node checks independently", "Same consensus rules for everyone", "Invalid or spent transactions are refused"]},
+       "narration": "Each full node validates blocks independently, using the same consensus rules. A node accepts a block only if all the transactions in it are valid and not already spent. So miners propose blocks, but they cannot force the network to accept an invalid one."}
+    ]},
+    {"name": "Rewards and supply", "scenes": [
+      {"text": "Where new coins come from", "visual": {"type": "bullets", "items": ["First transaction starts a new coin", "Fees are added on top", "Together: the block reward"]},
+       "narration": "The first transaction in each block is a special one that starts a new coin. Transaction fees are added to the block's incentive value as well. Together, that is the block reward."},
+      {"text": "The halving", "visual": {"type": "stat", "value": "210,000", "caption": "blocks between halvings"},
+       "narration": "The block subsidy halves every 210,000 blocks, which is about every four years. It became 3.125 bitcoin at the April 2024 halving."},
+      {"text": "The 21 million cap", "visual": {"type": "stat", "value": "21M", "caption": "maximum bitcoin supply"},
+       "narration": "And Bitcoin's supply is capped at 21 million coins."}
+    ]},
+    {"name": "Chance and pools", "scenes": [
+      {"text": "Mining is probability", "visual": {"type": "bullets", "items": ["Your share of network hashrate", "= your chance per block", "A bigger share never decides one block"]},
+       "narration": "Whether a particular miner finds a particular block is a matter of probability. Your chance per block is your share of the total network hashrate. A bigger share raises your odds, but it never decides any single block."},
+      {"text": "What a pool does", "visual": {"type": "bullets", "items": ["Miners combine their work", "Rewards shared by work contributed", "Payouts become smoother"]},
+       "narration": "Many miners join pools. A pool shares rewards in proportion to the work each miner contributed, which smooths out payouts. Solo mining is possible, but then payouts depend on luck."}
+    ]},
+    {"name": "Costs and efficiency", "scenes": [
+      {"text": "Electricity is the big cost", "visual": {"type": "stat", "value": "W/TH", "caption": "watts per terahash: lower is better"},
+       "narration": "Now the part people skip: costs. Electricity is typically a miner's largest ongoing cost, so efficiency matters. It is measured in joules per terahash, which is the same as watts per terahash, written W slash T H. Lower is more efficient."},
+      {"text": "Why ASICs, not GPUs", "visual": {"type": "bullets", "items": ["ASICs are built for SHA-256", "Far more efficient than GPUs or CPUs", "GPU mining Bitcoin is not practical"]},
+       "narration": "That is also why mining Bitcoin with a graphics card is not practical today. Specialised chips called ASICs are far more efficient at SHA-256 than GPUs or CPUs."},
+      {"text": "Rewards in BTC, bills in cash", "visual": {"type": "bullets", "items": ["Rewards are paid in bitcoin", "Electricity and hosting: regular money", "So results move with the price"]},
+       "narration": "Here is another catch. Mining rewards are paid in bitcoin, but electricity and hosting are paid in regular money. So profitability moves with the bitcoin price, and returns are never certain."}
+    ]},
+    {"name": "Digital mining", "scenes": [
+      {"text": "What a digital miner is", "visual": {"type": "bullets", "items": ["An NFT representing a share of hashrate", "Hosted in the provider's data centres", "Measured in TH/s, with efficiency in W/TH"]},
+       "narration": "Some people do not want to run hardware, so they look at services like GoMining. According to a third party explainer, GoMining sells digital miners, which are NFTs representing a share of hashrate hosted in its data centres, measured in terahash with an efficiency in watts per terahash."},
+      {"text": "Rewards minus maintenance", "visual": {"type": "bullets", "items": ["Daily bitcoin rewards credited", "Minus a maintenance charge", "Not redeemable for bitcoin or hardware"]},
+       "narration": "Owners are credited daily bitcoin rewards, minus a maintenance charge that covers electricity and service costs. Digital miners are not redeemable for bitcoin, and owners do not hold the underlying hardware."},
+      {"text": "Results can be negative", "visual": {"type": "bullets", "items": ["Price, difficulty and hashrate all move", "Net results vary", "They can be low or even negative"], "footer": "Referral link in the description. Not financial advice."},
+       "narration": "Rewards and maintenance both move with the bitcoin price, network difficulty and hashrate, so net results vary, and can be low or even negative. Check gomining.com for current details before you decide anything. The link in my description is a referral link, and I may receive a benefit if you sign up."}
+    ]},
+    {"name": "Recap", "scenes": [
+      {"text": "Quick recap", "visual": {"type": "bullets", "items": ["Miners compete to add blocks", "Hash the header, beat the target", "Difficulty adjusts every 2,016 blocks", "Nodes check the work", "Rewards halve every 210,000 blocks"]},
+       "narration": "Quick recap. Miners compete to add blocks. They hash a block header and search for a value below the target. Difficulty adjusts every 2,016 blocks. Nodes check the work. Rewards halve every 210,000 blocks, and the costs are paid in regular money."},
+      {"text": "Know the costs and risks", "cta": true, "visual": {"type": "none", "footer": "Referral link in the description. Not financial advice."},
+       "narration": "If you remember one thing, make it this: understand the costs and the risks before anything else. Which part surprised you most? Tell me in the comments. The sources are in the description, and this is not financial advice."}
+    ]}
+  ]
+}

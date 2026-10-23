@@ -1,0 +1,28 @@
+A plain-English guide to how Bitcoin mining works: what a block is, what miners are really doing, why difficulty exists, how rewards work, and what costs and risks sit behind it. Educational only, with no promises of returns.
+
+Chapters:
+0:00 Introduction
+0:15 What mining is
+0:34 Inside a block
+0:58 Hashing is a lottery
+1:28 Difficulty
+1:54 Who checks the work
+2:17 Rewards and supply
+2:42 Chance and pools
+3:04 Costs and efficiency
+3:41 Digital mining
+4:26 Recap
+
+Interested in learning more about digital Bitcoin mining? Explore GoMining here:
+https://link-target.net/10151711/Pp2SuETkV4xz
+
+This is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.
+
+Sources:
+- Bitcoin developer guide: mining: https://bitcoin.org/en/developer-guide#mining
+- Bitcoin developer guide: block chain: https://developer.bitcoin.org/devguide/block_chain.html
+- Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf
+- Blockstream: halving: https://help.blockstream.com/education/glossary/halving
+- Forklog: What is a digital miner: https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/
+
+#Bitcoin #BitcoinMining #HowItWorks
