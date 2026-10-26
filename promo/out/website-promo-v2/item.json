@@ -1,0 +1,54 @@
+{
+  "topic": "Website promo: xylomining.github.io",
+  "hook": "Confused by Bitcoin mining jargon? I built a website for you.",
+  "scenes": [
+    {
+      "text": "Who it's for",
+      "narration": "It's for anyone curious how Bitcoin mining works, or weighing up digital mining, without the hype.",
+      "image": "/home/claude/xylomining-shorts-media/promo/shots/home.png"
+    },
+    {
+      "text": "Plain English guides",
+      "narration": "Inside are plain English guides on hashrate, difficulty, maintenance fees and mining pools.",
+      "image": "/home/claude/xylomining-shorts-media/promo/shots/guides.png"
+    },
+    {
+      "text": "Test your own numbers",
+      "narration": "There's a calculator with growth graphs, so you can test your own assumptions, including the downsides.",
+      "image": "/home/claude/xylomining-shorts-media/promo/shots/calculator.png"
+    },
+    {
+      "text": "My real results",
+      "narration": "My favourite part is the My results page. It shows my own numbers. They are not typical, and can be lower.",
+      "image": "/home/claude/xylomining-shorts-media/promo/shots/results.png"
+    }
+  ],
+  "cta": "Find it at xylomining dot github dot I O. Link in my bio. Which page would you open first? Tell me below.",
+  "title": "I Built a Website to Explain Bitcoin Mining in Plain English",
+  "description_body": "Guides, a calculator with growth graphs, live channel stats and my own results page, all free to read.",
+  "tags": [
+    "bitcoin mining",
+    "how bitcoin mining works",
+    "gomining",
+    "mining calculator",
+    "crypto for beginners"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Bitcoin",
+    "#BitcoinMining"
+  ],
+  "thumbnail": {
+    "line1": "MINING WEBSITE",
+    "line2": "GUIDES + CALCULATOR"
+  },
+  "sources": [
+    {
+      "title": "XyloMining",
+      "url": "https://xylomining.github.io"
+    }
+  ],
+  "style": {
+    "bg": "aurora"
+  }
+}
