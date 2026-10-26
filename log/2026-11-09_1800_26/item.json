@@ -1,0 +1,47 @@
+{
+  "day": "monday",
+  "topic": "What a block header holds: the previous hash and the merkle root",
+  "hook": "Bitcoin miners don't hash the whole block. Just 80 bytes.",
+  "scenes": [
+    {
+      "text": "Just the header",
+      "stat": "80 bytes",
+      "narration": "Here is the surprise. Miners only run proof of work on the 80-byte block header."
+    },
+    {
+      "text": "What is inside",
+      "narration": "That header holds the previous block's hash, which links the chain together, plus the merkle root of the block's transactions."
+    },
+    {
+      "text": "The trick",
+      "narration": "It also has a nonce, an easy field to change, so miners can try fresh hashes over and over."
+    },
+    {
+      "text": "So what changes?",
+      "narration": "Every attempt changes only that tiny nonce, and the header is hashed again."
+    }
+  ],
+  "cta": "Which part surprised you most? Tell me below, and the link is on my channel page.",
+  "title": "Bitcoin Miners Only Hash 80 Bytes",
+  "description_body": "Only the 80-byte block header is hashed for proof of work. It stores the previous block hash, the merkle root and a nonce.",
+  "tags": [
+    "bitcoin",
+    "bitcoin mining",
+    "block header",
+    "merkle root"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "80 BYTES",
+    "line2": "WHAT MINERS REALLY HASH"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: the biggest miner always wins the next block",
+  "hook": "Does the biggest miner win every Bitcoin block? Most people say yes.",
+  "scenes": [
+    {
+      "text": "The myth",
+      "narration": "Many people think the miner with the most hashrate wins every block."
+    },
+    {
+      "text": "The truth",
+      "narration": "Finding a block is a matter of probability. Your chance per block is your share of the total network hashrate."
+    },
+    {
+      "text": "Bigger helps",
+      "narration": "A bigger share raises your odds, but it never decides any single block."
+    },
+    {
+      "text": "So expect variation",
+      "narration": "Even a large miner can go a while without finding one."
+    }
+  ],
+  "cta": "Did you believe this one? Tell me in the comments, and my description link has more.",
+  "title": "Myth: The Biggest Miner Always Wins?",
+  "description_body": "Block finding is probability based. Your chance per block matches your share of network hashrate, and nothing is certain.",
+  "tags": [
+    "bitcoin mining myths",
+    "hashrate",
+    "probability",
+    "mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "MYTH",
+    "line2": "BIGGEST MINER ALWAYS WINS?"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

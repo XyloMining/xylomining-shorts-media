@@ -1,0 +1,17 @@
+{
+  "title": "Bitcoin Miners Only Hash 80 Bytes",
+  "description": "Only the 80-byte block header is hashed for proof of work. It stores the previous block hash, the merkle root and a nonce.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin developer guide: block chain: https://developer.bitcoin.org/devguide/block_chain.html\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "tags": [
+    "bitcoin",
+    "bitcoin mining",
+    "block header",
+    "merkle root"
+  ],
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ],
+  "publish_local": "2026-11-09T18:00:00+11:00"
+}
