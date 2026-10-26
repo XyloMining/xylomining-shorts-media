@@ -19,7 +19,7 @@ schedule:
   sunday:    { time: "11:00", theme: "Weekly mining lesson or recap (no invented personal results)" }
 
 pipeline:
-  buffer_slots: 16           # build further ahead; Buffer scheduling is capped at 10 per channel, so schedule in batches
+  buffer_slots: 18           # build further ahead; Buffer scheduling is capped at 10 per channel, so schedule in batches
   min_lead_minutes: 30       # never schedule a slot closer than this to "now"
   generation_attempts: 3     # LLM retries (with validator feedback) before giving up on a slot
 
