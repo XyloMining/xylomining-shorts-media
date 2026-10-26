@@ -1,0 +1,46 @@
+{
+  "day": "thursday",
+  "topic": "Reading a GoMining digital miner: TH/s and W/TH",
+  "hook": "Two numbers on a GoMining digital miner decide a lot. Do you know them?",
+  "scenes": [
+    {
+      "text": "Number one: TH/s",
+      "narration": "TH/s is the hashrate the digital miner represents in the data centre."
+    },
+    {
+      "text": "Number two: W/TH",
+      "narration": "W/TH is its efficiency in watts per terahash. Lower is more efficient."
+    },
+    {
+      "text": "The catch",
+      "narration": "Digital miners are not redeemable for bitcoin, and owners do not hold the underlying hardware."
+    },
+    {
+      "text": "Always verify",
+      "narration": "Details change, so check gomining.com for the current numbers."
+    }
+  ],
+  "cta": "Which number do you look at first? Tell me below, and my referral link is in the description.",
+  "title": "GoMining Digital Miners: TH/s and W/TH Explained",
+  "description_body": "A digital miner represents a share of hashrate with an efficiency in W/TH. Check gomining.com for current details.",
+  "tags": [
+    "gomining",
+    "digital miner",
+    "th/s",
+    "w/th"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "2 NUMBERS",
+    "line2": "TH/S AND W/TH"
+  },
+  "sources": [
+    {
+      "title": "Forklog: What is a digital miner",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

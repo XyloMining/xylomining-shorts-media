@@ -1,0 +1,50 @@
+{
+  "day": "friday",
+  "topic": "Every full node checks every block itself",
+  "hook": "Miners can't force Bitcoin to accept a bad block.",
+  "scenes": [
+    {
+      "text": "Who checks?",
+      "narration": "Each full node validates blocks on its own, using the same consensus rules."
+    },
+    {
+      "text": "What fails",
+      "narration": "Nodes accept a block only if every transaction in it is valid and not already spent."
+    },
+    {
+      "text": "The asymmetry",
+      "narration": "Finding a valid block is hard, but checking its proof of work is cheap."
+    },
+    {
+      "text": "So what?",
+      "narration": "Nobody needs to trust a miner's word. The network can check the work."
+    }
+  ],
+  "cta": "Did that surprise you? Tell me below, and see my description for more.",
+  "title": "Why Miners Can't Force a Bad Bitcoin Block",
+  "description_body": "Full nodes validate blocks independently, and proof of work is hard to find but cheap to check.",
+  "tags": [
+    "bitcoin nodes",
+    "validation",
+    "proof of work",
+    "bitcoin facts"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NODES CHECK",
+    "line2": "BAD BLOCKS GET REJECTED"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

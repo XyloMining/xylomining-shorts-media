@@ -1,0 +1,50 @@
+{
+  "day": "wednesday",
+  "topic": "The block reward is the subsidy plus transaction fees",
+  "hook": "Most people only know half of the Bitcoin block reward.",
+  "scenes": [
+    {
+      "text": "Half one: subsidy",
+      "narration": "The block subsidy is newly created bitcoin. It halves every 210,000 blocks, and became 3.125 BTC in April 2024."
+    },
+    {
+      "text": "Half two: fees",
+      "narration": "Transaction fees are added to the block's incentive value, so the winning miner earns both."
+    },
+    {
+      "text": "Who gets it?",
+      "narration": "The miner who adds the next block earns that combined reward."
+    },
+    {
+      "text": "Why it matters",
+      "narration": "Only the subsidy follows the halving schedule. Fees are the other part."
+    }
+  ],
+  "cta": "Did you know about the fees part? Comment below, and my description link has more.",
+  "title": "The Bitcoin Block Reward Has Two Parts",
+  "description_body": "The block reward combines the newly created subsidy with transaction fees, and the subsidy halves every 210,000 blocks.",
+  "tags": [
+    "block reward",
+    "bitcoin halving",
+    "transaction fees",
+    "mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "TWO PARTS",
+    "line2": "SUBSIDY PLUS FEES"
+  },
+  "sources": [
+    {
+      "title": "Blockstream: halving",
+      "url": "https://help.blockstream.com/education/glossary/halving"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}
