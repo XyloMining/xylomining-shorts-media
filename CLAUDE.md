@@ -55,3 +55,10 @@ Link clicks and "viewed vs swiped away" are not available via API; say so. Never
 - Money in narration is spoken in words ("4 dollars and 30 cents") but captioned as "$4.30"; `render.py` merges "N dollars and M cents" into "$N.MM" automatically.
 - Dollar figures are only allowed if they appear in `personal_results` (config.yaml). Personal-results videos always say they are the creator's own numbers, not typical, and can be lower.
 - `tts.clause_sync: true` synthesises clause by clause so caption timing is measured (off by default; the dashboard Short was built with it). Scenes may carry `"image": <path>` (screenshot) and an item may set `"style": {"bg": "aurora"}`.
+
+## Daily site update (set by the user, 28 Oct 2026)
+When the user sends the daily message ("update instagram and tiktok on my website and the stats"), do this in `/home/claude/xylomining.github.io`:
+1. `mcp__Buffer__list_posts` (org above, channels Instagram + TikTok, status sent, includeMetrics, first 50) and `execute_query` for each post's `externalLink` (posts(input:{organizationId, filter:{channelIds, status:[sent]}}) { edges { node { id channelService dueAt externalLink } } }). Save the list result and a "postId url" text file.
+2. `python3 scripts/buffer_to_json.py LIST_RESULT LINKS.txt` writes `data/buffer_posts.json`. Put any follower numbers the user gave into `data/followers.json` (Buffer has none).
+3. Do NOT run `scripts/fetch-posts.mjs` in the sandbox (YouTube/Reddit are blocked and it would drop their posts). Merge Instagram/TikTok rows into `posts.json` by hand (keep YouTube/Reddit), run `node scripts/fetch-stats.mjs`, commit, `git pull --rebase`, push to main. Data files only: site code changes still wait for "publish".
+Buffer metrics lag by about a day. Stories and untitled posts are skipped.
