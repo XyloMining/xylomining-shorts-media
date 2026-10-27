@@ -1,89 +1,96 @@
 {
- "publisher": "buffer",
- "org": "6ad38249b692c4ab06ad53ec",
- "channels": {
-  "youtube": "6ad382fe778b240e2f3a0081",
-  "tiktok": "6ad3833b778b240e2f3a0347",
-  "instagram": "6ad3cd59778b240e2f3e1aff"
- },
- "posts": {
-  "2": {
-   "youtube": "6ad3bf11ae173d6e00cc0e38",
-   "tiktok": "6ad3bf13769b4579348da03b",
-   "instagram": "6ad3ce5bf7ec2cca4096d1f2"
+  "publisher": "buffer",
+  "org": "6ad38249b692c4ab06ad53ec",
+  "channels": {
+    "youtube": "6ad382fe778b240e2f3a0081",
+    "tiktok": "6ad3833b778b240e2f3a0347",
+    "instagram": "6ad3cd59778b240e2f3e1aff"
   },
-  "3": {
-   "youtube": "6ad3bf180a208cb32332c808",
-   "tiktok": "6ad3bf1a0b0d72757aed6b3c",
-   "instagram": "6ad431d70a208cb323494dc0"
+  "posts": {
+    "2": {
+      "youtube": "6ad3bf11ae173d6e00cc0e38",
+      "tiktok": "6ad3bf13769b4579348da03b",
+      "instagram": "6ad3ce5bf7ec2cca4096d1f2"
+    },
+    "3": {
+      "youtube": "6ad3bf180a208cb32332c808",
+      "tiktok": "6ad3bf1a0b0d72757aed6b3c",
+      "instagram": "6ad431d70a208cb323494dc0"
+    },
+    "4": {
+      "youtube": "6ad3bf1c0b0d72757aed6bb8",
+      "tiktok": "6ad3bf1e769b4579348da280",
+      "instagram": "6ad431d90a208cb323494e35"
+    },
+    "5": {
+      "youtube": "6ad3bf210a208cb32332c97e",
+      "tiktok": "6ad3bf230b0d72757aed6ca7",
+      "instagram": "6ad431db0a208cb323494e6c"
+    },
+    "6": {
+      "youtube": "6ad3bf26938409f1d09aee5f",
+      "tiktok": "6ad3bf28769b4579348da587",
+      "instagram": "6ad431dd769b457934a4a2c0"
+    },
+    "1": {
+      "youtube": "6ad3c01ae272c4918f995d1f",
+      "tiktok": "6ad3c01ce272c4918f995d77"
+    },
+    "7": {
+      "youtube": "6ad3c00c938409f1d09b0d3a",
+      "tiktok": "6ad3c017ae173d6e00cc3a03",
+      "instagram": "6ad431dfe272c4918faffc70"
+    },
+    "8": {
+      "youtube": "6ad92f8e9c05f711d3c23bd8",
+      "tiktok": "6ad92f90b71cd0e4248f38fc",
+      "instagram": "6ad92f929756ed1587c9fdea"
+    },
+    "9": {
+      "youtube": "6ad92f959756ed1587c9fe68",
+      "tiktok": "6ad92f9765ffc170d009a6f1",
+      "instagram": "6ad92f9965ffc170d009a722"
+    },
+    "10": {
+      "youtube": "6ad92f9bbc50ae7f72d6e1bb",
+      "tiktok": "6ad92f9d9756ed1587c9ff3f",
+      "instagram": "6ad92f9f9c05f711d3c23d33"
+    },
+    "11": {
+      "youtube": "6ad92fa2cfacd02600969ec9",
+      "tiktok": "6ad92fa49756ed1587ca0089",
+      "instagram": "6ad92fa69c05f711d3c23e1a"
+    },
+    "12": {
+      "youtube": "6ad92fa99756ed1587ca0137",
+      "tiktok": "6ad92fab65ffc170d009a913",
+      "instagram": "6ad92fadb71cd0e4248f3c2f"
+    },
+    "13": {
+      "youtube": "6ad92fb0b71cd0e4248f3cc9",
+      "tiktok": "6ad92fb1b71cd0e4248f3cf8",
+      "instagram": "6ad92fb3bc50ae7f72d6e5ef"
+    },
+    "14": {
+      "youtube": "6ad92fb6cfacd0260096a0a5",
+      "tiktok": "6ad92fb89756ed1587ca02e5",
+      "instagram": "6ad92fbab71cd0e4248f3e15"
+    }
   },
-  "4": {
-   "youtube": "6ad3bf1c0b0d72757aed6bb8",
-   "tiktok": "6ad3bf1e769b4579348da280",
-   "instagram": "6ad431d90a208cb323494e35"
+  "extras": {
+    "2026-10-19_1200_10": {
+      "youtube": "6ad47ac86d56c60a73ff03b5",
+      "tiktok": "6ad47acb0a208cb323566384",
+      "instagram": "6ad47acd769b457934b20569",
+      "title": "My Real Bitcoin Mining Stats: 114 TH GoMining Dashboard",
+      "due": "2026-10-19T12:00:00+11:00"
+    },
+    "2026-10-27_2200_promo": {
+      "instagram": "6ae037be913aa340c540a1f4",
+      "tiktok": "6ae037c08f5aed9e2e3abd01",
+      "title": "I Built a FREE Bitcoin Mining Website",
+      "due": "2026-10-27T22:00:00+11:00"
+    }
   },
-  "5": {
-   "youtube": "6ad3bf210a208cb32332c97e",
-   "tiktok": "6ad3bf230b0d72757aed6ca7",
-   "instagram": "6ad431db0a208cb323494e6c"
-  },
-  "6": {
-   "youtube": "6ad3bf26938409f1d09aee5f",
-   "tiktok": "6ad3bf28769b4579348da587",
-   "instagram": "6ad431dd769b457934a4a2c0"
-  },
-  "1": {
-   "youtube": "6ad3c01ae272c4918f995d1f",
-   "tiktok": "6ad3c01ce272c4918f995d77"
-  },
-  "7": {
-   "youtube": "6ad3c00c938409f1d09b0d3a",
-   "tiktok": "6ad3c017ae173d6e00cc3a03",
-   "instagram": "6ad431dfe272c4918faffc70"
-  },
-  "8": {
-   "youtube": "6ad92f8e9c05f711d3c23bd8",
-   "tiktok": "6ad92f90b71cd0e4248f38fc",
-   "instagram": "6ad92f929756ed1587c9fdea"
-  },
-  "9": {
-   "youtube": "6ad92f959756ed1587c9fe68",
-   "tiktok": "6ad92f9765ffc170d009a6f1",
-   "instagram": "6ad92f9965ffc170d009a722"
-  },
-  "10": {
-   "youtube": "6ad92f9bbc50ae7f72d6e1bb",
-   "tiktok": "6ad92f9d9756ed1587c9ff3f",
-   "instagram": "6ad92f9f9c05f711d3c23d33"
-  },
-  "11": {
-   "youtube": "6ad92fa2cfacd02600969ec9",
-   "tiktok": "6ad92fa49756ed1587ca0089",
-   "instagram": "6ad92fa69c05f711d3c23e1a"
-  },
-  "12": {
-   "youtube": "6ad92fa99756ed1587ca0137",
-   "tiktok": "6ad92fab65ffc170d009a913",
-   "instagram": "6ad92fadb71cd0e4248f3c2f"
-  },
-  "13": {
-   "youtube": "6ad92fb0b71cd0e4248f3cc9",
-   "tiktok": "6ad92fb1b71cd0e4248f3cf8",
-   "instagram": "6ad92fb3bc50ae7f72d6e5ef"
-  },
-  "14": {
-   "youtube": "6ad92fb6cfacd0260096a0a5",
-   "tiktok": "6ad92fb89756ed1587ca02e5",
-   "instagram": "6ad92fbab71cd0e4248f3e15"
-  }
- },
- "extras": {
-  "2026-10-19_1200_10": {
-   "youtube": "6ad47ac86d56c60a73ff03b5",
-   "tiktok": "6ad47acb0a208cb323566384",
-   "instagram": "6ad47acd769b457934b20569",
-   "title": "My Real Bitcoin Mining Stats: 114 TH GoMining Dashboard",
-   "due": "2026-10-19T12:00:00+11:00"
-  }
- }
+  "schedule_note": "From 27 Oct 2026 all uploads are 22:00 Sydney. Posts 10-14 re-timed on Buffer (post 10 moved to 14 Nov); posts 15-27 staged, not on Buffer."
 }

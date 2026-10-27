@@ -10,13 +10,13 @@ link: "https://link-target.net/10151711/Pp2SuETkV4xz"
 
 # One Short per day, same video and same time on YouTube and TikTok. Local time in the timezone above.
 schedule:
-  monday:    { time: "18:00", theme: "Bitcoin mining education" }
-  tuesday:   { time: "18:00", theme: "Mining myths and misconceptions" }
-  wednesday: { time: "18:00", theme: "Hashrate, mining efficiency, electricity costs, or mining rewards" }
-  thursday:  { time: "18:00", theme: "GoMining platform explainer" }
-  friday:    { time: "18:00", theme: "High-retention Bitcoin mining fact" }
-  saturday:  { time: "11:00", theme: "Practical tutorial or beginner's guide" }
-  sunday:    { time: "11:00", theme: "Weekly mining lesson or recap (no invented personal results)" }
+  monday:    { time: "22:00", theme: "Bitcoin mining education" }
+  tuesday:   { time: "22:00", theme: "Mining myths and misconceptions" }
+  wednesday: { time: "22:00", theme: "Hashrate, mining efficiency, electricity costs, or mining rewards" }
+  thursday:  { time: "22:00", theme: "GoMining platform explainer" }
+  friday:    { time: "22:00", theme: "High-retention Bitcoin mining fact" }
+  saturday:  { time: "22:00", theme: "Practical tutorial or beginner's guide" }
+  sunday:    { time: "22:00", theme: "Weekly mining lesson or recap (no invented personal results)" }
 
 pipeline:
   buffer_slots: 18           # build further ahead; Buffer scheduling is capped at 10 per channel, so schedule in batches
