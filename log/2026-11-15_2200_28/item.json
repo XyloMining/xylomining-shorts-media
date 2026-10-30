@@ -1,0 +1,45 @@
+{
+  "day": "sunday",
+  "topic": "Questions to ask about risk before mining or buying hashrate",
+  "hook": "Ask these questions before putting any money into mining.",
+  "scenes": [
+    {
+      "text": "If the price drops?",
+      "narration": "Rewards are paid in bitcoin, but costs are paid in cash, so a lower bitcoin price squeezes results."
+    },
+    {
+      "text": "If difficulty rises?",
+      "narration": "More network hashrate means your share shrinks, and so can your rewards."
+    },
+    {
+      "text": "What are the fees?",
+      "narration": "Maintenance and hosting charges come out of what you earn, so know them first. Results vary, and they can be negative."
+    }
+  ],
+  "cta": "Want to explore how digital Bitcoin mining works? Check the link on my channel page.",
+  "title": "3 Risk Questions to Ask Before You Mine Bitcoin",
+  "description_body": "Price, difficulty and fees all affect mining results. Mining involves costs and risks and is not financial advice.",
+  "tags": [
+    "mining risks",
+    "bitcoin mining",
+    "hashrate"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#BitcoinMining"
+  ],
+  "thumbnail": {
+    "line1": "RISK CHECK",
+    "line2": "ASK BEFORE YOU MINE"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Forklog: what is a digital miner",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

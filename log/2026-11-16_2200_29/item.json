@@ -1,0 +1,47 @@
+{
+  "day": "monday",
+  "topic": "What the Bitcoin block reward is and how halvings change it",
+  "hook": "Every four years, Bitcoin miners get a pay cut. On purpose.",
+  "scenes": [
+    {
+      "text": "The block reward",
+      "narration": "A miner's reward for a block is the subsidy of new bitcoin, plus the transaction fees."
+    },
+    {
+      "text": "Halves every 210,000 blocks",
+      "narration": "Every 210,000 blocks, roughly four years, the subsidy is cut in half.",
+      "stat": "÷ 2"
+    },
+    {
+      "text": "Today's subsidy",
+      "narration": "At the April 2024 halving it dropped to 3.125 bitcoin per block.",
+      "stat": "3.125 BTC"
+    }
+  ],
+  "cta": "Want to dig deeper? There's a link on my channel page if you'd like to explore digital mining.",
+  "title": "Bitcoin Halving Explained in 30 Seconds",
+  "description_body": "The block subsidy halves every 210,000 blocks. Since April 2024 it has been 3.125 BTC per block.",
+  "tags": [
+    "bitcoin halving",
+    "block reward",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Halving"
+  ],
+  "thumbnail": {
+    "line1": "THE HALVING",
+    "line2": "MINERS GET A PAY CUT"
+  },
+  "sources": [
+    {
+      "title": "Blockstream: halving",
+      "url": "https://help.blockstream.com/education/glossary/halving"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

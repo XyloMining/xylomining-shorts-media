@@ -1,0 +1,41 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: you can mine Bitcoin profitably with a gaming GPU",
+  "hook": "Can your gaming PC mine Bitcoin? Not in any practical way.",
+  "scenes": [
+    {
+      "text": "The myth",
+      "narration": "Many beginners think a gaming graphics card can mine Bitcoin."
+    },
+    {
+      "text": "ASICs changed everything",
+      "narration": "Specialised chips called ASICs are far more efficient at SHA-256 than graphics cards or CPUs."
+    },
+    {
+      "text": "Efficiency decides",
+      "narration": "Mining Bitcoin with a GPU is not practical today, because ASICs are so much more efficient at the same job."
+    }
+  ],
+  "cta": "Want to dig deeper? There's a link on my channel page if you'd like to explore digital mining.",
+  "title": "Can a Gaming GPU Mine Bitcoin? (The Honest Answer)",
+  "description_body": "ASICs dominate SHA-256 mining, which is why GPU mining Bitcoin is not practical today.",
+  "tags": [
+    "gpu mining",
+    "bitcoin asic",
+    "bitcoin mining myths"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#GPU"
+  ],
+  "thumbnail": {
+    "line1": "GPU MINING?",
+    "line2": "THE HONEST ANSWER"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

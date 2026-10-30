@@ -1,0 +1,1 @@
+Every four years, Bitcoin miners get a pay cut. On purpose. A miner's reward for a block is the subsidy of new bitcoin, plus the transaction fees. Every 210,000 blocks, roughly four years, the subsidy is cut in half. At the April 2024 halving it dropped to 3.125 bitcoin per block. Want to dig deeper? There's a link on my channel page if you'd like to explore digital mining.
