@@ -110,6 +110,23 @@ def _silent(cfg, text, out):
     _ff("-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", f"{secs:.2f}", "-f", "wav", str(out))
 
 
+_SPOKEN = [  # unit abbreviations are always spoken in full (captions keep the written form)
+    (re.compile(r"\bW/TH\b"), "watts per terahash"),
+    (re.compile(r"\bJ/TH\b"), "joules per terahash"),
+    (re.compile(r"\bTH/s\b"), "terahash per second"),
+    (re.compile(r"\bTHs?\b"), "terahash"),
+    (re.compile(r"(?<=\d)\s?W\b"), " watts"),
+    (re.compile(r"\bW\b"), "watts"),
+]
+
+
+def spoken(text: str) -> str:
+    """Text as it should be read aloud: TH -> terahash, W -> watts."""
+    for rx, rep in _SPOKEN:
+        text = rx.sub(rep, text)
+    return text
+
+
 def synthesize(cfg, narrations, workdir: pathlib.Path):
     """Returns (wav_path, scenes) where scenes = [{start, end, speech}] in seconds."""
     log = get_logger()
@@ -122,6 +139,7 @@ def synthesize(cfg, narrations, workdir: pathlib.Path):
     used = None
     wavs, scenes, t = [], [], 0.0
     for i, text in enumerate(narrations):
+        text = spoken(text)
         raw = workdir / f"raw_{i}.audio"
         ok = False
         clauses = None
