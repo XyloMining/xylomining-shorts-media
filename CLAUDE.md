@@ -38,6 +38,9 @@ Never schedule anything the user has not approved. Never claim a step worked wit
       A failure on one network must not block or duplicate the other: the post stays `staged` until every network is done, and `queue` re-lists only what is missing.
 4. `python -m yt_auto persist` so the next session sees the state. Report: what is scheduled (title + local time), anything failed, anything waiting for approval.
 
+## Running experiment: title-only YouTube Shorts (set by the user, 1 Nov 2026)
+Alternate days (2, 4, 6, 8, 10, 12, 14 Nov) go to YouTube with NO description (Buffer text empty, metadata title + categoryId 28); the other days keep the full description. Details, post ids and how to compare are in `state/experiments/no-description.json`. When scheduling posts 27 (10 Nov) and 24 (12 Nov), leave the YouTube text empty. TikTok and Instagram are unchanged. Review on or after 17 Nov: compare views at equal video age, not totals. Do not widen or end the experiment without the user.
+
 ## Sunday report
 Use Metricool `getAnalyticsAvailableMetrics` (network youtube) then `getAnalyticsDataByMetrics` for the last 7 days, write `data/metrics.json` as rows keyed by `title`
 (views, engagedViews, averageViewDuration, averageViewPercentage, likes, comments, subscribersGained as available), run `python -m yt_auto report`.
