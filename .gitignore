@@ -8,3 +8,4 @@ __pycache__/
 *.pyc
 .venv/
 longform/out/*/audio/
+promo/out/join-gomining/audio/
