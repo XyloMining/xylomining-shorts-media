@@ -79,11 +79,45 @@ def draw_dots(d, w, h, t):
 DOLLARS = re.compile(r"^\d[\d,]*$")
 
 
+_SPELL_DIGITS = {"zero": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9"}
+
+
+def _spelled(words, i):
+    """Run of spelled-out characters ('double U, C, A, zero, T') starting at i -> (code, count, trailing punctuation) or None.
+    Spoken letter by letter, captioned as one code such as WCAZD0T. Needs 4+ characters."""
+    chars, j = [], i
+    while j < len(words):
+        bare = re.sub(r"[^\w]", "", words[j])
+        if bare.lower() == "double" and j + 1 < len(words) and re.sub(r"[^\w]", "", words[j + 1]).lower() == "u":
+            chars.append("W")
+            j += 2
+        elif len(bare) == 1 and bare.isalpha() and bare.lower() != "a" or bare == "A" and j > i:
+            chars.append(bare.upper())
+            j += 1
+        elif bare.lower() in _SPELL_DIGITS:
+            chars.append(_SPELL_DIGITS[bare.lower()])
+            j += 1
+        else:
+            break
+        if not words[j - 1].endswith(","):
+            break
+    if len(chars) < 4:
+        return None
+    tail = re.search(r"[^\w]+$", words[j - 1])
+    return "".join(chars), j - i, (tail.group(0).replace(",", "") if tail else "")
+
+
 def _display_tokens(words):
     """(shown, spoken_weight) per caption token. 'N dollars and M cents' is spoken in words but captioned as $N.MM."""
     out, i = [], 0
     while i < len(words):
         w = words[i]
+        sp = _spelled(words, i)
+        if sp:
+            code, n, tail = sp
+            out.append((code + tail, sum(max(2, len(x)) for x in words[i:i + n])))
+            i += n
+            continue
         if (i + 4 < len(words) and DOLLARS.match(w) and words[i + 1].lower().startswith("dollar") and words[i + 2].lower() == "and"
                 and DOLLARS.match(words[i + 3]) and words[i + 4].lower().startswith("cent")):
             tail = re.search(r"[^\w]+$", words[i + 4])
