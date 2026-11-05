@@ -17,7 +17,7 @@ ITEM = {
     "style": {"bg": "aurora"},
     "scenes": [
         {"text": "1. Start from my link", "narration": "Open my GoMining link first.", "shot": "1-link"},
-        {"text": "2. Promo code: WCAZD0T", "narration": "Create your account. If the bonuses do not show, enter my promo code, W C A Z D zero T, at checkout.", "shot": "2-signup"},
+        {"text": "2. Promo code: WCAZD0T", "narration": "Create your account. If the bonuses do not show, enter my promo code, double U, C, A, Z, D, zero, T, at checkout.", "shot": "2-signup"},
         {"text": "3. Know your bonuses", "narration": "New users can get five percent bonus terahash on a first miner, plus a month of Platinum Plus. Each bonus has a time window.", "shot": "3-bonuses"},
         {"text": "4. Check before you buy", "narration": "Before buying, check the miner's terahash, efficiency and maintenance fee. Returns can be negative.", "shot": "4-miner"},
     ],
