@@ -157,5 +157,14 @@
       "due": "2026-10-27T22:00:00+11:00"
     }
   },
-  "schedule_note": "From 27 Oct 2026 all uploads are 22:00 Sydney. Posts 10-14 re-timed on Buffer (post 10 moved to 14 Nov); posts 15-27 staged, not on Buffer."
+  "schedule_note": "From 27 Oct 2026 all uploads are 22:00 Sydney. Posts 10-14 re-timed on Buffer (post 10 moved to 14 Nov); posts 15-27 staged, not on Buffer.",
+  "join_guide": {
+    "video": "videos/2026-11-15_2200_join.mp4",
+    "due": "2026-11-15T22:00:00+11:00",
+    "youtube": "6aed4257f3498efda76679fa",
+    "tiktok": "6aed42587b7e47e8f40304a6",
+    "instagram": "6aed4258dbada656beebc51c",
+    "title": "Join GoMining in 30 Seconds: Promo Code WCAZD0T",
+    "note": "Promo code WCAZD0T; Sunday chosen as best weekday on sparse data (5 Nov 2026). Pushes post 28 later."
+  }
 }
