@@ -1,0 +1,41 @@
+{
+  "day": "saturday",
+  "topic": "Solo mining versus mining pools explained",
+  "hook": "Solo mining versus a pool: what's the difference?",
+  "scenes": [
+    {
+      "text": "Your odds",
+      "narration": "Your chance of finding a block is your share of the network's total hashrate."
+    },
+    {
+      "text": "Solo is lumpy",
+      "narration": "Solo miners can wait a long time between rewards, then get a whole block at once."
+    },
+    {
+      "text": "Pools smooth it",
+      "narration": "Pools combine hashrate and share rewards in proportion to the work each member contributed."
+    }
+  ],
+  "cta": "Want to dig deeper? There's a link on my channel page if you'd like to explore digital mining.",
+  "title": "Solo Mining vs Mining Pools for Beginners",
+  "description_body": "Why pools exist: your odds per block follow your share of network hashrate, and pools smooth out the payouts.",
+  "tags": [
+    "mining pool",
+    "solo mining",
+    "bitcoin beginners"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#MiningPool"
+  ],
+  "thumbnail": {
+    "line1": "SOLO OR POOL?",
+    "line2": "BEGINNER'S GUIDE"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

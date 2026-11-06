@@ -1,0 +1,1 @@
+Why do Bitcoin miners avoid graphics cards entirely? An ASIC is a chip built specifically for SHA-256 hashing. ASICs are far more efficient at it than GPUs or CPUs. That is why GPU mining Bitcoin is not practical today. Efficiency is measured in W/TH, and lower means less power per terahash. Did you think GPUs still worked? Tell me below. My description link has more.

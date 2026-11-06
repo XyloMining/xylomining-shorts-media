@@ -1,0 +1,21 @@
+{
+  "title": "ASIC vs GPU: Why Bitcoin Miners Use ASICs",
+  "description": "ASICs are built for SHA-256 and are far more efficient than GPUs or CPUs, so GPU mining Bitcoin is not practical today.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin developer guide: mining: https://bitcoin.org/en/developer-guide#mining\n- Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "tags": [
+    "asic",
+    "gpu mining",
+    "beginner guide",
+    "sha-256"
+  ],
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ],
+  "publish_local": "2026-11-21T22:00:00+11:00"
+}

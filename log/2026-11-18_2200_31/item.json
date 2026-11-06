@@ -1,0 +1,41 @@
+{
+  "day": "wednesday",
+  "topic": "Why electricity costs and the Bitcoin price decide mining profitability",
+  "hook": "Mining rewards come in bitcoin. The bills arrive in regular money.",
+  "scenes": [
+    {
+      "text": "Rewards in BTC",
+      "narration": "Miners are paid in bitcoin."
+    },
+    {
+      "text": "Costs in cash",
+      "narration": "Electricity and hosting are paid in regular currency, and electricity is usually the biggest ongoing cost."
+    },
+    {
+      "text": "Profit moves",
+      "narration": "So a falling bitcoin price or a rising power price can squeeze mining returns. Results vary, and they are never certain."
+    }
+  ],
+  "cta": "Want to dig deeper? There's a link on my channel page if you'd like to explore digital mining.",
+  "title": "Why Electricity Decides if Bitcoin Mining Pays",
+  "description_body": "Rewards arrive in BTC while costs are paid in fiat, so profitability moves with the bitcoin price and power costs.",
+  "tags": [
+    "mining profitability",
+    "electricity cost",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#MiningCosts"
+  ],
+  "thumbnail": {
+    "line1": "THE BILLS",
+    "line2": "REWARDS IN BTC, COSTS IN CASH"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

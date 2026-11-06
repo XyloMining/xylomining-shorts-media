@@ -1,0 +1,41 @@
+{
+  "day": "friday",
+  "topic": "Why Bitcoin proof of work is hard to fake",
+  "hook": "Bitcoin mining is hard to do, but easy to check.",
+  "scenes": [
+    {
+      "text": "Hard to find",
+      "narration": "Finding a block means searching for a header hash below the target. There's no shortcut except more guesses."
+    },
+    {
+      "text": "Easy to verify",
+      "narration": "Once a block is found, other nodes can check its proof of work cheaply."
+    },
+    {
+      "text": "That's the point",
+      "narration": "Honest checking is cheap, while cheating would take enormous computing work."
+    }
+  ],
+  "cta": "Want to dig deeper? There's a link on my channel page if you'd like to explore digital mining.",
+  "title": "Why Bitcoin Mining Is Hard to Fake",
+  "description_body": "Proof of work is expensive to produce and cheap to verify, which is what protects the network.",
+  "tags": [
+    "proof of work",
+    "bitcoin security",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#ProofOfWork"
+  ],
+  "thumbnail": {
+    "line1": "HARD TO FAKE",
+    "line2": "EASY TO CHECK"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

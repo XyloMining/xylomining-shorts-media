@@ -1,0 +1,50 @@
+{
+  "day": "saturday",
+  "topic": "Beginner guide: why ASICs beat GPUs and CPUs for SHA-256",
+  "hook": "Why do Bitcoin miners avoid graphics cards entirely?",
+  "scenes": [
+    {
+      "text": "Meet the ASIC",
+      "narration": "An ASIC is a chip built specifically for SHA-256 hashing."
+    },
+    {
+      "text": "The gap",
+      "narration": "ASICs are far more efficient at it than GPUs or CPUs."
+    },
+    {
+      "text": "The result",
+      "narration": "That is why GPU mining Bitcoin is not practical today."
+    },
+    {
+      "text": "Remember",
+      "narration": "Efficiency is measured in W/TH, and lower means less power per terahash."
+    }
+  ],
+  "cta": "Did you think GPUs still worked? Tell me below. My description link has more.",
+  "title": "ASIC vs GPU: Why Bitcoin Miners Use ASICs",
+  "description_body": "ASICs are built for SHA-256 and are far more efficient than GPUs or CPUs, so GPU mining Bitcoin is not practical today.",
+  "tags": [
+    "asic",
+    "gpu mining",
+    "beginner guide",
+    "sha-256"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "ASIC VS GPU",
+    "line2": "WHY SPECIAL CHIPS?"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

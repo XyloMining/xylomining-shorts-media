@@ -1,0 +1,41 @@
+{
+  "day": "thursday",
+  "topic": "How GoMining rewards and maintenance charges work",
+  "hook": "Daily Bitcoin rewards sound simple. Here's the part people skip.",
+  "scenes": [
+    {
+      "text": "Daily rewards",
+      "narration": "Per a third-party explainer, owners are credited bitcoin rewards each day."
+    },
+    {
+      "text": "Minus maintenance",
+      "narration": "A maintenance charge covering electricity and service costs is deducted from those rewards."
+    },
+    {
+      "text": "Results vary",
+      "narration": "Bitcoin's price and network difficulty change, so the net result can be low or even negative. And digital miners can't be redeemed for bitcoin."
+    }
+  ],
+  "cta": "Learn more about GoMining through the link on my channel page. It's a referral link, so I may earn a benefit.",
+  "title": "GoMining Rewards vs Maintenance: What to Know",
+  "description_body": "How rewards and maintenance charges fit together on GoMining, plus why results vary. Source is a third-party explainer; check the platform for current terms.",
+  "tags": [
+    "gomining",
+    "mining rewards",
+    "maintenance fee"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#GoMining"
+  ],
+  "thumbnail": {
+    "line1": "REWARDS",
+    "line2": "MINUS MAINTENANCE"
+  },
+  "sources": [
+    {
+      "title": "Forklog: what is a digital miner",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}
