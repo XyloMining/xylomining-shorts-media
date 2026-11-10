@@ -1,0 +1,46 @@
+{
+  "day": "saturday",
+  "topic": "A pre-mining checklist",
+  "hook": "Thinking about mining? Run this checklist first.",
+  "scenes": [
+    {
+      "text": "Efficiency",
+      "narration": "First, check efficiency in watts per terahash."
+    },
+    {
+      "text": "Power price",
+      "narration": "Second, check your electricity price. It is typically the largest ongoing cost."
+    },
+    {
+      "text": "Currency mismatch",
+      "narration": "Third, remember rewards arrive in BTC while costs are in regular currency."
+    },
+    {
+      "text": "No promises",
+      "narration": "No return is ever promised, so only go in with a clear head."
+    }
+  ],
+  "cta": "What would you add? Tell me in the comments, and the link is on my channel page.",
+  "title": "Before You Mine Bitcoin: A 4-Step Checklist",
+  "description_body": "Efficiency, power price, currency mismatch and why no return is promised.",
+  "tags": [
+    "bitcoin mining tutorial",
+    "mining checklist",
+    "mining costs",
+    "beginner guide"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "CHECKLIST",
+    "line2": "BEFORE YOU MINE"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

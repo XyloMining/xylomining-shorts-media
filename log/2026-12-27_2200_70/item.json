@@ -1,0 +1,50 @@
+{
+  "day": "sunday",
+  "topic": "Year-end recap",
+  "hook": "Year-end recap: four ideas to take into the new year.",
+  "scenes": [
+    {
+      "text": "1. It's a lottery",
+      "narration": "Your chance of finding a block is your share of network hashrate."
+    },
+    {
+      "text": "2. Costs matter",
+      "narration": "Electricity and efficiency decide whether mining pays."
+    },
+    {
+      "text": "3. Rules are checked",
+      "narration": "Nodes validate every block, whoever mined it."
+    },
+    {
+      "text": "4. No promises",
+      "narration": "Returns vary, and none are ever promised."
+    }
+  ],
+  "cta": "Which idea stuck? Tell me in the comments, and the link is on my channel page.",
+  "title": "Year-End Recap: 4 Bitcoin Mining Ideas",
+  "description_body": "Lottery, costs, rules and no promises: four ideas to carry into the new year.",
+  "tags": [
+    "year end recap",
+    "bitcoin mining",
+    "weekly recap",
+    "bitcoin basics"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "YEAR-END",
+    "line2": "4 IDEAS TO KEEP"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

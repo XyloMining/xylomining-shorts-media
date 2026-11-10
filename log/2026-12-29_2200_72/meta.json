@@ -1,0 +1,21 @@
+{
+  "title": "Myth: Can Bitcoin Miners Spend a Coin Twice?",
+  "description": "Full nodes reject any block containing an already-spent transaction.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf\n- Bitcoin developer guide: block chain: https://developer.bitcoin.org/devguide/block_chain.html\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "tags": [
+    "bitcoin myths",
+    "double spend",
+    "bitcoin nodes",
+    "bitcoin validation"
+  ],
+  "sources": [
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    },
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ],
+  "publish_local": "2026-12-29T22:00:00+11:00"
+}

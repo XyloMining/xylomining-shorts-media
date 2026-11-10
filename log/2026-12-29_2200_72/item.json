@@ -1,0 +1,46 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: miners can spend the same coin twice",
+  "hook": "Myth: a miner could spend the same bitcoin twice.",
+  "scenes": [
+    {
+      "text": "Nodes check every block",
+      "narration": "Each full node independently validates blocks using the same consensus rules."
+    },
+    {
+      "text": "Spent means rejected",
+      "narration": "A block is only accepted if every transaction in it is valid and not already spent."
+    },
+    {
+      "text": "Work doesn't override rules",
+      "narration": "Doing lots of work does not let a miner skip those checks. A bad block is simply refused."
+    }
+  ],
+  "cta": "Did that make sense? Tell me in the comments, and the link is on my channel page.",
+  "title": "Myth: Can Bitcoin Miners Spend a Coin Twice?",
+  "description_body": "Full nodes reject any block containing an already-spent transaction.",
+  "tags": [
+    "bitcoin myths",
+    "double spend",
+    "bitcoin nodes",
+    "bitcoin validation"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "DOUBLE SPEND?",
+    "line2": "NODES REJECT BAD BLOCKS"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    },
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ]
+}

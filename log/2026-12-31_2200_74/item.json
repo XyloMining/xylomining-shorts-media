@@ -1,0 +1,42 @@
+{
+  "day": "thursday",
+  "topic": "Year-end checklist for a digital miner",
+  "hook": "Own a digital miner? Do this year-end check.",
+  "scenes": [
+    {
+      "text": "Rewards",
+      "narration": "First, look at the daily rewards credited to your miner."
+    },
+    {
+      "text": "Maintenance",
+      "narration": "Second, look at the maintenance charge taken off, which covers electricity and service."
+    },
+    {
+      "text": "Net result",
+      "narration": "Third, compare the two. Net results vary and can be low or negative, so know your own number."
+    }
+  ],
+  "cta": "What does yours show? Tell me in the comments, and the link is on my channel page.",
+  "title": "Digital Miner Year-End Checklist",
+  "description_body": "Compare credited rewards with the maintenance charge to see your net result.",
+  "tags": [
+    "GoMining",
+    "digital miner",
+    "year end checklist",
+    "mining rewards"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "YEAR-END CHECK",
+    "line2": "REWARDS MINUS MAINTENANCE"
+  },
+  "sources": [
+    {
+      "title": "Forklog: digital miners",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}
