@@ -1,0 +1,1 @@
+The very first Bitcoin reward can never be spent. The first block was mined on the third of January, 2009. Its coinbase created fifty bitcoin. Those fifty bitcoin were never spendable. They sit in the history of the chain, but they cannot move. Did you know? Tell me in the comments, and the link is on my channel page.

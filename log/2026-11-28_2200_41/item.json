@@ -1,0 +1,44 @@
+{
+  "day": "saturday",
+  "topic": "Read any miner's spec in three steps",
+  "hook": "Read any mining spec in three steps.",
+  "scenes": [
+    {
+      "text": "Step 1: TH/s",
+      "stat": "TH/s",
+      "narration": "First, find the hashrate in terahash per second. One terahash per second is one trillion hashes every second."
+    },
+    {
+      "text": "Step 2: W/TH",
+      "stat": "W/TH",
+      "narration": "Second, find the efficiency in watts per terahash. Lower is more efficient."
+    },
+    {
+      "text": "Step 3: the cost",
+      "narration": "Third, find the running cost. Electricity is typically a miner's largest ongoing cost."
+    }
+  ],
+  "cta": "Which spec confuses you? Tell me in the comments, and the link is on my channel page.",
+  "title": "How to Read a Mining Spec in 3 Steps",
+  "description_body": "Hashrate, efficiency and running cost: the three numbers on any mining spec.",
+  "tags": [
+    "bitcoin mining tutorial",
+    "TH/s",
+    "W/TH",
+    "mining specs"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "3 STEPS",
+    "line2": "READ ANY MINING SPEC"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

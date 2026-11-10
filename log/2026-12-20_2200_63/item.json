@@ -1,0 +1,44 @@
+{
+  "day": "sunday",
+  "topic": "Recap: target and difficulty",
+  "hook": "Weekly recap: how mining difficulty really works.",
+  "scenes": [
+    {
+      "text": "The target",
+      "stat": "256-bit",
+      "narration": "The target is a 256-bit number. A hash must be at or below it."
+    },
+    {
+      "text": "Lower is harder",
+      "narration": "The lower the target, the harder it is to generate a block."
+    },
+    {
+      "text": "Adjusted",
+      "stat": "2,016 blocks",
+      "narration": "Every two thousand sixteen blocks it adjusts, never by more than a factor of four."
+    }
+  ],
+  "cta": "Is difficulty clear now? Tell me in the comments, and the link is on my channel page.",
+  "title": "Weekly Recap: Target and Difficulty",
+  "description_body": "The target, why lower is harder and how it adjusts every 2,016 blocks.",
+  "tags": [
+    "weekly recap",
+    "bitcoin difficulty",
+    "bitcoin target",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "RECAP",
+    "line2": "TARGET AND DIFFICULTY"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin Wiki: Target",
+      "url": "https://en.bitcoin.it/wiki/Target"
+    }
+  ]
+}

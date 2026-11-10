@@ -1,0 +1,1 @@
+Weekly recap: how mining difficulty really works. The target is a 256-bit number. A hash must be at or below it. The lower the target, the harder it is to generate a block. Every two thousand sixteen blocks it adjusts, never by more than a factor of four. Is difficulty clear now? Tell me in the comments, and the link is on my channel page.

@@ -1,0 +1,42 @@
+{
+  "day": "wednesday",
+  "topic": "Rewards in BTC, costs in fiat",
+  "hook": "Miners earn in bitcoin but pay their bills in dollars.",
+  "scenes": [
+    {
+      "text": "Two currencies",
+      "narration": "Mining rewards are paid in BTC. But electricity and hosting are paid in regular currency."
+    },
+    {
+      "text": "So price matters",
+      "narration": "That means profit moves with the bitcoin price, even if the miner runs the same hardware."
+    },
+    {
+      "text": "The honest part",
+      "narration": "No return is ever promised. A good month can be followed by a poor one."
+    }
+  ],
+  "cta": "How do you track this? Tell me in the comments, and the link is on my channel page.",
+  "title": "Why Miners Earn in BTC but Pay in Fiat",
+  "description_body": "Rewards arrive in BTC while costs are paid in fiat, so profit moves with price.",
+  "tags": [
+    "bitcoin mining profit",
+    "mining costs",
+    "bitcoin price",
+    "mining electricity"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "TWO CURRENCIES",
+    "line2": "BTC IN, FIAT OUT"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

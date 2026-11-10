@@ -1,0 +1,47 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: all 21 million bitcoin can be mined",
+  "hook": "Myth: all twenty-one million bitcoin will end up mined.",
+  "scenes": [
+    {
+      "text": "Just under the cap",
+      "narration": "Because the subsidy rounds down at satoshi precision, the real ceiling is slightly under twenty-one million."
+    },
+    {
+      "text": "Some coins are gone",
+      "stat": "50 BTC",
+      "narration": "The fifty bitcoin from the genesis block reward was never spendable."
+    },
+    {
+      "text": "Lost for good",
+      "narration": "Two blocks in November 2010 overwrote earlier rewards, making another hundred bitcoin unspendable."
+    }
+  ],
+  "cta": "Did you know that? Tell me in the comments, and the link is on my channel page.",
+  "title": "Myth: All 21 Million Bitcoin Can Be Mined",
+  "description_body": "The true ceiling is just under 21 million, and some coins can never move.",
+  "tags": [
+    "bitcoin myths",
+    "bitcoin supply",
+    "lost bitcoin",
+    "21 million"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NOT QUITE 21M",
+    "line2": "SOME BITCOIN CAN NEVER MOVE"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    },
+    {
+      "title": "Coinbase transaction glossary",
+      "url": "https://www.spark.money/glossary/coinbase-transaction"
+    }
+  ]
+}

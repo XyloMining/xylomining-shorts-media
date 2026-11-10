@@ -1,0 +1,43 @@
+{
+  "day": "wednesday",
+  "topic": "Same hashrate, different efficiency",
+  "hook": "Two miners, same hashrate, very different power bills.",
+  "scenes": [
+    {
+      "text": "Same speed",
+      "narration": "Imagine two miners that both run at the same terahash per second."
+    },
+    {
+      "text": "Different power",
+      "narration": "If one uses fewer watts per terahash, it spends less on electricity for the same hashing."
+    },
+    {
+      "text": "Lower is better",
+      "stat": "W/TH",
+      "narration": "Efficiency is measured in watts per terahash. Lower is more efficient."
+    }
+  ],
+  "cta": "Which number do you check first? Tell me in the comments, and the link is on my channel page.",
+  "title": "Same Hashrate, Different Efficiency: Why It Matters",
+  "description_body": "Watts per terahash decides how much power a miner needs for the same hashing.",
+  "tags": [
+    "mining efficiency",
+    "W/TH",
+    "hashrate",
+    "bitcoin mining electricity"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "SAME SPEED",
+    "line2": "DIFFERENT POWER BILL"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

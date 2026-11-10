@@ -1,0 +1,47 @@
+{
+  "day": "friday",
+  "topic": "Block 501,726 unclaimed reward",
+  "hook": "One miner once left a whole Bitcoin reward on the table.",
+  "scenes": [
+    {
+      "text": "December 2017",
+      "stat": "12.5 BTC",
+      "narration": "The miner of block five hundred one thousand, seven hundred twenty-six claimed none of its twelve and a half bitcoin subsidy."
+    },
+    {
+      "text": "Allowed by the rules",
+      "narration": "A miner may claim less than the subsidy plus fees."
+    },
+    {
+      "text": "Gone for good",
+      "narration": "Any amount not claimed is destroyed."
+    }
+  ],
+  "cta": "Mistake or message? Tell me in the comments, and the link is on my channel page.",
+  "title": "The Miner Who Skipped a 12.5 BTC Reward",
+  "description_body": "A 2017 block left its subsidy unclaimed, and unclaimed rewards are destroyed.",
+  "tags": [
+    "bitcoin facts",
+    "coinbase transaction",
+    "bitcoin mining",
+    "block reward"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "SKIPPED IT",
+    "line2": "A MINER LEFT THE REWARD"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    },
+    {
+      "title": "Coinbase transaction glossary",
+      "url": "https://www.spark.money/glossary/coinbase-transaction"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Weekly Recap: Anatomy of a Bitcoin Block",
+  "description": "Header, coinbase and the proof-of-work check, in 30 seconds.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Blockstream glossary: block header: https://help.blockstream.com/education/glossary/block-header\n- Coinbase transaction glossary: https://www.spark.money/glossary/coinbase-transaction\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "tags": [
+    "weekly recap",
+    "bitcoin block",
+    "bitcoin mining basics",
+    "block header"
+  ],
+  "sources": [
+    {
+      "title": "Blockstream glossary: block header",
+      "url": "https://help.blockstream.com/education/glossary/block-header"
+    },
+    {
+      "title": "Coinbase transaction glossary",
+      "url": "https://www.spark.money/glossary/coinbase-transaction"
+    }
+  ],
+  "publish_local": "2026-11-29T22:00:00+11:00"
+}

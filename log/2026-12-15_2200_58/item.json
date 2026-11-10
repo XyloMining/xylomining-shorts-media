@@ -1,0 +1,43 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: mining ends when the 21 million cap hits",
+  "hook": "Myth: when the last bitcoin is issued, mining stops.",
+  "scenes": [
+    {
+      "text": "The subsidy ends",
+      "stat": "around 2140",
+      "narration": "The block subsidy is expected to reach zero around the year twenty one forty."
+    },
+    {
+      "text": "Fees remain",
+      "narration": "After that, miners are paid only by transaction fees."
+    },
+    {
+      "text": "The honest part",
+      "narration": "How well fees alone will secure the network is an open question. Nobody has tested it at scale."
+    }
+  ],
+  "cta": "What do you think happens then? Tell me in the comments, and the link is on my channel page.",
+  "title": "Myth: Bitcoin Mining Stops at 21 Million",
+  "description_body": "After the subsidy ends around 2140, miners earn only transaction fees.",
+  "tags": [
+    "bitcoin myths",
+    "21 million bitcoin",
+    "bitcoin fees",
+    "bitcoin supply"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "MINING ENDS?",
+    "line2": "WHAT HAPPENS AFTER 2140"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    }
+  ]
+}

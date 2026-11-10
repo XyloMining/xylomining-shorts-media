@@ -1,0 +1,48 @@
+{
+  "day": "friday",
+  "topic": "Bitcoin never takes a holiday",
+  "hook": "Bitcoin mining doesn't stop for Christmas.",
+  "scenes": [
+    {
+      "text": "Always on",
+      "stat": "10 minutes",
+      "narration": "The network aims to produce one block about every ten minutes."
+    },
+    {
+      "text": "No days off",
+      "narration": "That target holds on weekdays, weekends and holidays alike."
+    },
+    {
+      "text": "Adjusted for it",
+      "stat": "2,016 blocks",
+      "narration": "If blocks come too fast or too slow, the target is adjusted every two thousand sixteen blocks."
+    }
+  ],
+  "cta": "Mining or off today? Tell me in the comments, and the link is on my channel page.",
+  "title": "Bitcoin Never Takes a Holiday",
+  "description_body": "The network aims for one block about every 10 minutes, every day of the year.",
+  "tags": [
+    "bitcoin facts",
+    "bitcoin block time",
+    "christmas",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NO DAYS OFF",
+    "line2": "BLOCKS KEEP COMING"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin Wiki: Target",
+      "url": "https://en.bitcoin.it/wiki/Target"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

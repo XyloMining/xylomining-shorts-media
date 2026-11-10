@@ -1,0 +1,46 @@
+{
+  "day": "thursday",
+  "topic": "A digital miner is not hardware you can take home",
+  "hook": "A GoMining digital miner is not a machine you can collect.",
+  "scenes": [
+    {
+      "text": "An NFT, not a box",
+      "narration": "GoMining sells digital miners: NFTs that represent a share of hashrate hosted in its data centres."
+    },
+    {
+      "text": "No bitcoin redemption",
+      "narration": "Digital miners are not redeemable for bitcoin. Owners earn rewards, they do not hold the hardware."
+    },
+    {
+      "text": "Know what you hold",
+      "narration": "So the question is what the rewards look like after costs. That is what to check."
+    }
+  ],
+  "cta": "What would you want to know first? Tell me in the comments, and the link is on my channel page.",
+  "title": "GoMining Digital Miners: What You Don't Own",
+  "description_body": "A digital miner represents hosted hashrate. You earn rewards, not hardware.",
+  "tags": [
+    "GoMining",
+    "digital miner",
+    "NFT mining",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NOT HARDWARE",
+    "line2": "WHAT A DIGITAL MINER IS"
+  },
+  "sources": [
+    {
+      "title": "Forklog: digital miners",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    },
+    {
+      "title": "GoMining partner programme",
+      "url": "https://gomining.com/blog/gomining-partner"
+    }
+  ]
+}

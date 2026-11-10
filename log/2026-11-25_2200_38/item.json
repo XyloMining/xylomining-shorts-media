@@ -1,0 +1,48 @@
+{
+  "day": "wednesday",
+  "topic": "How the block subsidy shrank over time",
+  "hook": "The Bitcoin block reward started at fifty and keeps shrinking.",
+  "scenes": [
+    {
+      "text": "The reward steps down",
+      "stat": "50 to 3.125",
+      "narration": "The subsidy began at fifty bitcoin. It then dropped to twenty-five, twelve and a half, six and a quarter, and three point one two five."
+    },
+    {
+      "text": "The latest drop",
+      "stat": "April 2024",
+      "narration": "The most recent halving was at block eight hundred forty thousand, in April 2024."
+    },
+    {
+      "text": "What stays",
+      "narration": "Miners still earn the subsidy plus transaction fees. But the subsidy part keeps shrinking."
+    }
+  ],
+  "cta": "Which halving do you remember? Tell me in the comments, and the link is on my channel page.",
+  "title": "Bitcoin Block Reward: 50 BTC to 3.125 BTC",
+  "description_body": "How the subsidy stepped down from 50 to 3.125 BTC across four halvings.",
+  "tags": [
+    "bitcoin block reward",
+    "bitcoin halving",
+    "bitcoin mining rewards",
+    "subsidy"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "50 TO 3.125",
+    "line2": "THE SHRINKING REWARD"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

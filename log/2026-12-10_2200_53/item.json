@@ -1,0 +1,42 @@
+{
+  "day": "thursday",
+  "topic": "Digital miner rewards are credited daily",
+  "hook": "A GoMining digital miner pays out on a daily rhythm.",
+  "scenes": [
+    {
+      "text": "Credited daily",
+      "narration": "Owners are credited daily bitcoin rewards."
+    },
+    {
+      "text": "Minus maintenance",
+      "narration": "A maintenance charge is taken off. It covers electricity and service costs."
+    },
+    {
+      "text": "So read the net",
+      "narration": "What matters is the reward after that charge, not the headline reward alone."
+    }
+  ],
+  "cta": "Do you check yours daily? Tell me in the comments, and the link is on my channel page.",
+  "title": "How GoMining Digital Miner Rewards Are Credited",
+  "description_body": "Rewards are credited daily, minus a maintenance charge for electricity and service.",
+  "tags": [
+    "GoMining",
+    "digital miner rewards",
+    "maintenance fee",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "PAID DAILY",
+    "line2": "MINUS MAINTENANCE"
+  },
+  "sources": [
+    {
+      "title": "Forklog: digital miners",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

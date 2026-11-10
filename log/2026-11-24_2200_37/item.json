@@ -1,0 +1,47 @@
+{
+  "day": "tuesday",
+  "topic": "Myth: mining rewards can be spent immediately",
+  "hook": "Myth: miners can spend a block reward the second they win it.",
+  "scenes": [
+    {
+      "text": "The 100-block wait",
+      "stat": "100 blocks",
+      "narration": "Coinbase outputs cannot be spent until they have received one hundred confirmations."
+    },
+    {
+      "text": "That is a long wait",
+      "narration": "At roughly one block every ten minutes, that takes many hours."
+    },
+    {
+      "text": "Why it matters",
+      "narration": "So a freshly mined reward is locked for a while. Mining income is never instant."
+    }
+  ],
+  "cta": "Did you think it was instant? Tell me in the comments, and the link is on my channel page.",
+  "title": "Myth: Miners Spend Block Rewards Instantly",
+  "description_body": "Coinbase rewards need 100 confirmations before they can be spent.",
+  "tags": [
+    "bitcoin myths",
+    "coinbase maturity",
+    "bitcoin mining",
+    "block reward"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "REWARD LOCKED",
+    "line2": "100 BLOCKS BEFORE SPENDING"
+  },
+  "sources": [
+    {
+      "title": "Coinbase transaction glossary",
+      "url": "https://www.spark.money/glossary/coinbase-transaction"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

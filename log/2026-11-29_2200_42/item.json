@@ -1,0 +1,47 @@
+{
+  "day": "sunday",
+  "topic": "Recap: block anatomy",
+  "hook": "Weekly recap: what a Bitcoin block is made of.",
+  "scenes": [
+    {
+      "text": "The header",
+      "stat": "80 bytes",
+      "narration": "A header is eighty bytes: version, previous hash, merkle root, timestamp, bits and nonce."
+    },
+    {
+      "text": "The first transaction",
+      "narration": "The first transaction is the coinbase. It creates the coins and collects fees."
+    },
+    {
+      "text": "The check",
+      "narration": "Nodes hash the header twice and compare it with the target."
+    }
+  ],
+  "cta": "Which part do you want next? Tell me in the comments, and the link is on my channel page.",
+  "title": "Weekly Recap: Anatomy of a Bitcoin Block",
+  "description_body": "Header, coinbase and the proof-of-work check, in 30 seconds.",
+  "tags": [
+    "weekly recap",
+    "bitcoin block",
+    "bitcoin mining basics",
+    "block header"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "RECAP",
+    "line2": "ANATOMY OF A BLOCK"
+  },
+  "sources": [
+    {
+      "title": "Blockstream glossary: block header",
+      "url": "https://help.blockstream.com/education/glossary/block-header"
+    },
+    {
+      "title": "Coinbase transaction glossary",
+      "url": "https://www.spark.money/glossary/coinbase-transaction"
+    }
+  ]
+}

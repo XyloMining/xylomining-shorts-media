@@ -1,0 +1,1 @@
+Myth: miners can spend a block reward the second they win it. Coinbase outputs cannot be spent until they have received one hundred confirmations. At roughly one block every ten minutes, that takes many hours. So a freshly mined reward is locked for a while. Mining income is never instant. Did you think it was instant? Tell me in the comments, and the link is on my channel page.

@@ -1,0 +1,43 @@
+{
+  "day": "saturday",
+  "topic": "Turn TH/s into plain English",
+  "hook": "Let's turn terahash into plain English.",
+  "scenes": [
+    {
+      "text": "One terahash",
+      "stat": "1 TH/s",
+      "narration": "One terahash per second means one trillion hash attempts every second."
+    },
+    {
+      "text": "Scale it up",
+      "narration": "So a miner at one hundred terahash per second makes one hundred trillion attempts each second."
+    },
+    {
+      "text": "Still a lottery",
+      "narration": "Even so, finding a block is down to probability. Your chance is your share of the network."
+    }
+  ],
+  "cta": "Does that help? Tell me in the comments, and the link is on my channel page.",
+  "title": "TH/s in Plain English: What It Really Means",
+  "description_body": "One terahash per second is one trillion hashes every second.",
+  "tags": [
+    "TH/s",
+    "hashrate explained",
+    "bitcoin mining tutorial",
+    "terahash"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "TH/S SIMPLE",
+    "line2": "TRILLIONS OF GUESSES"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

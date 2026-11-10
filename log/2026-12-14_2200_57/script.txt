@@ -1,0 +1,1 @@
+Bitcoin's mining target is just one very large number. The target is a 256-bit number that all Bitcoin clients share. A block's hash has to be lower than or equal to it for the block to be accepted. The lower the target, the harder it is to generate a block. That is how difficulty works. Is difficulty clearer now? Tell me in the comments, and the link is on my channel page.

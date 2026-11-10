@@ -1,0 +1,1 @@
+Weekly recap: what a Bitcoin block is made of. A header is eighty bytes: version, previous hash, merkle root, timestamp, bits and nonce. The first transaction is the coinbase. It creates the coins and collects fees. Nodes hash the header twice and compare it with the target. Which part do you want next? Tell me in the comments, and the link is on my channel page.

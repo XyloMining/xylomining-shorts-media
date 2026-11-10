@@ -1,0 +1,43 @@
+{
+  "day": "friday",
+  "topic": "Last bitcoin around 2140",
+  "hook": "The last bitcoin won't be issued until around 2140.",
+  "scenes": [
+    {
+      "text": "A very long runway",
+      "stat": "around 2140",
+      "narration": "The block subsidy is expected to reach zero around the year twenty one forty."
+    },
+    {
+      "text": "The last step",
+      "narration": "The final blocks with a subsidy pay just one satoshi."
+    },
+    {
+      "text": "Then fees",
+      "narration": "After that, miners earn only transaction fees."
+    }
+  ],
+  "cta": "Would you still be mining? Tell me in the comments, and the link is on my channel page.",
+  "title": "When Will the Last Bitcoin Be Mined?",
+  "description_body": "The subsidy is expected to hit zero around 2140.",
+  "tags": [
+    "last bitcoin",
+    "bitcoin supply",
+    "bitcoin facts",
+    "bitcoin halving"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "YEAR 2140",
+    "line2": "THE LAST BITCOIN"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    }
+  ]
+}

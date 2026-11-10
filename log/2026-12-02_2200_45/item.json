@@ -1,0 +1,47 @@
+{
+  "day": "wednesday",
+  "topic": "Fees become the whole reward",
+  "hook": "One day, transaction fees will be the whole mining reward.",
+  "scenes": [
+    {
+      "text": "Two parts today",
+      "narration": "Today a miner's reward is the new subsidy plus the fees in the block."
+    },
+    {
+      "text": "The subsidy fades",
+      "stat": "around 2140",
+      "narration": "The subsidy keeps halving and is expected to hit zero around the year twenty one forty."
+    },
+    {
+      "text": "Fees only",
+      "narration": "After that, miners are paid entirely from transaction fees. Whether that is enough is still an open question."
+    }
+  ],
+  "cta": "Do you think fees will be enough? Tell me in the comments, and the link is on my channel page.",
+  "title": "Bitcoin Mining After Subsidy: Fees Only",
+  "description_body": "The subsidy is expected to end around 2140. Then fees are the whole reward.",
+  "tags": [
+    "bitcoin fees",
+    "bitcoin mining rewards",
+    "bitcoin subsidy",
+    "bitcoin economics"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "FEES ONLY",
+    "line2": "THE REWARD AFTER 2140"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

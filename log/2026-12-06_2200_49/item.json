@@ -1,0 +1,44 @@
+{
+  "day": "sunday",
+  "topic": "Recap: supply and rewards",
+  "hook": "Weekly recap: how Bitcoin's supply really works.",
+  "scenes": [
+    {
+      "text": "The steps",
+      "stat": "50 to 3.125",
+      "narration": "The subsidy went from fifty to three point one two five bitcoin across four halvings."
+    },
+    {
+      "text": "The cap",
+      "narration": "The real ceiling is just under twenty-one million, because of rounding."
+    },
+    {
+      "text": "The end",
+      "stat": "around 2140",
+      "narration": "The subsidy is expected to reach zero around twenty one forty. Then only fees."
+    }
+  ],
+  "cta": "Which fact was new? Tell me in the comments, and the link is on my channel page.",
+  "title": "Weekly Recap: Bitcoin Supply and Rewards",
+  "description_body": "Halvings, the real cap and the 2140 end of the subsidy.",
+  "tags": [
+    "weekly recap",
+    "bitcoin supply",
+    "bitcoin halving",
+    "bitcoin rewards"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "RECAP",
+    "line2": "SUPPLY AND REWARDS"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    }
+  ]
+}

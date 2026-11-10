@@ -1,0 +1,1 @@
+Here is how any computer can check a block in moments. A node takes the eighty-byte block header and hashes it twice with SHA-256. It then compares the result with the target. At or below it means the proof of work is valid. Finding that hash is hard. Checking it is cheap. Want a deeper dive? Tell me in the comments, and the link is on my channel page.

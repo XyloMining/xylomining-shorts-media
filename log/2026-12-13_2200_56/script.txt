@@ -1,0 +1,1 @@
+Weekly recap: who actually enforces Bitcoin's rules. Every full node validates blocks using the same consensus rules. A block with an already-spent transaction is rejected. Timestamps too far ahead, or older than the median of eleven blocks, are rejected too. Did you learn something? Tell me in the comments, and the link is on my channel page.

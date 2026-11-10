@@ -1,0 +1,46 @@
+{
+  "day": "thursday",
+  "topic": "Three things that move digital miner rewards",
+  "hook": "Three things move your digital miner's results, and you control none.",
+  "scenes": [
+    {
+      "text": "Bitcoin price",
+      "narration": "First, the bitcoin price. Rewards and maintenance fees both vary with it."
+    },
+    {
+      "text": "Network difficulty",
+      "narration": "Second, network difficulty, which is adjusted every two thousand sixteen blocks."
+    },
+    {
+      "text": "Network hashrate",
+      "narration": "Third, total network hashrate. Net results can be low or even negative."
+    }
+  ],
+  "cta": "Which one worries you most? Tell me in the comments, and the link is on my channel page.",
+  "title": "3 Things That Move Your Digital Miner Results",
+  "description_body": "Price, difficulty and network hashrate all change digital miner results.",
+  "tags": [
+    "GoMining",
+    "digital miner",
+    "bitcoin difficulty",
+    "mining results"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "3 VARIABLES",
+    "line2": "NONE ARE FIXED"
+  },
+  "sources": [
+    {
+      "title": "Forklog: digital miners",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://bitcoin.org/en/developer-guide#mining"
+    }
+  ]
+}

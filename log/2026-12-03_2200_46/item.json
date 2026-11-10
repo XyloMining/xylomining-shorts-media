@@ -1,0 +1,43 @@
+{
+  "day": "thursday",
+  "topic": "GoMining referral bonuses",
+  "hook": "New to GoMining? Here is what the referral page lists.",
+  "scenes": [
+    {
+      "text": "A referral code",
+      "narration": "GoMining's referral page lists bonuses a referred friend can get. Terms can change, so check them yourself."
+    },
+    {
+      "text": "The listed bonuses",
+      "stat": "5% bonus TH",
+      "narration": "They include a five percent bonus on the first miner, up to twenty-five terahash, and a month of Platinum Plus."
+    },
+    {
+      "text": "Read the terms",
+      "narration": "These are promotions, not promises. Eligibility and regional availability apply."
+    }
+  ],
+  "cta": "Have you checked the terms? Tell me in the comments, and the link is on my channel page.",
+  "title": "GoMining Referral Bonuses: What a New User Can Get",
+  "description_body": "What GoMining's referral page lists for new users. Terms can change. Referral link and disclosure below.",
+  "tags": [
+    "GoMining referral",
+    "GoMining bonus",
+    "GoMining promo code",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NEW USER?",
+    "line2": "WHAT THE REFERRAL LISTS"
+  },
+  "sources": [
+    {
+      "title": "GoMining partner programme",
+      "url": "https://gomining.com/blog/gomining-partner"
+    }
+  ]
+}

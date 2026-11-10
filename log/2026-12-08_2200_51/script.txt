@@ -1,0 +1,1 @@
+Myth: more difficulty makes Bitcoin blocks come faster. A lower target is harder. Higher difficulty means each hash is less likely to win. The network aims for one block about every ten minutes. Every two thousand sixteen blocks, the target is adjusted so the pace stays near that goal. Which myth should I bust next? Tell me in the comments, and the link is on my channel page.

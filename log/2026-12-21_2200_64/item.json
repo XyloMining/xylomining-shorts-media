@@ -1,0 +1,46 @@
+{
+  "day": "monday",
+  "topic": "The coinbase transaction",
+  "hook": "The first transaction in every block comes from nowhere.",
+  "scenes": [
+    {
+      "text": "The coinbase transaction",
+      "narration": "Every block starts with a special transaction called the coinbase transaction. It creates the new coins and collects the fees."
+    },
+    {
+      "text": "No inputs spent",
+      "narration": "It spends no previous output. Its input references nothing."
+    },
+    {
+      "text": "The reward lives here",
+      "narration": "That is where the miner's reward is claimed. It cannot be more than the subsidy plus fees."
+    }
+  ],
+  "cta": "Did you know that one? Tell me in the comments, and the link is on my channel page.",
+  "title": "What Is the Coinbase Transaction in Bitcoin?",
+  "description_body": "The first transaction in every block creates new coins and collects fees.",
+  "tags": [
+    "coinbase transaction",
+    "bitcoin block reward",
+    "bitcoin mining",
+    "bitcoin basics"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "COINBASE TX",
+    "line2": "THE FIRST TRANSACTION"
+  },
+  "sources": [
+    {
+      "title": "Coinbase transaction glossary",
+      "url": "https://www.spark.money/glossary/coinbase-transaction"
+    },
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    }
+  ]
+}

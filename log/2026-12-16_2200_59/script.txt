@@ -1,0 +1,1 @@
+Two miners, same hashrate, very different power bills. Imagine two miners that both run at the same terahash per second. If one uses fewer watts per terahash, it spends less on electricity for the same hashing. Efficiency is measured in watts per terahash. Lower is more efficient. Which number do you check first? Tell me in the comments, and the link is on my channel page.
