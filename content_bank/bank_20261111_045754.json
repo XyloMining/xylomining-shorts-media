@@ -1,0 +1,1771 @@
+[
+  {
+    "day": "monday",
+    "topic": "The six fields inside a Bitcoin block header",
+    "hook": "Every Bitcoin block is judged by just six fields.",
+    "scenes": [
+      {
+        "text": "Six fields, 80 bytes",
+        "stat": "80 bytes",
+        "narration": "A block header is a compact 80-byte bundle. It holds six fields: version, previous block hash, merkle root, timestamp, difficulty bits and a nonce."
+      },
+      {
+        "text": "Links and commits",
+        "narration": "The previous block hash links it to the block before. The merkle root commits to every transaction inside the block."
+      },
+      {
+        "text": "Miners change the nonce",
+        "narration": "The nonce is a counter miners keep changing while they search for a hash that meets the target."
+      }
+    ],
+    "cta": "Which field surprised you? Tell me in the comments, and the link is in my description.",
+    "title": "What Is Inside a Bitcoin Block Header?",
+    "description_body": "A block header is 80 bytes with six fields. See what each one does.",
+    "tags": [
+      "bitcoin block header",
+      "bitcoin mining basics",
+      "nonce",
+      "merkle root"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "6 FIELDS",
+      "line2": "INSIDE A BLOCK HEADER"
+    },
+    "sources": [
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      },
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      }
+    ]
+  },
+  {
+    "day": "monday",
+    "topic": "What a merkle root is and why the header holds one",
+    "hook": "One hash can vouch for thousands of transactions.",
+    "scenes": [
+      {
+        "text": "One hash, whole block",
+        "narration": "The merkle root is a single hash that commits to every transaction in a block."
+      },
+      {
+        "text": "It lives in the header",
+        "stat": "80 bytes",
+        "narration": "That matters because only the 80-byte block header gets hashed for proof of work, not the full list of transactions."
+      },
+      {
+        "text": "Change one, change all",
+        "narration": "Change any transaction and the merkle root changes, so the header hash changes too. That is how the header protects the whole block."
+      }
+    ],
+    "cta": "Did that click for you? Tell me in the comments, and the link is in my description.",
+    "title": "What Is a Merkle Root in Bitcoin?",
+    "description_body": "The merkle root lets an 80-byte header commit to every transaction in a block.",
+    "tags": [
+      "merkle root",
+      "bitcoin block",
+      "bitcoin mining explained",
+      "proof of work"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "MERKLE ROOT",
+      "line2": "ONE HASH, WHOLE BLOCK"
+    },
+    "sources": [
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      },
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      }
+    ]
+  },
+  {
+    "day": "monday",
+    "topic": "Why Bitcoin hashes each header twice",
+    "hook": "Bitcoin miners hash every header twice, on purpose.",
+    "scenes": [
+      {
+        "text": "Double SHA-256",
+        "narration": "Each block header is run through SHA-256 twice. That is called double SHA-256."
+      },
+      {
+        "text": "Then compare",
+        "narration": "The result is compared with the network target. It has to be at or below it to count."
+      },
+      {
+        "text": "Same rule everywhere",
+        "narration": "Every node uses the same rule, so anyone can repeat the check and get the same answer."
+      }
+    ],
+    "cta": "Did you know it was twice? Tell me in the comments, and the link is in my description.",
+    "title": "Why Bitcoin Hashes Twice (Double SHA-256)",
+    "description_body": "Each block header is hashed twice and compared with the target.",
+    "tags": [
+      "double SHA-256",
+      "bitcoin hashing",
+      "proof of work",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "HASHED TWICE",
+      "line2": "DOUBLE SHA-256 EXPLAINED"
+    },
+    "sources": [
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "monday",
+    "topic": "What the Bitcoin target is",
+    "hook": "Bitcoin's mining target is just one very large number.",
+    "scenes": [
+      {
+        "text": "A 256-bit number",
+        "stat": "256-bit",
+        "narration": "The target is a 256-bit number that all Bitcoin clients share."
+      },
+      {
+        "text": "Hash must be lower",
+        "narration": "A block's hash has to be lower than or equal to it for the block to be accepted."
+      },
+      {
+        "text": "Lower is harder",
+        "narration": "The lower the target, the harder it is to generate a block. That is how difficulty works."
+      }
+    ],
+    "cta": "Is difficulty clearer now? Tell me in the comments, and the link is in my description.",
+    "title": "What Is the Bitcoin Target? Simple Explanation",
+    "description_body": "The target is a shared 256-bit number. A lower target means harder mining.",
+    "tags": [
+      "bitcoin target",
+      "bitcoin difficulty",
+      "bitcoin mining basics",
+      "SHA-256"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "THE TARGET",
+      "line2": "ONE NUMBER SETS DIFFICULTY"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin Wiki: Target",
+        "url": "https://en.bitcoin.it/wiki/Target"
+      },
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      }
+    ]
+  },
+  {
+    "day": "monday",
+    "topic": "The coinbase transaction",
+    "hook": "The first transaction in every block comes from nowhere.",
+    "scenes": [
+      {
+        "text": "The coinbase transaction",
+        "narration": "Every block starts with a special transaction called the coinbase transaction. It creates the new coins and collects the fees."
+      },
+      {
+        "text": "No inputs spent",
+        "narration": "It spends no previous output. Its input references nothing."
+      },
+      {
+        "text": "The reward lives here",
+        "narration": "That is where the miner's reward is claimed. It cannot be more than the subsidy plus fees."
+      }
+    ],
+    "cta": "Did you know that one? Tell me in the comments, and the link is in my description.",
+    "title": "What Is the Coinbase Transaction in Bitcoin?",
+    "description_body": "The first transaction in every block creates new coins and collects fees.",
+    "tags": [
+      "coinbase transaction",
+      "bitcoin block reward",
+      "bitcoin mining",
+      "bitcoin basics"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "COINBASE TX",
+      "line2": "THE FIRST TRANSACTION"
+    },
+    "sources": [
+      {
+        "title": "Coinbase transaction glossary",
+        "url": "https://www.spark.money/glossary/coinbase-transaction"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "monday",
+    "topic": "What a satoshi is",
+    "hook": "Nobody needs a whole bitcoin. Here is the smallest piece.",
+    "scenes": [
+      {
+        "text": "The smallest unit",
+        "stat": "1/100,000,000",
+        "narration": "One satoshi is the smallest unit of bitcoin. It is one hundred millionth of a single bitcoin."
+      },
+      {
+        "text": "Why it matters",
+        "narration": "Block rewards are counted in satoshis. The protocol rounds the subsidy down at that precision."
+      },
+      {
+        "text": "Small, but exact",
+        "narration": "That rounding is one reason the real cap sits just under twenty-one million."
+      }
+    ],
+    "cta": "Do you think in sats or bitcoin? Tell me in the comments, and the link is in my description.",
+    "title": "What Is a Satoshi? Bitcoin's Smallest Unit",
+    "description_body": "A satoshi is one hundred millionth of a bitcoin, and rewards are counted in them.",
+    "tags": [
+      "satoshi",
+      "bitcoin units",
+      "bitcoin basics",
+      "bitcoin supply"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "SATOSHI",
+      "line2": "BITCOIN'S SMALLEST UNIT"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: mining rewards can be spent immediately",
+    "hook": "Myth: miners can spend a block reward the second they win it.",
+    "scenes": [
+      {
+        "text": "The 100-block wait",
+        "stat": "100 blocks",
+        "narration": "Coinbase outputs cannot be spent until they have received one hundred confirmations."
+      },
+      {
+        "text": "That is a long wait",
+        "narration": "At roughly one block every ten minutes, that takes many hours."
+      },
+      {
+        "text": "Why it matters",
+        "narration": "So a freshly mined reward is locked for a while. Mining income is never instant."
+      }
+    ],
+    "cta": "Did you think it was instant? Tell me in the comments, and the link is in my description.",
+    "title": "Myth: Miners Spend Block Rewards Instantly",
+    "description_body": "Coinbase rewards need 100 confirmations before they can be spent.",
+    "tags": [
+      "bitcoin myths",
+      "coinbase maturity",
+      "bitcoin mining",
+      "block reward"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "REWARD LOCKED",
+      "line2": "100 BLOCKS BEFORE SPENDING"
+    },
+    "sources": [
+      {
+        "title": "Coinbase transaction glossary",
+        "url": "https://www.spark.money/glossary/coinbase-transaction"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: miners can set any timestamp",
+    "hook": "Myth: a Bitcoin miner can stamp a block with any time.",
+    "scenes": [
+      {
+        "text": "Two limits",
+        "narration": "Nodes reject a block header if its timestamp is more than two hours ahead of their own clock."
+      },
+      {
+        "text": "And a floor",
+        "stat": "median of 11",
+        "narration": "They also reject it if the timestamp is earlier than the median of the last eleven blocks."
+      },
+      {
+        "text": "Rules, not trust",
+        "narration": "Miners claim a time, but every node checks it. The network enforces the rules, not the miner."
+      }
+    ],
+    "cta": "Did that change your view? Tell me in the comments, and the link is in my description.",
+    "title": "Myth: Miners Can Fake Any Block Timestamp",
+    "description_body": "Nodes reject timestamps too far ahead or older than the median of 11 blocks.",
+    "tags": [
+      "bitcoin myths",
+      "block timestamp",
+      "bitcoin nodes",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "FAKE TIME?",
+      "line2": "NODES CHECK THE CLOCK"
+    },
+    "sources": [
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      },
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: higher difficulty means faster blocks",
+    "hook": "Myth: more difficulty makes Bitcoin blocks come faster.",
+    "scenes": [
+      {
+        "text": "It works the other way",
+        "narration": "A lower target is harder. Higher difficulty means each hash is less likely to win."
+      },
+      {
+        "text": "The goal is steady",
+        "stat": "10 minutes",
+        "narration": "The network aims for one block about every ten minutes."
+      },
+      {
+        "text": "So it adjusts",
+        "stat": "2,016 blocks",
+        "narration": "Every two thousand sixteen blocks, the target is adjusted so the pace stays near that goal."
+      }
+    ],
+    "cta": "Which myth should I bust next? Tell me in the comments, and the link is in my description.",
+    "title": "Myth: Higher Difficulty Means Faster Blocks?",
+    "description_body": "Difficulty is adjusted to keep blocks near one every 10 minutes.",
+    "tags": [
+      "bitcoin difficulty",
+      "bitcoin myths",
+      "bitcoin mining",
+      "block time"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "DIFFICULTY MYTH",
+      "line2": "IT KEEPS BLOCKS STEADY"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin Wiki: Target",
+        "url": "https://en.bitcoin.it/wiki/Target"
+      },
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: mining ends when the 21 million cap hits",
+    "hook": "Myth: when the last bitcoin is issued, mining stops.",
+    "scenes": [
+      {
+        "text": "The subsidy ends",
+        "stat": "around 2140",
+        "narration": "The block subsidy is expected to reach zero around the year twenty one forty."
+      },
+      {
+        "text": "Fees remain",
+        "narration": "After that, miners are paid only by transaction fees."
+      },
+      {
+        "text": "The honest part",
+        "narration": "How well fees alone will secure the network is an open question. Nobody has tested it at scale."
+      }
+    ],
+    "cta": "What do you think happens then? Tell me in the comments, and the link is in my description.",
+    "title": "Myth: Bitcoin Mining Stops at 21 Million",
+    "description_body": "After the subsidy ends around 2140, miners earn only transaction fees.",
+    "tags": [
+      "bitcoin myths",
+      "21 million bitcoin",
+      "bitcoin fees",
+      "bitcoin supply"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "MINING ENDS?",
+      "line2": "WHAT HAPPENS AFTER 2140"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: all 21 million bitcoin can be mined",
+    "hook": "Myth: all twenty-one million bitcoin will end up mined.",
+    "scenes": [
+      {
+        "text": "Just under the cap",
+        "narration": "Because the subsidy rounds down at satoshi precision, the real ceiling is slightly under twenty-one million."
+      },
+      {
+        "text": "Some coins are gone",
+        "stat": "50 BTC",
+        "narration": "The fifty bitcoin from the genesis block reward was never spendable."
+      },
+      {
+        "text": "Lost for good",
+        "narration": "Two blocks in November 2010 overwrote earlier rewards, making another hundred bitcoin unspendable."
+      }
+    ],
+    "cta": "Did you know that? Tell me in the comments, and the link is in my description.",
+    "title": "Myth: All 21 Million Bitcoin Can Be Mined",
+    "description_body": "The true ceiling is just under 21 million, and some coins can never move.",
+    "tags": [
+      "bitcoin myths",
+      "bitcoin supply",
+      "lost bitcoin",
+      "21 million"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NOT QUITE 21M",
+      "line2": "SOME BITCOIN CAN NEVER MOVE"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      },
+      {
+        "title": "Coinbase transaction glossary",
+        "url": "https://www.spark.money/glossary/coinbase-transaction"
+      }
+    ]
+  },
+  {
+    "day": "tuesday",
+    "topic": "Myth: miners can spend the same coin twice",
+    "hook": "Myth: a miner could spend the same bitcoin twice.",
+    "scenes": [
+      {
+        "text": "Nodes check every block",
+        "narration": "Each full node independently validates blocks using the same consensus rules."
+      },
+      {
+        "text": "Spent means rejected",
+        "narration": "A block is only accepted if every transaction in it is valid and not already spent."
+      },
+      {
+        "text": "Work doesn't override rules",
+        "narration": "Doing lots of work does not let a miner skip those checks. A bad block is simply refused."
+      }
+    ],
+    "cta": "Did that make sense? Tell me in the comments, and the link is in my description.",
+    "title": "Myth: Can Bitcoin Miners Spend a Coin Twice?",
+    "description_body": "Full nodes reject any block containing an already-spent transaction.",
+    "tags": [
+      "bitcoin myths",
+      "double spend",
+      "bitcoin nodes",
+      "bitcoin validation"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "DOUBLE SPEND?",
+      "line2": "NODES REJECT BAD BLOCKS"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      },
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "How the block subsidy shrank over time",
+    "hook": "The Bitcoin block reward started at fifty and keeps shrinking.",
+    "scenes": [
+      {
+        "text": "The reward steps down",
+        "stat": "50 to 3.125",
+        "narration": "The subsidy began at fifty bitcoin. It then dropped to twenty-five, twelve and a half, six and a quarter, and three point one two five."
+      },
+      {
+        "text": "The latest drop",
+        "stat": "April 2024",
+        "narration": "The most recent halving was at block eight hundred forty thousand, in April 2024."
+      },
+      {
+        "text": "What stays",
+        "narration": "Miners still earn the subsidy plus transaction fees. But the subsidy part keeps shrinking."
+      }
+    ],
+    "cta": "Which halving do you remember? Tell me in the comments, and the link is in my description.",
+    "title": "Bitcoin Block Reward: 50 BTC to 3.125 BTC",
+    "description_body": "How the subsidy stepped down from 50 to 3.125 BTC across four halvings.",
+    "tags": [
+      "bitcoin block reward",
+      "bitcoin halving",
+      "bitcoin mining rewards",
+      "subsidy"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "50 TO 3.125",
+      "line2": "THE SHRINKING REWARD"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      },
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "Fees become the whole reward",
+    "hook": "One day, transaction fees will be the whole mining reward.",
+    "scenes": [
+      {
+        "text": "Two parts today",
+        "narration": "Today a miner's reward is the new subsidy plus the fees in the block."
+      },
+      {
+        "text": "The subsidy fades",
+        "stat": "around 2140",
+        "narration": "The subsidy keeps halving and is expected to hit zero around the year twenty one forty."
+      },
+      {
+        "text": "Fees only",
+        "narration": "After that, miners are paid entirely from transaction fees. Whether that is enough is still an open question."
+      }
+    ],
+    "cta": "Do you think fees will be enough? Tell me in the comments, and the link is in my description.",
+    "title": "Bitcoin Mining After Subsidy: Fees Only",
+    "description_body": "The subsidy is expected to end around 2140. Then fees are the whole reward.",
+    "tags": [
+      "bitcoin fees",
+      "bitcoin mining rewards",
+      "bitcoin subsidy",
+      "bitcoin economics"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "FEES ONLY",
+      "line2": "THE REWARD AFTER 2140"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      },
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "Rewards in BTC, costs in fiat",
+    "hook": "Miners earn in bitcoin but pay their bills in dollars.",
+    "scenes": [
+      {
+        "text": "Two currencies",
+        "narration": "Mining rewards are paid in BTC. But electricity and hosting are paid in regular currency."
+      },
+      {
+        "text": "So price matters",
+        "narration": "That means profit moves with the bitcoin price, even if the miner runs the same hardware."
+      },
+      {
+        "text": "The honest part",
+        "narration": "No return is ever promised. A good month can be followed by a poor one."
+      }
+    ],
+    "cta": "How do you track this? Tell me in the comments, and the link is in my description.",
+    "title": "Why Miners Earn in BTC but Pay in Fiat",
+    "description_body": "Rewards arrive in BTC while costs are paid in fiat, so profit moves with price.",
+    "tags": [
+      "bitcoin mining profit",
+      "mining costs",
+      "bitcoin price",
+      "mining electricity"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "TWO CURRENCIES",
+      "line2": "BTC IN, FIAT OUT"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "Same hashrate, different efficiency",
+    "hook": "Two miners, same hashrate, very different power bills.",
+    "scenes": [
+      {
+        "text": "Same speed",
+        "narration": "Imagine two miners that both run at the same terahash per second."
+      },
+      {
+        "text": "Different power",
+        "narration": "If one uses fewer watts per terahash, it spends less on electricity for the same hashing."
+      },
+      {
+        "text": "Lower is better",
+        "stat": "W/TH",
+        "narration": "Efficiency is measured in watts per terahash. Lower is more efficient."
+      }
+    ],
+    "cta": "Which number do you check first? Tell me in the comments, and the link is in my description.",
+    "title": "Same Hashrate, Different Efficiency: Why It Matters",
+    "description_body": "Watts per terahash decides how much power a miner needs for the same hashing.",
+    "tags": [
+      "mining efficiency",
+      "W/TH",
+      "hashrate",
+      "bitcoin mining electricity"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "SAME SPEED",
+      "line2": "DIFFERENT POWER BILL"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "Hashrate is your share of the lottery",
+    "hook": "Your hashrate is really your share of a lottery.",
+    "scenes": [
+      {
+        "text": "Chance per block",
+        "narration": "Your chance of finding a block is your share of the total network hashrate."
+      },
+      {
+        "text": "More share, more chance",
+        "narration": "Twice the share means twice the chance. But it is still chance."
+      },
+      {
+        "text": "Pools smooth it out",
+        "narration": "Pools share rewards in proportion to the work contributed, which smooths out the payouts."
+      }
+    ],
+    "cta": "How big is your share? Tell me in the comments, and the link is in my description.",
+    "title": "Your Hashrate Is Your Share of the Lottery",
+    "description_body": "Your chance of finding a block equals your share of network hashrate.",
+    "tags": [
+      "hashrate",
+      "bitcoin mining pools",
+      "bitcoin mining luck",
+      "mining probability"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "YOUR SHARE",
+      "line2": "HASHRATE IS A LOTTERY"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "wednesday",
+    "topic": "Year-end check on the three mining variables",
+    "hook": "Three things decide mining results. Check them before year end.",
+    "scenes": [
+      {
+        "text": "1. Efficiency",
+        "narration": "First, efficiency: how many watts per terahash your miner uses."
+      },
+      {
+        "text": "2. Power cost",
+        "narration": "Second, electricity. It is typically a miner's largest ongoing cost."
+      },
+      {
+        "text": "3. The price",
+        "narration": "Third, the bitcoin price, because rewards come in BTC while costs are in fiat."
+      },
+      {
+        "text": "No promises",
+        "narration": "None of these are certain to stay the same, so review them regularly."
+      }
+    ],
+    "cta": "Which one moves yours most? Tell me in the comments, and the link is in my description.",
+    "title": "3 Mining Numbers to Check Before Year End",
+    "description_body": "Efficiency, electricity and BTC price decide mining results, and none are fixed.",
+    "tags": [
+      "bitcoin mining",
+      "mining efficiency",
+      "mining electricity",
+      "year end review"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "3 NUMBERS",
+      "line2": "CHECK BEFORE YEAR END"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "A digital miner is not hardware you can take home",
+    "hook": "A GoMining digital miner is not a machine you can collect.",
+    "scenes": [
+      {
+        "text": "An NFT, not a box",
+        "narration": "GoMining sells digital miners: NFTs that represent a share of hashrate hosted in its data centres."
+      },
+      {
+        "text": "No bitcoin redemption",
+        "narration": "Digital miners are not redeemable for bitcoin. Owners earn rewards, they do not hold the hardware."
+      },
+      {
+        "text": "Know what you hold",
+        "narration": "So the question is what the rewards look like after costs. That is what to check."
+      }
+    ],
+    "cta": "What would you want to know first? Tell me in the comments, and the link is in my description.",
+    "title": "GoMining Digital Miners: What You Don't Own",
+    "description_body": "A digital miner represents hosted hashrate. You earn rewards, not hardware.",
+    "tags": [
+      "GoMining",
+      "digital miner",
+      "NFT mining",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NOT HARDWARE",
+      "line2": "WHAT A DIGITAL MINER IS"
+    },
+    "sources": [
+      {
+        "title": "Forklog: digital miners",
+        "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+      },
+      {
+        "title": "GoMining partner programme",
+        "url": "https://gomining.com/blog/gomining-partner"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "GoMining referral bonuses",
+    "hook": "New to GoMining? Here is what the referral page lists.",
+    "scenes": [
+      {
+        "text": "A referral code",
+        "narration": "GoMining's referral page lists bonuses a referred friend can get. Terms can change, so check them yourself."
+      },
+      {
+        "text": "The listed bonuses",
+        "stat": "5% bonus TH",
+        "narration": "They include a five percent bonus on the first miner, up to twenty-five terahash, and a month of Platinum Plus."
+      },
+      {
+        "text": "Read the terms",
+        "narration": "These are promotions, not promises. Eligibility and regional availability apply."
+      }
+    ],
+    "cta": "Have you checked the terms? Tell me in the comments, and the link is in my description.",
+    "title": "GoMining Referral Bonuses: What a New User Can Get",
+    "description_body": "What GoMining's referral page lists for new users. Terms can change. Referral link and disclosure below.",
+    "tags": [
+      "GoMining referral",
+      "GoMining bonus",
+      "GoMining promo code",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NEW USER?",
+      "line2": "WHAT THE REFERRAL LISTS"
+    },
+    "sources": [
+      {
+        "title": "GoMining partner programme",
+        "url": "https://gomining.com/blog/gomining-partner"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "Digital miner rewards are credited daily",
+    "hook": "A GoMining digital miner pays out on a daily rhythm.",
+    "scenes": [
+      {
+        "text": "Credited daily",
+        "narration": "Owners are credited daily bitcoin rewards."
+      },
+      {
+        "text": "Minus maintenance",
+        "narration": "A maintenance charge is taken off. It covers electricity and service costs."
+      },
+      {
+        "text": "So read the net",
+        "narration": "What matters is the reward after that charge, not the headline reward alone."
+      }
+    ],
+    "cta": "Do you check yours daily? Tell me in the comments, and the link is in my description.",
+    "title": "How GoMining Digital Miner Rewards Are Credited",
+    "description_body": "Rewards are credited daily, minus a maintenance charge for electricity and service.",
+    "tags": [
+      "GoMining",
+      "digital miner rewards",
+      "maintenance fee",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "PAID DAILY",
+      "line2": "MINUS MAINTENANCE"
+    },
+    "sources": [
+      {
+        "title": "Forklog: digital miners",
+        "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "Three things that move digital miner rewards",
+    "hook": "Three things move your digital miner's results, and you control none.",
+    "scenes": [
+      {
+        "text": "Bitcoin price",
+        "narration": "First, the bitcoin price. Rewards and maintenance fees both vary with it."
+      },
+      {
+        "text": "Network difficulty",
+        "narration": "Second, network difficulty, which is adjusted every two thousand sixteen blocks."
+      },
+      {
+        "text": "Network hashrate",
+        "narration": "Third, total network hashrate. Net results can be low or even negative."
+      }
+    ],
+    "cta": "Which one worries you most? Tell me in the comments, and the link is in my description.",
+    "title": "3 Things That Move Your Digital Miner Results",
+    "description_body": "Price, difficulty and network hashrate all change digital miner results.",
+    "tags": [
+      "GoMining",
+      "digital miner",
+      "bitcoin difficulty",
+      "mining results"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "3 VARIABLES",
+      "line2": "NONE ARE FIXED"
+    },
+    "sources": [
+      {
+        "title": "Forklog: digital miners",
+        "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+      },
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "Check terms and region before joining",
+    "hook": "Before you sign up anywhere, check two boring things.",
+    "scenes": [
+      {
+        "text": "Eligibility",
+        "narration": "GoMining states its products and features are subject to eligibility and its terms."
+      },
+      {
+        "text": "Region",
+        "narration": "They are also subject to regional availability, so what you see may differ by country."
+      },
+      {
+        "text": "Do it first",
+        "narration": "Read both before you decide anything. That is true for any platform, not just this one."
+      }
+    ],
+    "cta": "What do you check first? Tell me in the comments, and the link is in my description.",
+    "title": "Before You Join Any Mining Platform: Check This",
+    "description_body": "Eligibility, terms and regional availability can change what is on offer.",
+    "tags": [
+      "GoMining",
+      "mining platform",
+      "due diligence",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "CHECK FIRST",
+      "line2": "TERMS AND REGION"
+    },
+    "sources": [
+      {
+        "title": "GoMining partner programme",
+        "url": "https://gomining.com/blog/gomining-partner"
+      }
+    ]
+  },
+  {
+    "day": "thursday",
+    "topic": "Year-end checklist for a digital miner",
+    "hook": "Own a digital miner? Do this year-end check.",
+    "scenes": [
+      {
+        "text": "Rewards",
+        "narration": "First, look at the daily rewards credited to your miner."
+      },
+      {
+        "text": "Maintenance",
+        "narration": "Second, look at the maintenance charge taken off, which covers electricity and service."
+      },
+      {
+        "text": "Net result",
+        "narration": "Third, compare the two. Net results vary and can be low or negative, so know your own number."
+      }
+    ],
+    "cta": "What does yours show? Tell me in the comments, and the link is in my description.",
+    "title": "Digital Miner Year-End Checklist",
+    "description_body": "Compare credited rewards with the maintenance charge to see your net result.",
+    "tags": [
+      "GoMining",
+      "digital miner",
+      "year end checklist",
+      "mining rewards"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "YEAR-END CHECK",
+      "line2": "REWARDS MINUS MAINTENANCE"
+    },
+    "sources": [
+      {
+        "title": "Forklog: digital miners",
+        "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Genesis block reward unspendable",
+    "hook": "The very first Bitcoin reward can never be spent.",
+    "scenes": [
+      {
+        "text": "Block zero",
+        "stat": "3 Jan 2009",
+        "narration": "The first block was mined on the third of January, 2009. Its coinbase created fifty bitcoin."
+      },
+      {
+        "text": "Locked forever",
+        "stat": "50 BTC",
+        "narration": "Those fifty bitcoin were never spendable."
+      },
+      {
+        "text": "Still counted",
+        "narration": "They sit in the history of the chain, but they cannot move."
+      }
+    ],
+    "cta": "Did you know? Tell me in the comments, and the link is in my description.",
+    "title": "The First Bitcoin Reward Can Never Be Spent",
+    "description_body": "The 50 BTC from the genesis block was never spendable.",
+    "tags": [
+      "genesis block",
+      "bitcoin facts",
+      "bitcoin history",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "UNSPENDABLE",
+      "line2": "THE FIRST 50 BITCOIN"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      },
+      {
+        "title": "Coinbase transaction glossary",
+        "url": "https://www.spark.money/glossary/coinbase-transaction"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Last bitcoin around 2140",
+    "hook": "The last bitcoin won't be issued until around 2140.",
+    "scenes": [
+      {
+        "text": "A very long runway",
+        "stat": "around 2140",
+        "narration": "The block subsidy is expected to reach zero around the year twenty one forty."
+      },
+      {
+        "text": "The last step",
+        "narration": "The final blocks with a subsidy pay just one satoshi."
+      },
+      {
+        "text": "Then fees",
+        "narration": "After that, miners earn only transaction fees."
+      }
+    ],
+    "cta": "Would you still be mining? Tell me in the comments, and the link is in my description.",
+    "title": "When Will the Last Bitcoin Be Mined?",
+    "description_body": "The subsidy is expected to hit zero around 2140.",
+    "tags": [
+      "last bitcoin",
+      "bitcoin supply",
+      "bitcoin facts",
+      "bitcoin halving"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "YEAR 2140",
+      "line2": "THE LAST BITCOIN"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Block 501,726 unclaimed reward",
+    "hook": "One miner once left a whole Bitcoin reward on the table.",
+    "scenes": [
+      {
+        "text": "December 2017",
+        "stat": "12.5 BTC",
+        "narration": "The miner of block five hundred one thousand, seven hundred twenty-six claimed none of its twelve and a half bitcoin subsidy."
+      },
+      {
+        "text": "Allowed by the rules",
+        "narration": "A miner may claim less than the subsidy plus fees."
+      },
+      {
+        "text": "Gone for good",
+        "narration": "Any amount not claimed is destroyed."
+      }
+    ],
+    "cta": "Mistake or message? Tell me in the comments, and the link is in my description.",
+    "title": "The Miner Who Skipped a 12.5 BTC Reward",
+    "description_body": "A 2017 block left its subsidy unclaimed, and unclaimed rewards are destroyed.",
+    "tags": [
+      "bitcoin facts",
+      "coinbase transaction",
+      "bitcoin mining",
+      "block reward"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "SKIPPED IT",
+      "line2": "A MINER LEFT THE REWARD"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      },
+      {
+        "title": "Coinbase transaction glossary",
+        "url": "https://www.spark.money/glossary/coinbase-transaction"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Two blocks overwrote rewards in 2010",
+    "hook": "In 2010, two Bitcoin blocks erased 100 bitcoin.",
+    "scenes": [
+      {
+        "text": "November 2010",
+        "stat": "100 BTC",
+        "narration": "Blocks ninety-one thousand eight hundred forty-two and ninety-one thousand eight hundred eighty overwrote two earlier coinbase transactions."
+      },
+      {
+        "text": "Unspendable",
+        "narration": "That made another hundred bitcoin unspendable."
+      },
+      {
+        "text": "A lesson",
+        "narration": "The protocol has been refined since. Early Bitcoin was still being worked out."
+      }
+    ],
+    "cta": "Did you know this one? Tell me in the comments, and the link is in my description.",
+    "title": "The 2010 Bitcoin Blocks That Erased 100 BTC",
+    "description_body": "Two blocks in November 2010 overwrote earlier coinbase transactions.",
+    "tags": [
+      "bitcoin history",
+      "bitcoin facts",
+      "coinbase transaction",
+      "lost bitcoin"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "100 BTC GONE",
+      "line2": "THE 2010 OVERWRITE"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      }
+    ]
+  },
+  {
+    "day": "friday",
+    "topic": "Bitcoin never takes a holiday",
+    "hook": "Bitcoin mining doesn't stop for Christmas.",
+    "scenes": [
+      {
+        "text": "Always on",
+        "stat": "10 minutes",
+        "narration": "The network aims to produce one block about every ten minutes."
+      },
+      {
+        "text": "No days off",
+        "narration": "That target holds on weekdays, weekends and holidays alike."
+      },
+      {
+        "text": "Adjusted for it",
+        "stat": "2,016 blocks",
+        "narration": "If blocks come too fast or too slow, the target is adjusted every two thousand sixteen blocks."
+      }
+    ],
+    "cta": "Mining or off today? Tell me in the comments, and the link is in my description.",
+    "title": "Bitcoin Never Takes a Holiday",
+    "description_body": "The network aims for one block about every 10 minutes, every day of the year.",
+    "tags": [
+      "bitcoin facts",
+      "bitcoin block time",
+      "christmas",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "NO DAYS OFF",
+      "line2": "BLOCKS KEEP COMING"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin Wiki: Target",
+        "url": "https://en.bitcoin.it/wiki/Target"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "saturday",
+    "topic": "Read any miner's spec in three steps",
+    "hook": "Read any mining spec in three steps.",
+    "scenes": [
+      {
+        "text": "Step 1: TH/s",
+        "stat": "TH/s",
+        "narration": "First, find the hashrate in terahash per second. One terahash per second is one trillion hashes every second."
+      },
+      {
+        "text": "Step 2: W/TH",
+        "stat": "W/TH",
+        "narration": "Second, find the efficiency in watts per terahash. Lower is more efficient."
+      },
+      {
+        "text": "Step 3: the cost",
+        "narration": "Third, find the running cost. Electricity is typically a miner's largest ongoing cost."
+      }
+    ],
+    "cta": "Which spec confuses you? Tell me in the comments, and the link is in my description.",
+    "title": "How to Read a Mining Spec in 3 Steps",
+    "description_body": "Hashrate, efficiency and running cost: the three numbers on any mining spec.",
+    "tags": [
+      "bitcoin mining tutorial",
+      "TH/s",
+      "W/TH",
+      "mining specs"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "3 STEPS",
+      "line2": "READ ANY MINING SPEC"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "saturday",
+    "topic": "Turn TH/s into plain English",
+    "hook": "Let's turn terahash into plain English.",
+    "scenes": [
+      {
+        "text": "One terahash",
+        "stat": "1 TH/s",
+        "narration": "One terahash per second means one trillion hash attempts every second."
+      },
+      {
+        "text": "Scale it up",
+        "narration": "So a miner at one hundred terahash per second makes one hundred trillion attempts each second."
+      },
+      {
+        "text": "Still a lottery",
+        "narration": "Even so, finding a block is down to probability. Your chance is your share of the network."
+      }
+    ],
+    "cta": "Does that help? Tell me in the comments, and the link is in my description.",
+    "title": "TH/s in Plain English: What It Really Means",
+    "description_body": "One terahash per second is one trillion hashes every second.",
+    "tags": [
+      "TH/s",
+      "hashrate explained",
+      "bitcoin mining tutorial",
+      "terahash"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "TH/S SIMPLE",
+      "line2": "TRILLIONS OF GUESSES"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "saturday",
+    "topic": "How to think about your share of the network",
+    "hook": "Here is how to think about your chance of finding a block.",
+    "scenes": [
+      {
+        "text": "Your share",
+        "narration": "Your chance per block is your share of the total network hashrate."
+      },
+      {
+        "text": "Small share, small odds",
+        "narration": "A small share means a small chance on any single block."
+      },
+      {
+        "text": "What pools do",
+        "narration": "Pools combine many miners and share rewards in proportion to the work each contributed."
+      }
+    ],
+    "cta": "Solo or pool? Tell me in the comments, and the link is in my description.",
+    "title": "How to Think About Your Share of the Network",
+    "description_body": "Your chance of finding a block equals your share of network hashrate.",
+    "tags": [
+      "bitcoin mining tutorial",
+      "mining pools",
+      "hashrate share",
+      "bitcoin mining odds"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "YOUR ODDS",
+      "line2": "SHARE OF THE NETWORK"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "saturday",
+    "topic": "How a node verifies a block quickly",
+    "hook": "Here is how any computer can check a block in moments.",
+    "scenes": [
+      {
+        "text": "Take the header",
+        "stat": "80 bytes",
+        "narration": "A node takes the eighty-byte block header and hashes it twice with SHA-256."
+      },
+      {
+        "text": "Compare to target",
+        "narration": "It then compares the result with the target. At or below it means the proof of work is valid."
+      },
+      {
+        "text": "Cheap to check",
+        "narration": "Finding that hash is hard. Checking it is cheap."
+      }
+    ],
+    "cta": "Want a deeper dive? Tell me in the comments, and the link is in my description.",
+    "title": "How a Bitcoin Node Verifies a Block",
+    "description_body": "Hash the header twice, compare with the target. Finding is hard, checking is cheap.",
+    "tags": [
+      "bitcoin node",
+      "proof of work",
+      "bitcoin tutorial",
+      "block validation"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "VERIFY A BLOCK",
+      "line2": "HASH TWICE, COMPARE"
+    },
+    "sources": [
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "saturday",
+    "topic": "A pre-mining checklist",
+    "hook": "Thinking about mining? Run this checklist first.",
+    "scenes": [
+      {
+        "text": "Efficiency",
+        "narration": "First, check efficiency in watts per terahash."
+      },
+      {
+        "text": "Power price",
+        "narration": "Second, check your electricity price. It is typically the largest ongoing cost."
+      },
+      {
+        "text": "Currency mismatch",
+        "narration": "Third, remember rewards arrive in BTC while costs are in regular currency."
+      },
+      {
+        "text": "No promises",
+        "narration": "No return is ever promised, so only go in with a clear head."
+      }
+    ],
+    "cta": "What would you add? Tell me in the comments, and the link is in my description.",
+    "title": "Before You Mine Bitcoin: A 4-Step Checklist",
+    "description_body": "Efficiency, power price, currency mismatch and why no return is promised.",
+    "tags": [
+      "bitcoin mining tutorial",
+      "mining checklist",
+      "mining costs",
+      "beginner guide"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "CHECKLIST",
+      "line2": "BEFORE YOU MINE"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      }
+    ]
+  },
+  {
+    "day": "sunday",
+    "topic": "Recap: block anatomy",
+    "hook": "Weekly recap: what a Bitcoin block is made of.",
+    "scenes": [
+      {
+        "text": "The header",
+        "stat": "80 bytes",
+        "narration": "A header is eighty bytes: version, previous hash, merkle root, timestamp, bits and nonce."
+      },
+      {
+        "text": "The first transaction",
+        "narration": "The first transaction is the coinbase. It creates the coins and collects fees."
+      },
+      {
+        "text": "The check",
+        "narration": "Nodes hash the header twice and compare it with the target."
+      }
+    ],
+    "cta": "Which part do you want next? Tell me in the comments, and the link is in my description.",
+    "title": "Weekly Recap: Anatomy of a Bitcoin Block",
+    "description_body": "Header, coinbase and the proof-of-work check, in 30 seconds.",
+    "tags": [
+      "weekly recap",
+      "bitcoin block",
+      "bitcoin mining basics",
+      "block header"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "RECAP",
+      "line2": "ANATOMY OF A BLOCK"
+    },
+    "sources": [
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      },
+      {
+        "title": "Coinbase transaction glossary",
+        "url": "https://www.spark.money/glossary/coinbase-transaction"
+      }
+    ]
+  },
+  {
+    "day": "sunday",
+    "topic": "Recap: supply and rewards",
+    "hook": "Weekly recap: how Bitcoin's supply really works.",
+    "scenes": [
+      {
+        "text": "The steps",
+        "stat": "50 to 3.125",
+        "narration": "The subsidy went from fifty to three point one two five bitcoin across four halvings."
+      },
+      {
+        "text": "The cap",
+        "narration": "The real ceiling is just under twenty-one million, because of rounding."
+      },
+      {
+        "text": "The end",
+        "stat": "around 2140",
+        "narration": "The subsidy is expected to reach zero around twenty one forty. Then only fees."
+      }
+    ],
+    "cta": "Which fact was new? Tell me in the comments, and the link is in my description.",
+    "title": "Weekly Recap: Bitcoin Supply and Rewards",
+    "description_body": "Halvings, the real cap and the 2140 end of the subsidy.",
+    "tags": [
+      "weekly recap",
+      "bitcoin supply",
+      "bitcoin halving",
+      "bitcoin rewards"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "RECAP",
+      "line2": "SUPPLY AND REWARDS"
+    },
+    "sources": [
+      {
+        "title": "Learn Bitcoin: supply",
+        "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      }
+    ]
+  },
+  {
+    "day": "sunday",
+    "topic": "Recap: validation and rules",
+    "hook": "Weekly recap: who actually enforces Bitcoin's rules.",
+    "scenes": [
+      {
+        "text": "Nodes check",
+        "narration": "Every full node validates blocks using the same consensus rules."
+      },
+      {
+        "text": "Spent means refused",
+        "narration": "A block with an already-spent transaction is rejected."
+      },
+      {
+        "text": "Time limits",
+        "narration": "Timestamps too far ahead, or older than the median of eleven blocks, are rejected too."
+      }
+    ],
+    "cta": "Did you learn something? Tell me in the comments, and the link is in my description.",
+    "title": "Weekly Recap: Who Enforces Bitcoin's Rules?",
+    "description_body": "Nodes reject double spends and bad timestamps. Miners don't set the rules.",
+    "tags": [
+      "weekly recap",
+      "bitcoin nodes",
+      "bitcoin validation",
+      "bitcoin myths"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "RECAP",
+      "line2": "NODES ENFORCE THE RULES"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: block chain",
+        "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+      },
+      {
+        "title": "Blockstream glossary: block header",
+        "url": "https://help.blockstream.com/education/glossary/block-header"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  },
+  {
+    "day": "sunday",
+    "topic": "Recap: target and difficulty",
+    "hook": "Weekly recap: how mining difficulty really works.",
+    "scenes": [
+      {
+        "text": "The target",
+        "stat": "256-bit",
+        "narration": "The target is a 256-bit number. A hash must be at or below it."
+      },
+      {
+        "text": "Lower is harder",
+        "narration": "The lower the target, the harder it is to generate a block."
+      },
+      {
+        "text": "Adjusted",
+        "stat": "2,016 blocks",
+        "narration": "Every two thousand sixteen blocks it adjusts, never by more than a factor of four."
+      }
+    ],
+    "cta": "Is difficulty clear now? Tell me in the comments, and the link is in my description.",
+    "title": "Weekly Recap: Target and Difficulty",
+    "description_body": "The target, why lower is harder and how it adjusts every 2,016 blocks.",
+    "tags": [
+      "weekly recap",
+      "bitcoin difficulty",
+      "bitcoin target",
+      "bitcoin mining"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "RECAP",
+      "line2": "TARGET AND DIFFICULTY"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin Wiki: Target",
+        "url": "https://en.bitcoin.it/wiki/Target"
+      }
+    ]
+  },
+  {
+    "day": "sunday",
+    "topic": "Year-end recap",
+    "hook": "Year-end recap: four ideas to take into the new year.",
+    "scenes": [
+      {
+        "text": "1. It's a lottery",
+        "narration": "Your chance of finding a block is your share of network hashrate."
+      },
+      {
+        "text": "2. Costs matter",
+        "narration": "Electricity and efficiency decide whether mining pays."
+      },
+      {
+        "text": "3. Rules are checked",
+        "narration": "Nodes validate every block, whoever mined it."
+      },
+      {
+        "text": "4. No promises",
+        "narration": "Returns vary, and none are ever promised."
+      }
+    ],
+    "cta": "Which idea stuck? Tell me in the comments, and the link is in my description.",
+    "title": "Year-End Recap: 4 Bitcoin Mining Ideas",
+    "description_body": "Lottery, costs, rules and no promises: four ideas to carry into the new year.",
+    "tags": [
+      "year end recap",
+      "bitcoin mining",
+      "weekly recap",
+      "bitcoin basics"
+    ],
+    "hashtags": [
+      "#Shorts",
+      "#Crypto"
+    ],
+    "thumbnail": {
+      "line1": "YEAR-END",
+      "line2": "4 IDEAS TO KEEP"
+    },
+    "sources": [
+      {
+        "title": "Bitcoin developer guide: mining",
+        "url": "https://bitcoin.org/en/developer-guide#mining"
+      },
+      {
+        "title": "Bitcoin whitepaper",
+        "url": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ]
+  }
+]

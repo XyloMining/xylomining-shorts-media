@@ -1,199 +1,204 @@
 {
-  "publisher": "buffer",
-  "org": "6ad38249b692c4ab06ad53ec",
-  "channels": {
-    "youtube": "6ad382fe778b240e2f3a0081",
-    "tiktok": "6ad3833b778b240e2f3a0347",
-    "instagram": "6ad3cd59778b240e2f3e1aff"
+ "publisher": "buffer",
+ "org": "6ad38249b692c4ab06ad53ec",
+ "channels": {
+  "youtube": "6ad382fe778b240e2f3a0081",
+  "tiktok": "6ad3833b778b240e2f3a0347",
+  "instagram": "6ad3cd59778b240e2f3e1aff"
+ },
+ "posts": {
+  "2": {
+   "youtube": "6ad3bf11ae173d6e00cc0e38",
+   "tiktok": "6ad3bf13769b4579348da03b",
+   "instagram": "6ad3ce5bf7ec2cca4096d1f2"
   },
-  "posts": {
-    "2": {
-      "youtube": "6ad3bf11ae173d6e00cc0e38",
-      "tiktok": "6ad3bf13769b4579348da03b",
-      "instagram": "6ad3ce5bf7ec2cca4096d1f2"
-    },
-    "3": {
-      "youtube": "6ad3bf180a208cb32332c808",
-      "tiktok": "6ad3bf1a0b0d72757aed6b3c",
-      "instagram": "6ad431d70a208cb323494dc0"
-    },
-    "4": {
-      "youtube": "6ad3bf1c0b0d72757aed6bb8",
-      "tiktok": "6ad3bf1e769b4579348da280",
-      "instagram": "6ad431d90a208cb323494e35"
-    },
-    "5": {
-      "youtube": "6ad3bf210a208cb32332c97e",
-      "tiktok": "6ad3bf230b0d72757aed6ca7",
-      "instagram": "6ad431db0a208cb323494e6c"
-    },
-    "6": {
-      "youtube": "6ad3bf26938409f1d09aee5f",
-      "tiktok": "6ad3bf28769b4579348da587",
-      "instagram": "6ad431dd769b457934a4a2c0"
-    },
-    "1": {
-      "youtube": "6ad3c01ae272c4918f995d1f",
-      "tiktok": "6ad3c01ce272c4918f995d77"
-    },
-    "7": {
-      "youtube": "6ad3c00c938409f1d09b0d3a",
-      "tiktok": "6ad3c017ae173d6e00cc3a03",
-      "instagram": "6ad431dfe272c4918faffc70"
-    },
-    "8": {
-      "youtube": "6ad92f8e9c05f711d3c23bd8",
-      "tiktok": "6ad92f90b71cd0e4248f38fc",
-      "instagram": "6ad92f929756ed1587c9fdea"
-    },
-    "9": {
-      "youtube": "6ad92f959756ed1587c9fe68",
-      "tiktok": "6ad92f9765ffc170d009a6f1",
-      "instagram": "6ad92f9965ffc170d009a722"
-    },
-    "10": {
-      "youtube": "6ad92f9bbc50ae7f72d6e1bb",
-      "tiktok": "6ad92f9d9756ed1587c9ff3f",
-      "instagram": "6ad92f9f9c05f711d3c23d33"
-    },
-    "11": {
-      "youtube": "6ad92fa2cfacd02600969ec9",
-      "tiktok": "6ad92fa49756ed1587ca0089",
-      "instagram": "6ad92fa69c05f711d3c23e1a"
-    },
-    "12": {
-      "youtube": "6ad92fa99756ed1587ca0137",
-      "tiktok": "6ad92fab65ffc170d009a913",
-      "instagram": "6ad92fadb71cd0e4248f3c2f"
-    },
-    "13": {
-      "youtube": "6ad92fb0b71cd0e4248f3cc9",
-      "tiktok": "6ad92fb1b71cd0e4248f3cf8",
-      "instagram": "6ad92fb3bc50ae7f72d6e5ef"
-    },
-    "14": {
-      "youtube": "6ad92fb6cfacd0260096a0a5",
-      "tiktok": "6ad92fb89756ed1587ca02e5",
-      "instagram": "6ad92fbab71cd0e4248f3e15"
-    },
-    "15": {
-      "youtube": "6ae50d4518914720939b83e7",
-      "tiktok": "6ae50d46406ab8a018839f78",
-      "instagram": "6ae50d47eaa24d6f9a3e3e50"
-    },
-    "16": {
-      "youtube": "6ae50d62fc1ac02b6ee05064",
-      "tiktok": "6ae50d63a1145743496e5393",
-      "instagram": "6ae50d6418914720939b8985"
-    },
-    "17": {
-      "youtube": "6ae50d64b84259308ba17a53",
-      "tiktok": "6ae50d65a1145743496e5419",
-      "instagram": "6ae50d66fc1ac02b6ee05105"
-    },
-    "18": {
-      "youtube": "6ae50d6618914720939b8a08",
-      "tiktok": "6ae50d67406ab8a01883a599",
-      "instagram": "6ae50d68b84259308ba17afd"
-    },
-    "19": {
-      "youtube": "6ae50d88a1145743496e5b4d",
-      "tiktok": "6ae50d88fc1ac02b6ee05582",
-      "instagram": "6ae50d89fc1ac02b6ee055c2"
-    },
-    "20": {
-      "youtube": "6ae50d8918914720939b92f4",
-      "tiktok": "6ae50d8afc1ac02b6ee05674",
-      "instagram": "6ae50d8b406ab8a01883ae5f"
-    },
-    "21": {
-      "youtube": "6ae50d8bb84259308ba18a0a",
-      "tiktok": "6ae50d8c406ab8a01883af0c",
-      "instagram": "6ae50d8d18914720939b9378"
-    },
-    "22": {
-      "youtube": "6ae50d8d406ab8a01883af72",
-      "tiktok": "6ae50d8efc1ac02b6ee05731",
-      "instagram": "6ae50d8ffc1ac02b6ee057db"
-    },
-    "26": {
-      "youtube": "6aec5cfc9d7f1562d761f14c",
-      "tiktok": "6aec5cfc7a8d6fb41a6d5f17",
-      "instagram": "6aec5cfda94d53b8ea7f67ed"
-    },
-    "27": {
-      "youtube": "6aec5cfea94d53b8ea7f683b",
-      "tiktok": "6aec5cfee069fbd430dfa402",
-      "instagram": "6aec5cff7a8d6fb41a6d5fbe"
-    },
-    "23": {
-      "youtube": "6aec5cff3d04d032a6f674fc",
-      "tiktok": "6aec5d009d7f1562d761f2c4",
-      "instagram": "6aec5d019d7f1562d761f302"
-    },
-    "24": {
-      "youtube": "6aec5d023d04d032a6f67725",
-      "tiktok": "6aec5d03e069fbd430dfa5a6",
-      "instagram": "6aec5d03e37b539a4c1cd029"
-    },
-    "25": {
-      "youtube": "6aec5d047a8d6fb41a6d68b2",
-      "tiktok": "6aec5d059d7f1562d761f4b7",
-      "instagram": "6aec5d06e069fbd430dfa6ed"
-    }
+  "3": {
+   "youtube": "6ad3bf180a208cb32332c808",
+   "tiktok": "6ad3bf1a0b0d72757aed6b3c",
+   "instagram": "6ad431d70a208cb323494dc0"
   },
-  "extras": {
-    "2026-10-19_1200_10": {
-      "youtube": "6ad47ac86d56c60a73ff03b5",
-      "tiktok": "6ad47acb0a208cb323566384",
-      "instagram": "6ad47acd769b457934b20569",
-      "title": "My Real Bitcoin Mining Stats: 114 TH GoMining Dashboard",
-      "due": "2026-10-19T12:00:00+11:00"
-    },
-    "2026-10-27_2200_promo": {
-      "instagram": "6ae037be913aa340c540a1f4",
-      "tiktok": "6ae037c08f5aed9e2e3abd01",
-      "title": "I Built a FREE Bitcoin Mining Website",
-      "due": "2026-10-27T22:00:00+11:00"
-    }
+  "4": {
+   "youtube": "6ad3bf1c0b0d72757aed6bb8",
+   "tiktok": "6ad3bf1e769b4579348da280",
+   "instagram": "6ad431d90a208cb323494e35"
   },
-  "schedule_note": "From 27 Oct 2026 all uploads are 22:00 Sydney. Posts 10-14 re-timed on Buffer (post 10 moved to 14 Nov); posts 15-27 staged, not on Buffer.",
-  "join_guide": {
-    "video": "videos/2026-11-15_2200_join.mp4",
-    "due": "2026-11-15T22:00:00+11:00",
-    "youtube": "6aed4257f3498efda76679fa",
-    "tiktok": "6aed42587b7e47e8f40304a6",
-    "instagram": "6aed4258dbada656beebc51c",
-    "title": "Join GoMining in 30 Seconds: Promo Code WCAZD0T",
-    "note": "Promo code WCAZD0T; Sunday chosen as best weekday on sparse data (5 Nov 2026). Pushes post 28 later."
+  "5": {
+   "youtube": "6ad3bf210a208cb32332c97e",
+   "tiktok": "6ad3bf230b0d72757aed6ca7",
+   "instagram": "6ad431db0a208cb323494e6c"
   },
-  "29": {
-    "youtube": "6af29723b59b34913a543fee",
-    "tiktok": "6af2972326f9e6aeeae19bdf",
-    "instagram": "6af29724d35dff5701d950a1"
+  "6": {
+   "youtube": "6ad3bf26938409f1d09aee5f",
+   "tiktok": "6ad3bf28769b4579348da587",
+   "instagram": "6ad431dd769b457934a4a2c0"
   },
-  "30": {
-    "youtube": "6af2972426f9e6aeeae19c07",
-    "tiktok": "6af2972505af22d72605212f",
-    "instagram": "6af2972626f9e6aeeae19d05"
+  "1": {
+   "youtube": "6ad3c01ae272c4918f995d1f",
+   "tiktok": "6ad3c01ce272c4918f995d77"
   },
-  "31": {
-    "youtube": "6af29726223aa16048e92422",
-    "tiktok": "6af2972705af22d72605220d",
-    "instagram": "6af2972826f9e6aeeae19d8e"
+  "7": {
+   "youtube": "6ad3c00c938409f1d09b0d3a",
+   "tiktok": "6ad3c017ae173d6e00cc3a03",
+   "instagram": "6ad431dfe272c4918faffc70"
   },
-  "32": {
-    "youtube": "6af2972905af22d72605228e",
-    "tiktok": "6af2972926f9e6aeeae19e0f",
-    "instagram": "6af2972a223aa16048e9255d"
+  "8": {
+   "youtube": "6ad92f8e9c05f711d3c23bd8",
+   "tiktok": "6ad92f90b71cd0e4248f38fc",
+   "instagram": "6ad92f929756ed1587c9fdea"
   },
-  "28": {
-    "video": "videos/2026-11-15_2200_join.mp4",
-    "due": "2026-11-15T22:00:00+11:00",
-    "youtube": "6aed4257f3498efda76679fa",
-    "tiktok": "6aed42587b7e47e8f40304a6",
-    "instagram": "6aed4258dbada656beebc51c",
-    "title": "Join GoMining in 30 Seconds: Promo Code WCAZD0T",
-    "note": "Promo code WCAZD0T; Sunday chosen as best weekday on sparse data (5 Nov 2026). Pushes post 28 later."
+  "9": {
+   "youtube": "6ad92f959756ed1587c9fe68",
+   "tiktok": "6ad92f9765ffc170d009a6f1",
+   "instagram": "6ad92f9965ffc170d009a722"
+  },
+  "10": {
+   "youtube": "6ad92f9bbc50ae7f72d6e1bb",
+   "tiktok": "6ad92f9d9756ed1587c9ff3f",
+   "instagram": "6ad92f9f9c05f711d3c23d33"
+  },
+  "11": {
+   "youtube": "6ad92fa2cfacd02600969ec9",
+   "tiktok": "6ad92fa49756ed1587ca0089",
+   "instagram": "6ad92fa69c05f711d3c23e1a"
+  },
+  "12": {
+   "youtube": "6ad92fa99756ed1587ca0137",
+   "tiktok": "6ad92fab65ffc170d009a913",
+   "instagram": "6ad92fadb71cd0e4248f3c2f"
+  },
+  "13": {
+   "youtube": "6ad92fb0b71cd0e4248f3cc9",
+   "tiktok": "6ad92fb1b71cd0e4248f3cf8",
+   "instagram": "6ad92fb3bc50ae7f72d6e5ef"
+  },
+  "14": {
+   "youtube": "6ad92fb6cfacd0260096a0a5",
+   "tiktok": "6ad92fb89756ed1587ca02e5",
+   "instagram": "6ad92fbab71cd0e4248f3e15"
+  },
+  "15": {
+   "youtube": "6ae50d4518914720939b83e7",
+   "tiktok": "6ae50d46406ab8a018839f78",
+   "instagram": "6ae50d47eaa24d6f9a3e3e50"
+  },
+  "16": {
+   "youtube": "6ae50d62fc1ac02b6ee05064",
+   "tiktok": "6ae50d63a1145743496e5393",
+   "instagram": "6ae50d6418914720939b8985"
+  },
+  "17": {
+   "youtube": "6ae50d64b84259308ba17a53",
+   "tiktok": "6ae50d65a1145743496e5419",
+   "instagram": "6ae50d66fc1ac02b6ee05105"
+  },
+  "18": {
+   "youtube": "6ae50d6618914720939b8a08",
+   "tiktok": "6ae50d67406ab8a01883a599",
+   "instagram": "6ae50d68b84259308ba17afd"
+  },
+  "19": {
+   "youtube": "6ae50d88a1145743496e5b4d",
+   "tiktok": "6ae50d88fc1ac02b6ee05582",
+   "instagram": "6ae50d89fc1ac02b6ee055c2"
+  },
+  "20": {
+   "youtube": "6ae50d8918914720939b92f4",
+   "tiktok": "6ae50d8afc1ac02b6ee05674",
+   "instagram": "6ae50d8b406ab8a01883ae5f"
+  },
+  "21": {
+   "youtube": "6ae50d8bb84259308ba18a0a",
+   "tiktok": "6ae50d8c406ab8a01883af0c",
+   "instagram": "6ae50d8d18914720939b9378"
+  },
+  "22": {
+   "youtube": "6ae50d8d406ab8a01883af72",
+   "tiktok": "6ae50d8efc1ac02b6ee05731",
+   "instagram": "6ae50d8ffc1ac02b6ee057db"
+  },
+  "26": {
+   "youtube": "6aec5cfc9d7f1562d761f14c",
+   "tiktok": "6aec5cfc7a8d6fb41a6d5f17",
+   "instagram": "6aec5cfda94d53b8ea7f67ed"
+  },
+  "27": {
+   "youtube": "6aec5cfea94d53b8ea7f683b",
+   "tiktok": "6aec5cfee069fbd430dfa402",
+   "instagram": "6aec5cff7a8d6fb41a6d5fbe"
+  },
+  "23": {
+   "youtube": "6aec5cff3d04d032a6f674fc",
+   "tiktok": "6aec5d009d7f1562d761f2c4",
+   "instagram": "6aec5d019d7f1562d761f302"
+  },
+  "24": {
+   "youtube": "6aec5d023d04d032a6f67725",
+   "tiktok": "6aec5d03e069fbd430dfa5a6",
+   "instagram": "6aec5d03e37b539a4c1cd029"
+  },
+  "25": {
+   "youtube": "6aec5d047a8d6fb41a6d68b2",
+   "tiktok": "6aec5d059d7f1562d761f4b7",
+   "instagram": "6aec5d06e069fbd430dfa6ed"
   }
+ },
+ "extras": {
+  "2026-10-19_1200_10": {
+   "youtube": "6ad47ac86d56c60a73ff03b5",
+   "tiktok": "6ad47acb0a208cb323566384",
+   "instagram": "6ad47acd769b457934b20569",
+   "title": "My Real Bitcoin Mining Stats: 114 TH GoMining Dashboard",
+   "due": "2026-10-19T12:00:00+11:00"
+  },
+  "2026-10-27_2200_promo": {
+   "instagram": "6ae037be913aa340c540a1f4",
+   "tiktok": "6ae037c08f5aed9e2e3abd01",
+   "title": "I Built a FREE Bitcoin Mining Website",
+   "due": "2026-10-27T22:00:00+11:00"
+  }
+ },
+ "schedule_note": "From 27 Oct 2026 all uploads are 22:00 Sydney. Posts 10-14 re-timed on Buffer (post 10 moved to 14 Nov); posts 15-27 staged, not on Buffer.",
+ "join_guide": {
+  "video": "videos/2026-11-15_2200_join.mp4",
+  "due": "2026-11-15T22:00:00+11:00",
+  "youtube": "6aed4257f3498efda76679fa",
+  "tiktok": "6aed42587b7e47e8f40304a6",
+  "instagram": "6aed4258dbada656beebc51c",
+  "title": "Join GoMining in 30 Seconds: Promo Code WCAZD0T",
+  "note": "Promo code WCAZD0T; Sunday chosen as best weekday on sparse data (5 Nov 2026). Pushes post 28 later."
+ },
+ "29": {
+  "youtube": "6af29723b59b34913a543fee",
+  "tiktok": "6af2972326f9e6aeeae19bdf",
+  "instagram": "6af29724d35dff5701d950a1"
+ },
+ "30": {
+  "youtube": "6af2972426f9e6aeeae19c07",
+  "tiktok": "6af2972505af22d72605212f",
+  "instagram": "6af2972626f9e6aeeae19d05"
+ },
+ "31": {
+  "youtube": "6af29726223aa16048e92422",
+  "tiktok": "6af2972705af22d72605220d",
+  "instagram": "6af2972826f9e6aeeae19d8e"
+ },
+ "32": {
+  "youtube": "6af2972905af22d72605228e",
+  "tiktok": "6af2972926f9e6aeeae19e0f",
+  "instagram": "6af2972a223aa16048e9255d"
+ },
+ "28": {
+  "video": "videos/2026-11-15_2200_join.mp4",
+  "due": "2026-11-15T22:00:00+11:00",
+  "youtube": "6aed4257f3498efda76679fa",
+  "tiktok": "6aed42587b7e47e8f40304a6",
+  "instagram": "6aed4258dbada656beebc51c",
+  "title": "Join GoMining in 30 Seconds: Promo Code WCAZD0T",
+  "note": "Promo code WCAZD0T; Sunday chosen as best weekday on sparse data (5 Nov 2026). Pushes post 28 later."
+ },
+ "33": {
+  "youtube": "6af35fae1d932748c7e26eda",
+  "tiktok": "6af35faf94964d984f0b2854",
+  "instagram": "6af35fb00649793ed2fef5bf"
+ }
 }

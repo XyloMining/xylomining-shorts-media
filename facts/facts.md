@@ -41,3 +41,23 @@ difficulty) must NOT be quoted as current unless you add a dated, sourced line.
 ## GoMining referral bonuses for new users (added 30 Oct 2026; terms can change, say "can get" and never promise)
 - GoMining's referral page (screenshot supplied by the creator, 30 Oct 2026) lists for a referred friend: 5% bonus TH on their first miner within 30 days after registration, up to 25 TH; a TH bonus for the first card spending within 90 days after registration; and 1 month of Platinum+ within 30 days after registration. Source: https://gomining.com/blog/gomining-partner (confirms 5% extra mining power on the first miner, a free month of Platinum+ VIP and a card-spending mining-power bonus; the 25 TH cap and time windows come from the creator's screenshot of the referral page).
 - GoMining states referral rewards are a promo mechanic whose sizes and terms may change, and that products and features are subject to eligibility, its terms and regional availability. Source: https://gomining.com/blog/gomining-partner
+
+## Block header, target, supply and coinbase (added 10 Nov 2026; fetched and read this session)
+- The block header is a compact 80-byte bundle: version (4 bytes), previous block hash (32), merkle root (32), timestamp (4), nBits (4) and nonce (4). Source: https://help.blockstream.com/education/glossary/block-header
+- The version field tells nodes which consensus rules the miner applied; the previous block hash links a block to its predecessor; the merkle root is a single hash that commits to every transaction in the block. Source: https://help.blockstream.com/education/glossary/block-header
+- The nBits field encodes the difficulty target the header's hash must be at or below; the nonce is a 32-bit counter miners increment while searching. Source: https://help.blockstream.com/education/glossary/block-header
+- Each header is hashed twice (double SHA-256) and the result must be at or below the target. Source: https://help.blockstream.com/education/glossary/block-header
+- Nodes reject block headers whose timestamps are more than two hours ahead of their clocks or earlier than the median of the last 11 blocks. Source: https://help.blockstream.com/education/glossary/block-header
+- The target is a 256-bit number shared by all Bitcoin clients; a block's hash must be lower than or equal to it, and the lower the target, the harder it is to generate a block. Source: https://en.bitcoin.it/wiki/Target
+- Every 2016 blocks (two weeks at one block per 10 minutes) clients compare actual time with the two-week goal and adjust the target; a single retarget never changes the target by more than a factor of 4 either way. Source: https://en.bitcoin.it/wiki/Target
+- The block subsidy was 50 BTC, then 25, 12.5, 6.25 and 3.125 BTC after the April 2024 halving (block 840,000). Earlier halvings: block 210,000 (Nov 2012), 420,000 (Jul 2016), 630,000 (May 2020). Source: https://www.learnbitcoin.com/rabbit-hole/supply
+- The first 210,000-block era issued 10,500,000 BTC, about half of the 21 million cap. Source: https://www.learnbitcoin.com/rabbit-hole/supply
+- Because the subsidy rounds down at satoshi precision, the real ceiling is 20,999,999.9769 BTC, slightly under 21 million. Source: https://www.learnbitcoin.com/rabbit-hole/supply
+- One satoshi is the smallest unit: 1/100,000,000 of a bitcoin. Source: https://www.learnbitcoin.com/rabbit-hole/supply
+- The subsidy is expected to reach zero around the year 2140; after that miners are paid only by transaction fees. Source: https://www.learnbitcoin.com/rabbit-hole/supply
+- The 50 BTC reward of the genesis block (3 January 2009) was never spendable. Source: https://www.learnbitcoin.com/rabbit-hole/supply and https://www.spark.money/glossary/coinbase-transaction
+- In November 2010 two blocks (91,842 and 91,880) overwrote earlier coinbase transactions, making another 100 BTC unspendable. Source: https://www.learnbitcoin.com/rabbit-hole/supply
+- The miner of block 501,726 (December 2017) claimed none of its 12.5 BTC subsidy. Source: https://www.learnbitcoin.com/rabbit-hole/supply
+- The coinbase transaction is the first transaction in every block; it creates the new coins and collects fees, and spends no previous output. Source: https://www.spark.money/glossary/coinbase-transaction
+- Coinbase outputs cannot be spent until they have 100 confirmations. Source: https://www.spark.money/glossary/coinbase-transaction
+- A miner may claim less than subsidy plus fees; the unclaimed amount is destroyed. Source: https://www.spark.money/glossary/coinbase-transaction
