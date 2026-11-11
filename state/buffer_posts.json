@@ -201,7 +201,7 @@
   "tiktok": "6af35faf94964d984f0b2854",
   "instagram": "6af35fb00649793ed2fef5bf"
  },
- "reserved": {
-  "2026-12-06T22:00:00+11:00": "Long-form: Honeygain vs GoMining vs GPU mining (published manually). Do NOT schedule Short post 49 in this slot."
+ "long_form": {
+  "2026-12-06T20:00:00+11:00": "Long-form: Honeygain vs GoMining vs GPU mining, published separately 2h before the Short. Does not replace any Short."
  }
 }
