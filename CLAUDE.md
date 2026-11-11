@@ -68,3 +68,6 @@ Manual fallback if the automation is down: `mcp__Buffer__list_posts` (org above,
 
 ## Publishing the site ("publish")
 The live repo (`/home/claude/xylomining.github.io`, GitHub XyloMining/xylomining.github.io) has a manual workflow, Actions > "Publish site" (`.github/workflows/publish-site.yml`, logic in `scripts/publish-from-source.sh`): it builds the source repo branch (default `feature/stats-page`), copies it over the live site, and saves the previous live site as the next `backup-N` branch first (no backup if nothing changed). It never overwrites `stats.json`, `articles.json`, `prices.json`, `posts{yt,rd,ig,tt,x}.json` or `sitemap.xml` (sitemap is hand-edited on the live repo). Use the "dry run" input to preview. The user can run it themselves; when they say "publish" in a session you can do the same steps by running the script locally with BUILD_DIR set to the source repo's `dist/client`.
+
+## Reserved slot (set 11 Nov 2026)
+Sun 6 Dec 2026 22:00 Sydney is kept free for the long-form video (Honeygain vs GoMining vs GPU mining). Skip staged post 49 ("Weekly Recap: Bitcoin Supply and Rewards") when scheduling; it can move to another free day later.
