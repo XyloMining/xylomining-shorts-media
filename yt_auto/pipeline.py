@@ -107,7 +107,8 @@ def persist(cfg, message="Update pipeline state"):
 
 def _prune(cfg, db):
     keep = cfg["media"].get("keep_last_videos", 30)
-    protected = {pathlib.Path(r["video_url"]).name for r in db.by_status("staged") if r["video_url"]}
+    # keep every video Buffer still has to fetch: staged AND scheduled posts (scheduled ones are fetched at publish time)
+    protected = {pathlib.Path(r["video_url"]).name for st in ("staged", "scheduled") for r in db.by_status(st) if r["video_url"]}
     vids = sorted((ROOT / "videos").glob("*.mp4"))
     for v in vids[:-keep] if keep else []:
         if v.name not in protected:
