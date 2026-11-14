@@ -1,15 +1,74 @@
 {
  "captured": "2026-11-14, from the user's phone screenshots, for the long-form video (publish Sun 6 Dec 2026 20:00 Sydney)",
- "honeygain": {"transferred_to_jumptask_credits": 1451.88, "note": "Credit-to-USD rate and what period this covers not shown; confirm with user. Buzz Booster 300 credits, progress 0/3."},
- "gpu_mining_app_stats": {"mining_balance": 1.137889, "referral_balance": 0, "total_balance": 1.137889, "past_24h": 0.171601, "past_7d": 3.137784, "past_30d": 6.795721, "total_paid": 18.854757, "note": "Unit and app (Unmineable vs Kryptex) not shown on screen; confirm with user."},
+ "honeygain": {
+  "transferred_to_jumptask_credits": 1451.88,
+  "note": "1,451.88 credits = $1.45 at 1000 credits per USD. Assumed to be the week-1 total; day 1 alone was 27.58 credits (about $0.03).",
+  "usd": 1.45
+ },
+ "gpu_mining_app_stats": {
+  "mining_balance": 1.137889,
+  "referral_balance": 0,
+  "total_balance": 1.137889,
+  "past_24h": 0.171601,
+  "past_7d": 3.137784,
+  "past_30d": 6.795721,
+  "total_paid": 18.854757,
+  "app": "Unmineable",
+  "unit": "USD"
+ },
  "gomining_daily_rewards": [
-  {"date": "2026-11-13", "gomining_tokens": 2.66, "usd": 0.98},
-  {"date": "2026-11-12", "gomining_tokens": 2.99, "usd": 1.12},
-  {"date": "2026-11-11", "gomining_tokens": 2.94, "usd": 1.10},
-  {"date": "2026-11-10", "gomining_tokens": 3.16, "usd": 1.20},
-  {"date": "2026-11-09", "gomining_tokens": 3.17, "usd": 1.20},
-  {"date": "2026-11-08", "gomining_tokens": 3.22, "usd": 1.22},
-  {"date": "2026-11-07", "gomining_tokens": 3.21, "usd": 1.23}
+  {
+   "date": "2026-11-13",
+   "gomining_tokens": 2.66,
+   "usd": 0.98
+  },
+  {
+   "date": "2026-11-12",
+   "gomining_tokens": 2.99,
+   "usd": 1.12
+  },
+  {
+   "date": "2026-11-11",
+   "gomining_tokens": 2.94,
+   "usd": 1.1
+  },
+  {
+   "date": "2026-11-10",
+   "gomining_tokens": 3.16,
+   "usd": 1.2
+  },
+  {
+   "date": "2026-11-09",
+   "gomining_tokens": 3.17,
+   "usd": 1.2
+  },
+  {
+   "date": "2026-11-08",
+   "gomining_tokens": 3.22,
+   "usd": 1.22
+  },
+  {
+   "date": "2026-11-07",
+   "gomining_tokens": 3.21,
+   "usd": 1.23
+  }
  ],
- "gomining_7day_total": {"gomining_tokens": 21.35, "usd": 8.05, "note": "Gross rewards shown; maintenance cost not shown, so net is unknown."}
+ "gomining_7day_total": {
+  "gomining_tokens": 21.35,
+  "usd": 8.05,
+  "note": "Net of maintenance (confirmed by user)."
+ },
+ "confirmed_by_user_2026-11-14": {
+  "gomining_rewards": "after maintenance (net)",
+  "unmineable_unit": "USD",
+  "honeygain_rate": "1000 credits = 1 USD",
+  "honeygain_day1_credits": 27.58,
+  "honeygain_day1_note": "first-day screenshot (27.58 credits transferred) already supplied earlier; user can resend"
+ },
+ "week1_summary_usd": {
+  "gomining_net": 8.05,
+  "unmineable": 3.14,
+  "honeygain": 1.45,
+  "total": 12.64
+ }
 }
