@@ -18,7 +18,8 @@
   "past_30d": 6.795721,
   "total_paid": 18.854757,
   "app": "Unmineable",
-  "unit": "USD"
+  "unit": "USD",
+  "note": "3.137784 USD is the app total over 7 days across GPUs; 2050 share set by user to $0.17/day; 4070 figures pending, do not assume the remainder."
  },
  "gomining_daily_rewards": [
   {
@@ -79,5 +80,17 @@
    "honeygain": 0.2
   },
   "total_7d": 12.61
+ },
+ "gpu_2050_laptop": {
+  "earnings_usd_per_day": 0.17,
+  "power_w": 45,
+  "source": "user, 14 Nov",
+  "week_usd": 1.19,
+  "power_kwh_per_day_if_24h": 1.08,
+  "power_cost_aud_per_day_if_24h": 0.36,
+  "note": "Hours run per day not confirmed; assumes 24 h. Tariff A$0.33/kWh. AUD/USD rate not applied."
+ },
+ "gpu_4070_pc": {
+  "status": "user will supply earnings and power later"
  }
 }
