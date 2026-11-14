@@ -88,7 +88,16 @@
   "week_usd": 1.19,
   "power_kwh_per_day_if_24h": 1.08,
   "power_cost_aud_per_day_if_24h": 0.36,
-  "note": "Hours run per day not confirmed; assumes 24 h. Tariff A$0.33/kWh. AUD/USD rate not applied."
+  "note": "Hours run per day not confirmed; assumes 24 h. Tariff A$0.33/kWh. AUD/USD rate not applied.",
+  "hours_per_day": 24,
+  "aud_usd_rate": 0.7053,
+  "rate_source": "Wise mid-market, 14 Nov 2026 (no timestamp shown)",
+  "power_cost_aud_per_day": 0.36,
+  "power_cost_usd_per_day": 0.25,
+  "net_usd_per_day": -0.08,
+  "week_earnings_usd": 1.19,
+  "week_power_cost_usd": 1.76,
+  "week_net_usd": -0.57
  },
  "gpu_4070_pc": {
   "status": "user will supply earnings and power later"
