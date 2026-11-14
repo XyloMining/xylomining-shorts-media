@@ -1,9 +1,9 @@
 {
  "captured": "2026-11-14, from the user's phone screenshots, for the long-form video (publish Sun 6 Dec 2026 20:00 Sydney)",
  "honeygain": {
-  "transferred_to_jumptask_credits": 1451.88,
-  "note": "1,451.88 credits = $1.45 at 1000 credits per USD. Assumed to be the week-1 total; day 1 alone was 27.58 credits (about $0.03).",
-  "usd": 1.45
+  "note": "User confirmed 14 Nov: the credits figure is TOTAL earned to date (not one week). Weekly Honeygain earnings = difference between weekly totals, so 14 Nov total is the baseline. Day 1 alone was 27.58 credits. Start date of Honeygain unknown; ask.",
+  "total_earned_credits_all_time_at_2026-11-14": 1451.88,
+  "total_earned_usd_all_time_at_2026-11-14": 1.45
  },
  "gpu_mining_app_stats": {
   "mining_balance": 1.137889,
@@ -63,12 +63,11 @@
   "unmineable_unit": "USD",
   "honeygain_rate": "1000 credits = 1 USD",
   "honeygain_day1_credits": 27.58,
-  "honeygain_day1_note": "first-day screenshot (27.58 credits transferred) already supplied earlier; user can resend"
+  "honeygain_day1_note": "1,451.88 credits = total earned to date"
  },
  "week1_summary_usd": {
-  "gomining_net": 8.05,
-  "unmineable": 3.14,
-  "honeygain": 1.45,
-  "total": 12.64
+  "gomining_net_7d": 8.05,
+  "unmineable_7d": 3.14,
+  "honeygain": "not isolated: baseline total $1.45 at 14 Nov"
  }
 }
