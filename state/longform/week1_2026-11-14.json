@@ -1,9 +1,11 @@
 {
  "captured": "2026-11-14, from the user's phone screenshots, for the long-form video (publish Sun 6 Dec 2026 20:00 Sydney)",
  "honeygain": {
-  "note": "User confirmed 14 Nov: the credits figure is TOTAL earned to date (not one week). Weekly Honeygain earnings = difference between weekly totals, so 14 Nov total is the baseline. Day 1 alone was 27.58 credits. Start date of Honeygain unknown; ask.",
+  "note": "Total earned since start on 6 Nov: 1,451.88 credits = $1.45 over about 8 days. Day 1 was 27.58 credits. Weekly figures after this = difference between weekly totals.",
   "total_earned_credits_all_time_at_2026-11-14": 1451.88,
-  "total_earned_usd_all_time_at_2026-11-14": 1.45
+  "total_earned_usd_all_time_at_2026-11-14": 1.45,
+  "started": "2026-11-06",
+  "period": "6-14 Nov (about 8 days, first-day screenshot sent 6 Nov)"
  },
  "gpu_mining_app_stats": {
   "mining_balance": 1.137889,
@@ -68,6 +70,12 @@
  "week1_summary_usd": {
   "gomining_net_7d": 8.05,
   "unmineable_7d": 3.14,
-  "honeygain": "not isolated: baseline total $1.45 at 14 Nov"
+  "honeygain_since_6_nov_8d": 1.45,
+  "per_day": {
+   "gomining": 1.15,
+   "unmineable": 0.45,
+   "honeygain": 0.18
+  },
+  "note": "Honeygain covers 8 days, others 7; per-day is the fairer comparison."
  }
 }
