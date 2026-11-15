@@ -1,0 +1,6 @@
+file '/home/claude/xylomining-shorts-media/promo/out/linkvertise-tiktok/audio/scene_0.wav'
+file '/home/claude/xylomining-shorts-media/promo/out/linkvertise-tiktok/audio/scene_1.wav'
+file '/home/claude/xylomining-shorts-media/promo/out/linkvertise-tiktok/audio/scene_2.wav'
+file '/home/claude/xylomining-shorts-media/promo/out/linkvertise-tiktok/audio/scene_3.wav'
+file '/home/claude/xylomining-shorts-media/promo/out/linkvertise-tiktok/audio/scene_4.wav'
+file '/home/claude/xylomining-shorts-media/promo/out/linkvertise-tiktok/audio/scene_5.wav'
