@@ -1,7 +1,7 @@
 {
   "day": "wednesday",
-  "topic": "Year-end check on the three mining variables",
-  "hook": "Three things decide mining results. Check them before year end.",
+  "topic": "Three mining numbers to check before 2027",
+  "hook": "Three things decide mining results. Check them before 2027.",
   "scenes": [
     {
       "text": "1. Efficiency",
@@ -21,7 +21,7 @@
     }
   ],
   "cta": "Which one moves yours most? Tell me in the comments, and the link is on my channel page.",
-  "title": "3 Mining Numbers to Check Before Year End",
+  "title": "3 Mining Numbers to Check Before 2027",
   "description_body": "Efficiency, electricity and BTC price decide mining results, and none are fixed.",
   "tags": [
     "bitcoin mining",
@@ -42,5 +42,7 @@
       "title": "Bitcoin developer guide: mining",
       "url": "https://bitcoin.org/en/developer-guide#mining"
     }
-  ]
+  ],
+  "no": 73,
+  "date": "2026-12-30"
 }

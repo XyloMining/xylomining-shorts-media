@@ -1,0 +1,52 @@
+{
+  "no": 102,
+  "date": "2027-01-28",
+  "day": "thursday",
+  "topic": "Rewards after 2140",
+  "title": "What Happens to Mining Rewards After 2140?",
+  "hook": "What do miners earn when the subsidy runs out?",
+  "scenes": [
+    {
+      "text": "Around 2140",
+      "narration": "The subsidy is expected to reach zero around the year 2140."
+    },
+    {
+      "text": "Only fees",
+      "narration": "After that, miners are paid only by transaction fees."
+    },
+    {
+      "text": "Why it matters",
+      "narration": "Block space is scarce, so what users pay for it supports the miners."
+    },
+    {
+      "text": "Still far away",
+      "narration": "That is a long way off, so the subsidy keeps halving until then."
+    }
+  ],
+  "cta": "Will fees be enough? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "After about 2140, miners rely on transaction fees alone.",
+  "tags": [
+    "bitcoin 2140",
+    "block subsidy",
+    "transaction fees",
+    "bitcoin supply"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "AFTER 2140",
+    "line2": "FEES ONLY"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    },
+    {
+      "title": "Bitcoin Wiki: Controlled supply",
+      "url": "https://en.bitcoin.it/wiki/Controlled_supply"
+    }
+  ]
+}

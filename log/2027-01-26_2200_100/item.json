@@ -1,0 +1,52 @@
+{
+  "no": 100,
+  "date": "2027-01-26",
+  "day": "tuesday",
+  "topic": "The single best mining rule",
+  "title": "100 Mining Lessons: The Single Best Rule",
+  "hook": "If you keep one mining rule, keep this one.",
+  "scenes": [
+    {
+      "text": "Know your costs",
+      "narration": "Rewards come in bitcoin, but electricity and fees are paid in fiat."
+    },
+    {
+      "text": "Costs lead",
+      "narration": "Electricity is typically the largest ongoing cost, so it comes first."
+    },
+    {
+      "text": "Results vary",
+      "narration": "Price and difficulty move, and returns are never promised."
+    },
+    {
+      "text": "Review often",
+      "narration": "So review your numbers on a regular schedule, and change your plan when they change."
+    }
+  ],
+  "cta": "What is your best rule? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Know your costs before you chase rewards.",
+  "tags": [
+    "mining lessons",
+    "mining costs",
+    "bitcoin mining",
+    "beginner tips"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "BEST RULE",
+    "line2": "KNOW YOUR COSTS"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://developer.bitcoin.org/devguide/mining.html"
+    },
+    {
+      "title": "Luxor: hashprice",
+      "url": "https://docs.luxor.tech/hashrateindex/hashprice"
+    }
+  ]
+}

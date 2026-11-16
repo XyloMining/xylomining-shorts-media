@@ -1,0 +1,1 @@
+Can Bitcoin's chain change its mind? Sometimes, locally. A node finds a chain with more total work that leaves out blocks it had accepted. A reorg is local to each node, not a network-wide vote. The excluded blocks become orphans. Seen one on a block explorer? Tell me in the comments, and the link is on my channel page.

@@ -1,0 +1,52 @@
+{
+  "no": 101,
+  "date": "2027-01-27",
+  "day": "wednesday",
+  "topic": "Myth: difficulty adjusts every day",
+  "title": "Myth: Bitcoin Difficulty Adjusts Every Day",
+  "hook": "Myth: Bitcoin's difficulty changes every day.",
+  "scenes": [
+    {
+      "text": "Every 2,016 blocks",
+      "narration": "It is recalculated every two thousand sixteen blocks, about two weeks."
+    },
+    {
+      "text": "Compared with the goal",
+      "narration": "Clients compare the actual time with the two-week goal."
+    },
+    {
+      "text": "Capped changes",
+      "narration": "One adjustment never changes the target by more than a factor of four."
+    },
+    {
+      "text": "So not daily",
+      "narration": "Blocks keep coming in between, but the difficulty stays put until the next mark."
+    }
+  ],
+  "cta": "Did you think daily? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Difficulty adjusts about every two weeks, not daily, and only within limits.",
+  "tags": [
+    "bitcoin myths",
+    "difficulty adjustment",
+    "bitcoin target",
+    "2016 blocks"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "EVERY DAY?",
+    "line2": "NO: EVERY 2,016 BLOCKS"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin Wiki: Target",
+      "url": "https://en.bitcoin.it/wiki/Target"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://developer.bitcoin.org/devguide/mining.html"
+    }
+  ]
+}

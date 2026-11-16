@@ -1,7 +1,7 @@
 {
   "day": "sunday",
-  "topic": "Year-end recap",
-  "hook": "Year-end recap: four ideas to take into the new year.",
+  "topic": "Year-end recap: four mining lessons",
+  "hook": "Year-end recap: four lessons to take into the new year.",
   "scenes": [
     {
       "text": "1. It's a lottery",
@@ -21,7 +21,7 @@
     }
   ],
   "cta": "Which idea stuck? Tell me in the comments, and the link is on my channel page.",
-  "title": "Year-End Recap: 4 Bitcoin Mining Ideas",
+  "title": "Year-End Recap: 4 Bitcoin Mining Lessons",
   "description_body": "Lottery, costs, rules and no promises: four ideas to carry into the new year.",
   "tags": [
     "year end recap",
@@ -46,5 +46,7 @@
       "title": "Bitcoin whitepaper",
       "url": "https://bitcoin.org/bitcoin.pdf"
     }
-  ]
+  ],
+  "no": 70,
+  "date": "2026-12-27"
 }

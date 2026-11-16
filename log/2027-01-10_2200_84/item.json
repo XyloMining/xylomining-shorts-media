@@ -1,0 +1,48 @@
+{
+  "no": 84,
+  "date": "2027-01-10",
+  "day": "sunday",
+  "topic": "Weekly recap: mempool, fees and difficulty",
+  "title": "Weekly Recap: Mempool, Fees and Difficulty",
+  "hook": "This week's recap: mempool, fees and difficulty in three points.",
+  "scenes": [
+    {
+      "text": "Mempool",
+      "narration": "Unconfirmed transactions wait in the mempool until a miner includes them."
+    },
+    {
+      "text": "Fees",
+      "narration": "Miners rank transactions by fee rate, because block space is scarce."
+    },
+    {
+      "text": "Difficulty",
+      "narration": "Difficulty adjusts every two thousand sixteen blocks, about two weeks."
+    }
+  ],
+  "cta": "Which one was new to you? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Recap: mempool, fee rate and the 2,016-block difficulty adjustment.",
+  "tags": [
+    "weekly recap",
+    "bitcoin mempool",
+    "difficulty",
+    "bitcoin fees"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "WEEKLY RECAP",
+    "line2": "MEMPOOL, FEES, DIFFICULTY"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: the mempool",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/mempool"
+    },
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://developer.bitcoin.org/devguide/mining.html"
+    }
+  ]
+}

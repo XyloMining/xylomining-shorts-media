@@ -1,0 +1,44 @@
+{
+  "no": 79,
+  "date": "2027-01-05",
+  "day": "tuesday",
+  "topic": "Myth: mining uses only fossil fuels",
+  "title": "Myth: Bitcoin Mining Uses Only Fossil Fuels",
+  "hook": "Myth: Bitcoin mining runs only on fossil fuels.",
+  "scenes": [
+    {
+      "text": "Cambridge's 2025 study",
+      "narration": "Cambridge put sustainable energy at fifty-two point four percent of mining's energy mix."
+    },
+    {
+      "text": "What that includes",
+      "narration": "That breaks down as forty-two point six percent renewables and nine point eight percent nuclear."
+    },
+    {
+      "text": "Gas replaced coal",
+      "narration": "Natural gas was thirty-eight point two percent. Coal fell to eight point nine percent, down from thirty-six point six in 2022."
+    }
+  ],
+  "cta": "Surprised by that? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Cambridge's 2025 report: 52.4% sustainable, 38.2% gas and 8.9% coal.",
+  "tags": [
+    "bitcoin energy",
+    "mining energy mix",
+    "bitcoin myths",
+    "cambridge study"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "NOT ONLY FOSSIL",
+    "line2": "52.4% SUSTAINABLE"
+  },
+  "sources": [
+    {
+      "title": "Cambridge Judge Business School: energy mix study",
+      "url": "https://www.jbs.cam.ac.uk/2025/cambridge-study-sustainable-energy-rising-in-bitcoin-mining/"
+    }
+  ]
+}

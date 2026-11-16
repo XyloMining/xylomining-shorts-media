@@ -1,0 +1,48 @@
+{
+  "no": 82,
+  "date": "2027-01-08",
+  "day": "friday",
+  "topic": "Why hashrate chases cheap electricity",
+  "title": "Why Hashrate Always Chases Cheap Electricity",
+  "hook": "Miners chase cheap power, because power is the biggest bill.",
+  "scenes": [
+    {
+      "text": "Largest cost",
+      "narration": "Electricity is typically a miner's largest ongoing cost."
+    },
+    {
+      "text": "Efficiency squeeze",
+      "narration": "When power costs rise or difficulty rises, less efficient machines are hit first."
+    },
+    {
+      "text": "Online but obsolete",
+      "narration": "A machine can still be running and be economically obsolete, if power eats too much of its revenue."
+    }
+  ],
+  "cta": "What is your power cost? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Cheap electricity and efficient machines are what keep miners in the game.",
+  "tags": [
+    "mining electricity",
+    "mining efficiency",
+    "hashrate",
+    "bitcoin mining costs"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "CHEAP POWER",
+    "line2": "WHERE HASHRATE GOES"
+  },
+  "sources": [
+    {
+      "title": "ViaBTC: how long does an ASIC miner last",
+      "url": "https://www.viabtc.com/en/blog/Insights-how-long-does-an-asic-miner-last-physical-vs-economic-life-in-2026-647"
+    },
+    {
+      "title": "Simple Mining: Bitcoin price and hashrate",
+      "url": "https://www.simplemining.io/insights/post/the-relationship-between-bitcoin-price-hashrate"
+    }
+  ]
+}

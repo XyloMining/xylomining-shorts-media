@@ -1,0 +1,1 @@
+Myth: you need to own a whole bitcoin to mine. Mining needs hashing hardware and electricity, not coins. Pools hand out shares for valid proof of work and split rewards by contribution. One satoshi is one hundred millionth of a bitcoin, so payouts can be fractions. Did you think so too? Tell me in the comments, and the link is on my channel page.

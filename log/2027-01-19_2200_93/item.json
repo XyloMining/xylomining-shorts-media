@@ -1,0 +1,48 @@
+{
+  "no": 93,
+  "date": "2027-01-19",
+  "day": "tuesday",
+  "topic": "How miner upgrades change net yield",
+  "title": "How Miner Upgrades Change Daily Net Yield",
+  "hook": "Upgrading a digital miner changes more than one number.",
+  "scenes": [
+    {
+      "text": "More power",
+      "narration": "GoMining says daily BTC rewards are proportional to a miner's power and efficiency."
+    },
+    {
+      "text": "Better efficiency",
+      "narration": "Fewer watts per terahash means less electricity for each unit of hashrate."
+    },
+    {
+      "text": "Net is what counts",
+      "narration": "Maintenance is still deducted from rewards, so check your net result. It can be low or negative."
+    }
+  ],
+  "cta": "What would you upgrade? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Upgrades change power and efficiency, but net yield still depends on fees and the market.",
+  "tags": [
+    "GoMining",
+    "miner upgrade",
+    "W/TH",
+    "net rewards"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "UPGRADES",
+    "line2": "WHAT THEY CHANGE"
+  },
+  "sources": [
+    {
+      "title": "GoMining docs: miners",
+      "url": "https://docs.gomining.com/en/product/miners"
+    },
+    {
+      "title": "GoMining docs: maintenance fees and discounts",
+      "url": "https://docs.gomining.com/en/product/miners/maintenance-fees-and-discounts"
+    }
+  ]
+}

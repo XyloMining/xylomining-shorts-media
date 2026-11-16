@@ -1,0 +1,1 @@
+Myth: it takes ten minutes to mine one bitcoin. The network aims for a block about every ten minutes. That block pays the subsidy, three point one two five bitcoin, plus fees, to one winner. Your chance of winning a block is your share of total hashrate. Did you believe it? Tell me in the comments, and the link is on my channel page.

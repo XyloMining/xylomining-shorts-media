@@ -1,0 +1,44 @@
+{
+  "no": 86,
+  "date": "2027-01-12",
+  "day": "tuesday",
+  "topic": "Does cooler weather change mining profit",
+  "title": "Does Cooler Weather Make Mining More Profitable?",
+  "hook": "Does cold weather make Bitcoin mining more profitable?",
+  "scenes": [
+    {
+      "text": "Not an input",
+      "narration": "Hashprice depends on the block subsidy, fees, difficulty and, in dollars, the bitcoin price."
+    },
+    {
+      "text": "Weather isn't on it",
+      "narration": "Temperature isn't one of those inputs."
+    },
+    {
+      "text": "Check your own bill",
+      "narration": "Your electricity cost and machine efficiency are separate, so check your own numbers."
+    }
+  ],
+  "cta": "Does weather change your setup? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Hashprice depends on subsidy, fees, difficulty and price, not on the weather.",
+  "tags": [
+    "bitcoin mining profitability",
+    "hashprice",
+    "mining myths",
+    "electricity cost"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "COLD WEATHER?",
+    "line2": "WHAT SETS HASHPRICE"
+  },
+  "sources": [
+    {
+      "title": "Luxor: hashprice",
+      "url": "https://docs.luxor.tech/hashrateindex/hashprice"
+    }
+  ]
+}

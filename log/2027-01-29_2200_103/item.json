@@ -1,0 +1,52 @@
+{
+  "no": 103,
+  "date": "2027-01-29",
+  "day": "friday",
+  "topic": "Hashrate vs price",
+  "title": "Hashrate vs Price: Which One Follows Which?",
+  "hook": "Does hashrate follow bitcoin's price, or lead it?",
+  "scenes": [
+    {
+      "text": "A lag",
+      "narration": "One hosting firm argues hashrate tends to follow price, with a lag of weeks to months."
+    },
+    {
+      "text": "Why the lag",
+      "narration": "Hardware and facilities take time to build."
+    },
+    {
+      "text": "Difficulty links them",
+      "narration": "Between adjustments, falling hashrate slows blocks until difficulty resets."
+    },
+    {
+      "text": "Not in lockstep",
+      "narration": "So price and hashrate never move in perfect lockstep."
+    }
+  ],
+  "cta": "Which do you watch? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "One firm's view: hashrate tends to follow price with a delay.",
+  "tags": [
+    "hashrate",
+    "bitcoin price",
+    "mining economics",
+    "difficulty"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "HASHRATE VS PRICE",
+    "line2": "WHO FOLLOWS WHO?"
+  },
+  "sources": [
+    {
+      "title": "Simple Mining: Bitcoin price and hashrate",
+      "url": "https://www.simplemining.io/insights/post/the-relationship-between-bitcoin-price-hashrate"
+    },
+    {
+      "title": "Luxor: hashprice",
+      "url": "https://docs.luxor.tech/hashrateindex/hashprice"
+    }
+  ]
+}

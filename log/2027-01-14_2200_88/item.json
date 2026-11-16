@@ -1,0 +1,44 @@
+{
+  "no": 88,
+  "date": "2027-01-14",
+  "day": "thursday",
+  "topic": "Red flags in cloud mining offers",
+  "title": "3 Red Flags in Cloud Mining Contracts",
+  "hook": "Three red flags to spot in any mining offer.",
+  "scenes": [
+    {
+      "text": "1. Promised returns",
+      "narration": "The SEC's investor alert warns about promised high returns with little risk."
+    },
+    {
+      "text": "2. Rushing you",
+      "narration": "Pressure to act fast is another warning sign."
+    },
+    {
+      "text": "3. More to withdraw",
+      "narration": "Being asked to pay extra costs before you can withdraw profits is a third."
+    }
+  ],
+  "cta": "Seen any of these? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Promised returns, pressure and extra payments are classic warning signs.",
+  "tags": [
+    "cloud mining",
+    "crypto scams",
+    "investor alert",
+    "mining red flags"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "3 RED FLAGS",
+    "line2": "BEFORE YOU PAY"
+  },
+  "sources": [
+    {
+      "title": "Investor.gov: fraudulent crypto trading websites",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/investor-alert-watch-out-fraudulent-digital-asset-and-crypto-trading-websites"
+    }
+  ]
+}

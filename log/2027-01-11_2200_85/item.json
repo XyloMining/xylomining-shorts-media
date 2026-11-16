@@ -1,0 +1,44 @@
+{
+  "no": 85,
+  "date": "2027-01-11",
+  "day": "monday",
+  "topic": "How miners pick transactions",
+  "title": "How Miners Pick Which Transactions Go In",
+  "hook": "Miners don't pick transactions by who came first.",
+  "scenes": [
+    {
+      "text": "Fee rate decides",
+      "narration": "Miners rank by fee rate: the fee divided by the transaction's size."
+    },
+    {
+      "text": "Space is scarce",
+      "narration": "A block holds roughly four million weight units, so the highest rates go in first."
+    },
+    {
+      "text": "Low rates wait",
+      "narration": "Lowest fee-rate transactions wait, and can be dropped when a mempool fills up."
+    }
+  ],
+  "cta": "What fee do you usually pay? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Block space is scarce, so miners fill it by fee rate.",
+  "tags": [
+    "bitcoin fees",
+    "transaction selection",
+    "fee rate",
+    "bitcoin mempool"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "FEE RATE WINS",
+    "line2": "HOW BLOCKS GET FILLED"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: the mempool",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/mempool"
+    }
+  ]
+}

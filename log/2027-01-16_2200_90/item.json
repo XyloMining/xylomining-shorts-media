@@ -1,0 +1,44 @@
+{
+  "no": 90,
+  "date": "2027-01-16",
+  "day": "saturday",
+  "topic": "Mining rig life span",
+  "title": "What Is a Bitcoin Mining Rig Life Span?",
+  "hook": "How long does a Bitcoin mining machine last?",
+  "scenes": [
+    {
+      "text": "Physical life",
+      "narration": "A rough planning figure is three to five years, and that is not a warranty."
+    },
+    {
+      "text": "Economic life",
+      "narration": "It can be much shorter if electricity or difficulty rises, or newer machines are more efficient."
+    },
+    {
+      "text": "Running isn't paying",
+      "narration": "A machine can be online yet economically obsolete."
+    }
+  ],
+  "cta": "How old is your rig? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Three to five years is a rough physical range. Economics can end it sooner.",
+  "tags": [
+    "mining rig lifespan",
+    "asic miner",
+    "mining efficiency",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "RIG LIFESPAN",
+    "line2": "PHYSICAL VS ECONOMIC"
+  },
+  "sources": [
+    {
+      "title": "ViaBTC: how long does an ASIC miner last",
+      "url": "https://www.viabtc.com/en/blog/Insights-how-long-does-an-asic-miner-last-physical-vs-economic-life-in-2026-647"
+    }
+  ]
+}

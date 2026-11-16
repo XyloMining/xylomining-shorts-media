@@ -1,0 +1,52 @@
+{
+  "no": 95,
+  "date": "2027-01-21",
+  "day": "thursday",
+  "topic": "Myth: miners can change the 21 million cap",
+  "title": "Myth: Bitcoin Miners Can Change the 21M Cap",
+  "hook": "Myth: miners can just raise Bitcoin's twenty-one million cap.",
+  "scenes": [
+    {
+      "text": "Rules are fixed",
+      "narration": "The issuance schedule is fixed in advance."
+    },
+    {
+      "text": "Nodes check blocks",
+      "narration": "Each full node validates blocks with the same consensus rules."
+    },
+    {
+      "text": "Too much is rejected",
+      "narration": "A block that issues more than the rules allow is rejected by the network."
+    },
+    {
+      "text": "Miners can only claim less",
+      "narration": "A miner may claim less than the allowed reward, which destroys those coins, but never more."
+    }
+  ],
+  "cta": "Does that settle it? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Miners propose blocks, but nodes enforce the rules, including the cap.",
+  "tags": [
+    "bitcoin myths",
+    "21 million",
+    "bitcoin supply",
+    "full nodes"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "CAP CHANGE?",
+    "line2": "NODES SAY NO"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin Wiki: Controlled supply",
+      "url": "https://en.bitcoin.it/wiki/Controlled_supply"
+    },
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "no": 75,
+  "date": "2027-01-01",
+  "day": "friday",
+  "topic": "Setting mining goals for 2027",
+  "title": "Setting Up Your Bitcoin Mining Goals for 2027",
+  "hook": "New year, new goal: understand mining before you spend on it.",
+  "scenes": [
+    {
+      "text": "1. Learn the basics",
+      "narration": "Know what a block, hashrate and difficulty are before anything else."
+    },
+    {
+      "text": "2. Know your costs",
+      "narration": "Electricity is typically a miner's largest ongoing cost, so efficiency matters."
+    },
+    {
+      "text": "3. Expect variance",
+      "narration": "Rewards vary with price and difficulty, and returns are never promised."
+    }
+  ],
+  "cta": "What is your mining goal? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Three goals for 2027: learn the basics, know your costs, expect variance.",
+  "tags": [
+    "bitcoin mining goals",
+    "2027",
+    "mining basics",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "2027 GOALS",
+    "line2": "MINING, SENSIBLY"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://developer.bitcoin.org/devguide/mining.html"
+    },
+    {
+      "title": "Luxor: hashprice",
+      "url": "https://docs.luxor.tech/hashrateindex/hashprice"
+    }
+  ]
+}

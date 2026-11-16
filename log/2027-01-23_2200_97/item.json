@@ -1,0 +1,48 @@
+{
+  "no": 97,
+  "date": "2027-01-23",
+  "day": "saturday",
+  "topic": "Three things to check on a daily mining payout",
+  "title": "3 Things to Check on Your Daily Mining Payout",
+  "hook": "Three things to check on every daily mining payout.",
+  "scenes": [
+    {
+      "text": "1. The gross reward",
+      "narration": "See the daily pool reward credited to your miner."
+    },
+    {
+      "text": "2. The deduction",
+      "narration": "See the electricity and service fees taken off it."
+    },
+    {
+      "text": "3. The discounts",
+      "narration": "Check any discount applied, since terms can change."
+    },
+    {
+      "text": "Then compare",
+      "narration": "Net reward is the number to keep an eye on, because it is what is left after costs."
+    }
+  ],
+  "cta": "Which do you check first? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Gross reward, deductions and discounts: the three lines behind your net payout.",
+  "tags": [
+    "GoMining",
+    "daily rewards",
+    "maintenance fee",
+    "digital miner"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "3 CHECKS",
+    "line2": "ON EVERY PAYOUT"
+  },
+  "sources": [
+    {
+      "title": "GoMining docs: maintenance fees and discounts",
+      "url": "https://docs.gomining.com/en/product/miners/maintenance-fees-and-discounts"
+    }
+  ]
+}

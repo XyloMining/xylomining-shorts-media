@@ -1,0 +1,1 @@
+Every Bitcoin block header adds up to exactly eighty bytes. Version, timestamp, difficulty bits and nonce are four bytes each. The previous block hash and merkle root are thirty-two bytes each. That's sixteen plus sixty-four, or eighty, and only the header is hashed. Did you add it up? Tell me in the comments, and the link is on my channel page.

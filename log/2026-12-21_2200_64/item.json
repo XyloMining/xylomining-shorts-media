@@ -1,46 +1,60 @@
 {
+  "no": 64,
+  "date": "2026-12-21",
   "day": "monday",
-  "topic": "The coinbase transaction",
-  "hook": "The first transaction in every block comes from nowhere.",
+  "topic": "Five Bitcoin gift ideas",
+  "title": "5 Bitcoin Gift Ideas (From Lottery Miners to Sats)",
+  "hook": "Five Bitcoin gift ideas that are more than socks.",
   "scenes": [
     {
-      "text": "The coinbase transaction",
-      "narration": "Every block starts with a special transaction called the coinbase transaction. It creates the new coins and collects the fees."
+      "text": "1. A desk miner",
+      "narration": "A Bitaxe is an open-source miner that runs quietly on a desk. Treat it as a lottery ticket, not income."
     },
     {
-      "text": "No inputs spent",
-      "narration": "It spends no previous output. Its input references nothing."
+      "text": "2. A hardware wallet",
+      "narration": "A dedicated device that keeps private keys offline. The seed phrase stays the master backup."
     },
     {
-      "text": "The reward lives here",
-      "narration": "That is where the miner's reward is claimed. It cannot be more than the subsidy plus fees."
+      "text": "3. A few sats",
+      "narration": "One satoshi is one hundred millionth of a bitcoin, so even a small gift counts."
+    },
+    {
+      "text": "4. A Bitcoin book",
+      "narration": "Pick a plain-English one about how mining and blocks work."
+    },
+    {
+      "text": "5. Time to explain",
+      "narration": "Show them how a block is found. Understanding is the best gift."
     }
   ],
-  "cta": "Did you know that one? Tell me in the comments, and the link is on my channel page.",
-  "title": "What Is the Coinbase Transaction in Bitcoin?",
-  "description_body": "The first transaction in every block creates new coins and collects fees.",
+  "cta": "Which would you give? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Five Bitcoin gift ideas, from a desk lottery miner to a few sats.",
   "tags": [
-    "coinbase transaction",
-    "bitcoin block reward",
-    "bitcoin mining",
-    "bitcoin basics"
+    "bitcoin gifts",
+    "bitaxe",
+    "hardware wallet",
+    "satoshi"
   ],
   "hashtags": [
     "#Shorts",
     "#Crypto"
   ],
   "thumbnail": {
-    "line1": "COINBASE TX",
-    "line2": "THE FIRST TRANSACTION"
+    "line1": "5 GIFT IDEAS",
+    "line2": "LOTTERY MINERS TO SATS"
   },
   "sources": [
     {
-      "title": "Coinbase transaction glossary",
-      "url": "https://www.spark.money/glossary/coinbase-transaction"
+      "title": "TFTC: the Bitaxe explained",
+      "url": "https://www.tftc.io/bitaxe-explained"
     },
     {
-      "title": "Bitcoin whitepaper",
-      "url": "https://bitcoin.org/bitcoin.pdf"
+      "title": "Learn Bitcoin: hardware wallet",
+      "url": "https://www.learnbitcoin.com/glossary/hardware-wallet"
+    },
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
     }
   ]
 }

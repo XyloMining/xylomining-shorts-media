@@ -1,0 +1,1 @@
+Solo mining or a pool: what are your odds? A solo miner keeps the whole reward, but with high variance. One source puts a one terahash desk miner at roughly seventeen thousand years on average per block. Pool miners get smaller, more frequent payments, with lower variance. Solo or pool for you? Tell me in the comments, and the link is on my channel page.

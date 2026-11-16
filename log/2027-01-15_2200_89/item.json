@@ -1,0 +1,48 @@
+{
+  "no": 89,
+  "date": "2027-01-15",
+  "day": "friday",
+  "topic": "Myth: you need a whole bitcoin to mine",
+  "title": "Myth: You Need a Whole Bitcoin to Mine",
+  "hook": "Myth: you need to own a whole bitcoin to mine.",
+  "scenes": [
+    {
+      "text": "Mining needs hashing",
+      "narration": "Mining needs hashing hardware and electricity, not coins."
+    },
+    {
+      "text": "Shares, not whole coins",
+      "narration": "Pools hand out shares for valid proof of work and split rewards by contribution."
+    },
+    {
+      "text": "Tiny units",
+      "narration": "One satoshi is one hundred millionth of a bitcoin, so payouts can be fractions."
+    }
+  ],
+  "cta": "Did you think so too? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "You don't need a whole coin to mine. Pools pay fractions in proportion to work.",
+  "tags": [
+    "bitcoin myths",
+    "bitcoin mining",
+    "satoshi",
+    "mining pools"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "WHOLE BITCOIN?",
+    "line2": "NOT NEEDED"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin Wiki: Pooled mining",
+      "url": "https://en.bitcoin.it/wiki/Pooled_mining"
+    },
+    {
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    }
+  ]
+}

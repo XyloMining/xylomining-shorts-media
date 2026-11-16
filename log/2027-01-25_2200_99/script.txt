@@ -1,0 +1,1 @@
+Block producers control which transactions go in, and in what order. MEV is profit from including, excluding or reordering pending transactions. It began as miner extractable value, then became maximal extractable value. It is less lucrative on Bitcoin because Bitcoin lacks smart contracts. Had you heard of MEV? Tell me in the comments, and the link is on my channel page.

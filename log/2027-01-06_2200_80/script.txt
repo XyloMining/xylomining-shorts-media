@@ -1,0 +1,1 @@
+Where does a transaction wait before it joins a block? The mempool holds transactions that were broadcast but not yet included in a block. Every full node keeps its own, and they are similar but not identical. A low-fee transaction is valid, but it can wait a long time. Have you checked one lately? Tell me in the comments, and the link is on my channel page.

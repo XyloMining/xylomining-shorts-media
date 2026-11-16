@@ -1,0 +1,1 @@
+What happens if a lot of miners switch off at once? With less hashrate, blocks arrive slower than ten minutes. Difficulty only changes at the next two thousand sixteen block adjustment. At that point difficulty can fall, by as much as seventy-five percent in one step. Did you expect that? Tell me in the comments, and the link is on my channel page.

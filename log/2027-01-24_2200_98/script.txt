@@ -1,0 +1,1 @@
+Weekly recap: hashrate and target in three points. One terahash per second is one trillion hashes per second. A block's hash must be at or below the target, and a lower target is harder. Every two thousand sixteen blocks the target is adjusted to keep blocks near ten minutes. Which point do you want next? Tell me in the comments, and the link is on my channel page.

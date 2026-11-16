@@ -1,20 +1,20 @@
 {
-  "title": "Myth: All 21 Million Bitcoin Can Be Mined",
-  "description": "The true ceiling is just under 21 million, and some coins can never move.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Learn Bitcoin: supply: https://www.learnbitcoin.com/rabbit-hole/supply\n- Coinbase transaction glossary: https://www.spark.money/glossary/coinbase-transaction\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "title": "Bitcoin Never Takes a Break",
+  "description": "The network aims for a block about every ten minutes, every day of the year.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf\n- Bitcoin developer guide: mining: https://developer.bitcoin.org/devguide/mining.html\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
   "tags": [
-    "bitcoin myths",
-    "bitcoin supply",
-    "lost bitcoin",
-    "21 million"
+    "bitcoin facts",
+    "bitcoin block time",
+    "bitcoin 24/7",
+    "difficulty adjustment"
   ],
   "sources": [
     {
-      "title": "Learn Bitcoin: supply",
-      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
     },
     {
-      "title": "Coinbase transaction glossary",
-      "url": "https://www.spark.money/glossary/coinbase-transaction"
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://developer.bitcoin.org/devguide/mining.html"
     }
   ],
   "publish_local": "2026-12-22T22:00:00+11:00"

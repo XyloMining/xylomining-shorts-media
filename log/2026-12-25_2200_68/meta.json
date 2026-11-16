@@ -1,20 +1,20 @@
 {
-  "title": "Bitcoin Never Takes a Holiday",
-  "description": "The network aims for one block about every 10 minutes, every day of the year.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin Wiki: Target: https://en.bitcoin.it/wiki/Target\n- Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "title": "Why Hashrate Is Just a Mining Lottery Ticket",
+  "description": "Your chance of finding a block is your share of network hashrate, and pools smooth the luck.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin developer guide: mining: https://developer.bitcoin.org/devguide/mining.html\n- Bitcoin Wiki: Pooled mining: https://en.bitcoin.it/wiki/Pooled_mining\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
   "tags": [
-    "bitcoin facts",
-    "bitcoin block time",
-    "christmas",
-    "bitcoin mining"
+    "hashrate",
+    "mining lottery",
+    "bitcoin mining pools",
+    "mining probability"
   ],
   "sources": [
     {
-      "title": "Bitcoin Wiki: Target",
-      "url": "https://en.bitcoin.it/wiki/Target"
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://developer.bitcoin.org/devguide/mining.html"
     },
     {
-      "title": "Bitcoin whitepaper",
-      "url": "https://bitcoin.org/bitcoin.pdf"
+      "title": "Bitcoin Wiki: Pooled mining",
+      "url": "https://en.bitcoin.it/wiki/Pooled_mining"
     }
   ],
   "publish_local": "2026-12-25T22:00:00+11:00"

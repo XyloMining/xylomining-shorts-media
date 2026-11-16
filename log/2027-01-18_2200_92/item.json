@@ -1,0 +1,44 @@
+{
+  "no": 92,
+  "date": "2027-01-18",
+  "day": "monday",
+  "topic": "ASIC resistance",
+  "title": "What Is ASIC Resistance and Why Did It Fail?",
+  "hook": "Some coins tried to stop ASIC miners. It mostly failed.",
+  "scenes": [
+    {
+      "text": "The idea",
+      "narration": "ASIC resistance means designing mining so specialised chips gain little."
+    },
+    {
+      "text": "The goal",
+      "narration": "The aim was to keep mining with hobbyists on ordinary hardware."
+    },
+    {
+      "text": "It rarely held",
+      "narration": "Litecoin's algorithm got ASICs in 2014, and Ethereum's by 2018. Bitcoin doesn't pursue it."
+    }
+  ],
+  "cta": "Should it be tried again? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "ASIC resistance mostly failed. Specialised chips tend to arrive anyway.",
+  "tags": [
+    "ASIC resistance",
+    "bitcoin ASIC",
+    "mining hardware",
+    "proof of work"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "ASIC RESISTANCE",
+    "line2": "WHY IT FAILED"
+  },
+  "sources": [
+    {
+      "title": "Learn Bitcoin: ASIC resistance",
+      "url": "https://www.learnbitcoin.com/glossary/asic-resistance"
+    }
+  ]
+}

@@ -1,47 +1,48 @@
 {
+  "no": 65,
+  "date": "2026-12-22",
   "day": "tuesday",
-  "topic": "Myth: all 21 million bitcoin can be mined",
-  "hook": "Myth: all twenty-one million bitcoin will end up mined.",
+  "topic": "Bitcoin never takes a break",
+  "title": "Bitcoin Never Takes a Break",
+  "hook": "Banks close for the holidays. Bitcoin blocks keep coming.",
   "scenes": [
     {
-      "text": "Just under the cap",
-      "narration": "Because the subsidy rounds down at satoshi precision, the real ceiling is slightly under twenty-one million."
+      "text": "One block, ten minutes",
+      "narration": "The protocol aims for one block about every ten minutes, around the clock."
     },
     {
-      "text": "Some coins are gone",
-      "stat": "50 BTC",
-      "narration": "The fifty bitcoin from the genesis block reward was never spendable."
+      "text": "No weekends off",
+      "narration": "That target holds on weekdays, weekends and public holidays alike."
     },
     {
-      "text": "Lost for good",
-      "narration": "Two blocks in November 2010 overwrote earlier rewards, making another hundred bitcoin unspendable."
+      "text": "Self-adjusting",
+      "narration": "Every two thousand sixteen blocks, about two weeks, difficulty adjusts to keep the pace."
     }
   ],
-  "cta": "Did you know that? Tell me in the comments, and the link is on my channel page.",
-  "title": "Myth: All 21 Million Bitcoin Can Be Mined",
-  "description_body": "The true ceiling is just under 21 million, and some coins can never move.",
+  "cta": "Are you offline or mining today? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "The network aims for a block about every ten minutes, every day of the year.",
   "tags": [
-    "bitcoin myths",
-    "bitcoin supply",
-    "lost bitcoin",
-    "21 million"
+    "bitcoin facts",
+    "bitcoin block time",
+    "bitcoin 24/7",
+    "difficulty adjustment"
   ],
   "hashtags": [
     "#Shorts",
     "#Crypto"
   ],
   "thumbnail": {
-    "line1": "NOT QUITE 21M",
-    "line2": "SOME BITCOIN CAN NEVER MOVE"
+    "line1": "NO BREAKS",
+    "line2": "BLOCKS KEEP COMING"
   },
   "sources": [
     {
-      "title": "Learn Bitcoin: supply",
-      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
     },
     {
-      "title": "Coinbase transaction glossary",
-      "url": "https://www.spark.money/glossary/coinbase-transaction"
+      "title": "Bitcoin developer guide: mining",
+      "url": "https://developer.bitcoin.org/devguide/mining.html"
     }
   ]
 }

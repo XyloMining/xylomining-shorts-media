@@ -1,0 +1,52 @@
+{
+  "no": 105,
+  "date": "2027-01-31",
+  "day": "sunday",
+  "topic": "Monthly audit of a digital miner",
+  "title": "Monthly Audit: Did Your Digital Miner Profit?",
+  "hook": "Month's end: did your digital miner actually pay?",
+  "scenes": [
+    {
+      "text": "Add up rewards",
+      "narration": "Total the daily rewards credited this month."
+    },
+    {
+      "text": "Subtract maintenance",
+      "narration": "Take off the maintenance charges. Net results vary and can be negative."
+    },
+    {
+      "text": "Mind the price",
+      "narration": "Rewards are in bitcoin, so the bitcoin price changes what they are worth."
+    },
+    {
+      "text": "No promises",
+      "narration": "One month is a snapshot, not a promise of the next one."
+    }
+  ],
+  "cta": "What did yours show? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Rewards minus maintenance, for the month, is your honest net number.",
+  "tags": [
+    "GoMining",
+    "monthly audit",
+    "digital miner",
+    "mining rewards"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "MONTHLY AUDIT",
+    "line2": "DID IT PAY?"
+  },
+  "sources": [
+    {
+      "title": "GoMining docs: maintenance fees and discounts",
+      "url": "https://docs.gomining.com/en/product/miners/maintenance-fees-and-discounts"
+    },
+    {
+      "title": "Forklog: digital miners",
+      "url": "https://forklog.com/en/what-is-a-digital-miner-and-how-can-you-mine-bitcoin-with-nfts/"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Some coins tried to stop ASIC miners. It mostly failed. ASIC resistance means designing mining so specialised chips gain little. The aim was to keep mining with hobbyists on ordinary hardware. Litecoin's algorithm got ASICs in 2014, and Ethereum's by 2018. Bitcoin doesn't pursue it. Should it be tried again? Tell me in the comments, and the link is on my channel page.

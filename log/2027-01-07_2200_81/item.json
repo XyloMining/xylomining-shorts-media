@@ -1,0 +1,44 @@
+{
+  "no": 81,
+  "date": "2027-01-07",
+  "day": "thursday",
+  "topic": "Digital miner maintenance: where the money goes",
+  "title": "Digital Miner Maintenance: Where the Money Goes",
+  "hook": "Own a digital miner? Here is where the maintenance goes.",
+  "scenes": [
+    {
+      "text": "Two parts",
+      "narration": "GoMining's docs say the fee covers electricity and equipment service."
+    },
+    {
+      "text": "Taken from rewards",
+      "narration": "It is deducted from the pool reward. Net reward is reward minus those fees, after any discounts."
+    },
+    {
+      "text": "Discounts exist",
+      "narration": "Paying in GOMINING tokens can give a discount of up to twenty percent. Terms can change."
+    }
+  ],
+  "cta": "Do you check yours daily? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Net reward is pool reward minus electricity and service, after discounts.",
+  "tags": [
+    "GoMining",
+    "digital miner",
+    "maintenance fee",
+    "mining costs"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "WHERE IT GOES",
+    "line2": "MAINTENANCE EXPLAINED"
+  },
+  "sources": [
+    {
+      "title": "GoMining docs: maintenance fees and discounts",
+      "url": "https://docs.gomining.com/en/product/miners/maintenance-fees-and-discounts"
+    }
+  ]
+}

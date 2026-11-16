@@ -1,16 +1,16 @@
 {
-  "title": "The 2010 Bitcoin Blocks That Erased 100 BTC",
-  "description": "Two blocks in November 2010 overwrote earlier coinbase transactions.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Learn Bitcoin: supply: https://www.learnbitcoin.com/rabbit-hole/supply\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "title": "The 2010 Bitcoin Bug That Created 184 Billion BTC",
+  "description": "In August 2010 a bug briefly created 184 billion bitcoin. Here is how it was undone.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Bitcoin Wiki: Value overflow incident: https://en.bitcoin.it/wiki/Value_overflow_incident\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
   "tags": [
     "bitcoin history",
-    "bitcoin facts",
-    "coinbase transaction",
-    "lost bitcoin"
+    "bitcoin bug",
+    "value overflow",
+    "bitcoin 2010"
   ],
   "sources": [
     {
-      "title": "Learn Bitcoin: supply",
-      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+      "title": "Bitcoin Wiki: Value overflow incident",
+      "url": "https://en.bitcoin.it/wiki/Value_overflow_incident"
     }
   ],
   "publish_local": "2026-12-18T22:00:00+11:00"

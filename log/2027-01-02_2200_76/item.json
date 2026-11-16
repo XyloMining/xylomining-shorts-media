@@ -1,0 +1,48 @@
+{
+  "no": 76,
+  "date": "2027-01-02",
+  "day": "saturday",
+  "topic": "What happens when hashrate drops",
+  "title": "What Happens When Hashrate Suddenly Drops?",
+  "hook": "What happens if a lot of miners switch off at once?",
+  "scenes": [
+    {
+      "text": "Blocks slow down",
+      "narration": "With less hashrate, blocks arrive slower than ten minutes."
+    },
+    {
+      "text": "Difficulty waits",
+      "narration": "Difficulty only changes at the next two thousand sixteen block adjustment."
+    },
+    {
+      "text": "Then it falls",
+      "narration": "At that point difficulty can fall, by as much as seventy-five percent in one step."
+    }
+  ],
+  "cta": "Did you expect that? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "If hashrate drops, blocks slow until difficulty adjusts at the next 2,016-block mark.",
+  "tags": [
+    "hashrate drop",
+    "difficulty adjustment",
+    "bitcoin block time",
+    "bitcoin mining"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "HASHRATE DROPS",
+    "line2": "BLOCKS SLOW DOWN"
+  },
+  "sources": [
+    {
+      "title": "Simple Mining: Bitcoin price and hashrate",
+      "url": "https://www.simplemining.io/insights/post/the-relationship-between-bitcoin-price-hashrate"
+    },
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ]
+}

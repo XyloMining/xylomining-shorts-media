@@ -1,42 +1,49 @@
 {
   "day": "wednesday",
-  "topic": "Hashrate is your share of the lottery",
-  "hook": "Your hashrate is really your share of a lottery.",
+  "topic": "Myth: all 21 million bitcoin can be mined (moved to 23 Dec)",
+  "hook": "Myth: all twenty-one million bitcoin will end up mined.",
   "scenes": [
     {
-      "text": "Chance per block",
-      "narration": "Your chance of finding a block is your share of the total network hashrate."
+      "text": "Just under the cap",
+      "narration": "Because the subsidy rounds down at satoshi precision, the real ceiling is slightly under twenty-one million."
     },
     {
-      "text": "More share, more chance",
-      "narration": "Twice the share means twice the chance. But it is still chance."
+      "text": "Some coins are gone",
+      "stat": "50 BTC",
+      "narration": "The fifty bitcoin from the genesis block reward was never spendable."
     },
     {
-      "text": "Pools smooth it out",
-      "narration": "Pools share rewards in proportion to the work contributed, which smooths out the payouts."
+      "text": "Lost for good",
+      "narration": "Two blocks in November 2010 overwrote earlier rewards, making another hundred bitcoin unspendable."
     }
   ],
-  "cta": "How big is your share? Tell me in the comments, and the link is on my channel page.",
-  "title": "Your Hashrate Is Your Share of the Lottery",
-  "description_body": "Your chance of finding a block equals your share of network hashrate.",
+  "cta": "Did you know that? Tell me in the comments, and the link is on my channel page.",
+  "title": "Myth: All 21 Million Bitcoin Can Be Mined",
+  "description_body": "The true ceiling is just under 21 million, and some coins can never move.",
   "tags": [
-    "hashrate",
-    "bitcoin mining pools",
-    "bitcoin mining luck",
-    "mining probability"
+    "bitcoin myths",
+    "bitcoin supply",
+    "lost bitcoin",
+    "21 million"
   ],
   "hashtags": [
     "#Shorts",
     "#Crypto"
   ],
   "thumbnail": {
-    "line1": "YOUR SHARE",
-    "line2": "HASHRATE IS A LOTTERY"
+    "line1": "NOT QUITE 21M",
+    "line2": "SOME BITCOIN CAN NEVER MOVE"
   },
   "sources": [
     {
-      "title": "Bitcoin developer guide: mining",
-      "url": "https://bitcoin.org/en/developer-guide#mining"
+      "title": "Learn Bitcoin: supply",
+      "url": "https://www.learnbitcoin.com/rabbit-hole/supply"
+    },
+    {
+      "title": "Coinbase transaction glossary",
+      "url": "https://www.spark.money/glossary/coinbase-transaction"
     }
-  ]
+  ],
+  "no": 66,
+  "date": "2026-12-23"
 }

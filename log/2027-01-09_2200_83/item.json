@@ -1,0 +1,48 @@
+{
+  "no": 83,
+  "date": "2027-01-09",
+  "day": "saturday",
+  "topic": "Myth: mining one bitcoin takes ten minutes",
+  "title": "Myth: Mining 1 Bitcoin Takes 10 Minutes",
+  "hook": "Myth: it takes ten minutes to mine one bitcoin.",
+  "scenes": [
+    {
+      "text": "Ten minutes is the network",
+      "narration": "The network aims for a block about every ten minutes."
+    },
+    {
+      "text": "Not one coin each",
+      "narration": "That block pays the subsidy, three point one two five bitcoin, plus fees, to one winner."
+    },
+    {
+      "text": "Your chance is a share",
+      "narration": "Your chance of winning a block is your share of total hashrate."
+    }
+  ],
+  "cta": "Did you believe it? Tell me in the comments, and the link is on my channel page.",
+  "description_body": "Ten minutes is the network's block time, not the time it takes you to mine a coin.",
+  "tags": [
+    "bitcoin myths",
+    "bitcoin block time",
+    "block reward",
+    "mining probability"
+  ],
+  "hashtags": [
+    "#Shorts",
+    "#Crypto"
+  ],
+  "thumbnail": {
+    "line1": "10 MINUTES?",
+    "line2": "NOT PER COIN"
+  },
+  "sources": [
+    {
+      "title": "Bitcoin whitepaper",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    },
+    {
+      "title": "Blockstream: halving",
+      "url": "https://help.blockstream.com/education/glossary/halving"
+    }
+  ]
+}

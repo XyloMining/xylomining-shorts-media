@@ -1,0 +1,21 @@
+{
+  "title": "What Happens When Hashrate Suddenly Drops?",
+  "description": "If hashrate drops, blocks slow until difficulty adjusts at the next 2,016-block mark.\n\nInterested in learning more about digital Bitcoin mining? Explore GoMining here:\nhttps://link-target.net/10151711/Pp2SuETkV4xz\n\nThis is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice.\n\nSources:\n- Simple Mining: Bitcoin price and hashrate: https://www.simplemining.io/insights/post/the-relationship-between-bitcoin-price-hashrate\n- Bitcoin developer guide: block chain: https://developer.bitcoin.org/devguide/block_chain.html\n\n#Bitcoin #BitcoinMining #Shorts #Crypto",
+  "tags": [
+    "hashrate drop",
+    "difficulty adjustment",
+    "bitcoin block time",
+    "bitcoin mining"
+  ],
+  "sources": [
+    {
+      "title": "Simple Mining: Bitcoin price and hashrate",
+      "url": "https://www.simplemining.io/insights/post/the-relationship-between-bitcoin-price-hashrate"
+    },
+    {
+      "title": "Bitcoin developer guide: block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+    }
+  ],
+  "publish_local": "2027-01-02T22:00:00+11:00"
+}

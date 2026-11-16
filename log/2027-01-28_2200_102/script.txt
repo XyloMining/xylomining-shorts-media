@@ -1,0 +1,1 @@
+What do miners earn when the subsidy runs out? The subsidy is expected to reach zero around the year 2140. After that, miners are paid only by transaction fees. Block space is scarce, so what users pay for it supports the miners. That is a long way off, so the subsidy keeps halving until then. Will fees be enough? Tell me in the comments, and the link is on my channel page.
