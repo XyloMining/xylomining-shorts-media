@@ -1,0 +1,19 @@
+{
+ "window": [
+  "2026-11-10 15:34:06",
+  "2026-11-17 05:53:06"
+ ],
+ "hours_on": 46.0,
+ "avg_cpu_w": 65.7,
+ "avg_gpu_w": 100.2,
+ "avg_total_w": 165.9,
+ "avg_total_w_while_gpu_over_100w": 221.6,
+ "kwh": 7.63,
+ "electricity_aud": 2.52,
+ "csv_combined_revenue_usd": 0.4281,
+ "est_2050_share_usd": 0.3259,
+ "gpu_4070_revenue_usd": 0.1023,
+ "gpu_4070_revenue_aud": 0.145,
+ "profit_aud": -2.373,
+ "note": "From hardware-log.csv (real CPU+GPU power of the 4070 PC) and mining-profitability.csv (revenue covers both GPUs). Only hours present in the hardware log are counted (8 sessions). csv rows with the 0.015 USD startup placeholder excluded. 2050 share removed at 0.17 USD/day (user figure). CAUTION: csv revenue rate drops from ~1.0-1.9 USD/day (1-9 Nov) to ~0.22 USD/day from 10 Nov 15:34, so the 4070 figure is near zero; cause unconfirmed with user. Electricity at A$0.33/kWh; AUD/USD 0.7053."
+}
