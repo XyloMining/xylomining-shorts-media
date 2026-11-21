@@ -204,7 +204,7 @@ def build_description(cfg, item) -> str:
         if h.lower() not in [t.lower() for t in tags]:
             tags.append(h)
     tags = tags[:5]  # YouTube ignores all hashtags if more than 15; keep it tidy
-    return (f"{item['description_body'].strip()}\n\n{d['disclosure']}\n\n"
+    return (f"{item['description_body'].strip()}\n\n{d['referral_line']}\n\n{d['disclosure']}\n\n"
             f"Sources:\n{src}\n\n{' '.join(tags)}")[:4900]
 
 

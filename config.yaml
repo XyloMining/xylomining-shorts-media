@@ -108,6 +108,7 @@ cta:
   label: "LINK ON MY CHANNEL PAGE"
 
 description:
+  referral_line: "Join GoMining: https://xylomining.github.io/referrals/gomining"
   disclosure: "This is a referral link, and I may receive a benefit if you sign up. Digital mining involves costs and risks, and returns are not guaranteed. This is not financial advice."
   always_hashtags: ["#Bitcoin", "#BitcoinMining"]
 

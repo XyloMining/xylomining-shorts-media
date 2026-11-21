@@ -203,7 +203,7 @@ def metadata(cfg, script, timing, scenes, total, outdir):
             marks.append((0 if not marks else tm["start"], sc["chapter_name"]))
     lines = [f"{mmss(t)} {name}" for t, name in marks]
     desc = (f"{script['intro']}\n\nChapters:\n" + "\n".join(lines) +
-            f"\n\n{cfg['description']['disclosure']}\n\nSources:\n" +
+            f"\n\n{cfg['description']['referral_line']}\n\n{cfg['description']['disclosure']}\n\nSources:\n" +
             "\n".join(f"- {t}: {u}" for t, u in script["sources"]) + "\n\n#Bitcoin #BitcoinMining #HowItWorks")
     meta = {"title": script["title"], "description": desc, "tags": script["tags"], "category": "SCIENCE_TECHNOLOGY",
             "categoryId": "28", "privacy": "public", "madeForKids": False, "type": "long",

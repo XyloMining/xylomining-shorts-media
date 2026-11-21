@@ -61,6 +61,7 @@ class Validator(unittest.TestCase):
     def test_description_has_link_disclosure(self):
         d = content.build_description(CFG, self.items()[0])
         self.assertNotIn("link-target", d)
+        self.assertIn("xylomining.github.io/referrals/gomining", d)
         self.assertIn("referral link", d)
         self.assertIn("not guaranteed", d)
         self.assertLessEqual(len(d), 5000)
