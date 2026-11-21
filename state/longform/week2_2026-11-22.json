@@ -68,7 +68,7 @@
     "maintenance_usd": 2.61,
     "net_usd": 0.86,
     "power_th": 119.76,
-    "user_note": "Per user (22 Nov): this day's reward was paid out in BTC, not reinvested in TH, because BTC price is currently low. Note: the CSV row has reinvestmentInToken=true / reinvestmentInPowerNft=false and the app line showed the net as +2.38 GOMINING ($0.84); unconfirmed which asset arrived."
+    "user_note": "Confirmed by user (22 Nov): this day's reward was paid out in BTC, not reinvested in TH, because BTC price is currently low. (CSV flags and the app's GOMINING display for this day are not the payout asset.)"
    }
   ],
   "gross_usd_total": 21.09,
