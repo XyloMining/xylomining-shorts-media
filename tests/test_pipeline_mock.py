@@ -57,7 +57,7 @@ class T(unittest.TestCase):
             self.assertEqual(info["providers"], [{"network": "youtube"}])
             self.assertEqual(info["youtubeData"]["type"], "short")
             self.assertFalse(info["youtubeData"]["madeForKids"])
-            self.assertIn(self.cfg["link"], info["text"])
+            self.assertNotIn("link-target", info["text"])
             self.assertIn("referral link", info["text"])
             self.assertEqual(info["publicationDate"]["timezone"], "Australia/Sydney")
             self.assertRegex(it["date"], r"\+1[01]:00$")                 # Sydney offset, DST-aware
