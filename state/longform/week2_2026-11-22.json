@@ -1,0 +1,97 @@
+{
+ "captured": "2026-11-22, from the user's phone screenshots and GoMining nft_incomes.csv, for the long-form video (publish Sun 6 Dec 2026 20:00 Sydney)",
+ "gomining": {
+  "source": "2026-11-15-2026-11-21_nft_incomes.csv (rows present: 15-20 Nov)",
+  "days": [
+   {
+    "date": "2026-11-15",
+    "gross_btc": 5.39e-05,
+    "btc_usd": 62741.0,
+    "gross_usd": 3.38,
+    "maintenance_gmt": 7.16,
+    "gmt_price": 0.3579,
+    "maintenance_usd": 2.56,
+    "net_usd": 0.82,
+    "power_th": 117.45
+   },
+   {
+    "date": "2026-11-16",
+    "gross_btc": 5.48e-05,
+    "btc_usd": 64747.0,
+    "gross_usd": 3.55,
+    "maintenance_gmt": 7.33,
+    "gmt_price": 0.3496,
+    "maintenance_usd": 2.56,
+    "net_usd": 0.99,
+    "power_th": 117.45
+   },
+   {
+    "date": "2026-11-17",
+    "gross_btc": 5.5e-05,
+    "btc_usd": 64644.0,
+    "gross_usd": 3.56,
+    "maintenance_gmt": 7.19,
+    "gmt_price": 0.3572,
+    "maintenance_usd": 2.57,
+    "net_usd": 0.99,
+    "power_th": 117.78
+   },
+   {
+    "date": "2026-11-18",
+    "gross_btc": 5.582e-05,
+    "btc_usd": 64550.0,
+    "gross_usd": 3.6,
+    "maintenance_gmt": 7.31,
+    "gmt_price": 0.3574,
+    "maintenance_usd": 2.61,
+    "net_usd": 0.99,
+    "power_th": 119.34
+   },
+   {
+    "date": "2026-11-19",
+    "gross_btc": 5.605e-05,
+    "btc_usd": 63055.0,
+    "gross_usd": 3.53,
+    "maintenance_gmt": 7.4,
+    "gmt_price": 0.3543,
+    "maintenance_usd": 2.62,
+    "net_usd": 0.91,
+    "power_th": 119.76
+   },
+   {
+    "date": "2026-11-20",
+    "gross_btc": 5.568e-05,
+    "btc_usd": 62369.0,
+    "gross_usd": 3.47,
+    "maintenance_gmt": 7.39,
+    "gmt_price": 0.3532,
+    "maintenance_usd": 2.61,
+    "net_usd": 0.86,
+    "power_th": 119.76
+   }
+  ],
+  "gross_usd_total": 21.09,
+  "maintenance_usd_total": 15.53,
+  "net_usd_total": 5.56,
+  "note": "gross = income BTC x btcCourseInUsd; maintenance = 'c1+c2 in GMT' x gmtPrice (c1 electricity + c2 service, matches c1 USD + c2 USD within rounding). Gross matches app 'yesterday $3.47' for 20 Nov; app showed net BTC mining reward 2.38 GOMINING = $0.84 for that day."
+ },
+ "honeygain": {
+  "transferred_to_jumptask_credits_at_2026-11-22": 2743.8,
+  "week2_credits_estimate": 1291.92,
+  "week2_usd_estimate": 1.29,
+  "note": "Screenshot 'Transferred to Jumptask 2,743.80' assumed to be all-time earned since 6 Nov (previous all-time 1,451.88 at 14 Nov); week 2 = difference; 1000 credits = $1. CONFIRM this is all-time and no balance remains in the Honeygain wallet."
+ },
+ "gpu_mining_app_stats": {
+  "app": "Unmineable",
+  "unit": "USD",
+  "mining_balance": 1.141783,
+  "referral_balance": 0,
+  "total_balance": 1.141783,
+  "past_24h": 0.236329,
+  "past_7d": 1.507905,
+  "past_30d": 8.177952,
+  "total_paid": 20.449359,
+  "paid_since_week1": 1.594602,
+  "note": "Totals across both GPUs; do not split without user data. 7-day total halved vs week 1 (3.137784) consistent with earlier rate drop from 10 Nov."
+ }
+}
